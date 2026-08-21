@@ -45,7 +45,11 @@ def decode_json_bytes(data: bytes, *, label: str) -> Any:
         raise InputError(
             f"{label}: invalid JSON at line {exc.lineno}, column {exc.colno}"
         ) from exc
-    except (RecursionError, ValueError) as exc:
+    except RecursionError as exc:
+        # Older CPython JSON scanners hit the interpreter recursion limit before
+        # the explicit depth walk below can run; report the same depth boundary.
+        raise InputError(f"{label}: JSON exceeds maximum depth {MAX_JSON_DEPTH}") from exc
+    except ValueError as exc:
         raise InputError(
             f"{label}: JSON structure or number is outside safe parser limits"
         ) from exc

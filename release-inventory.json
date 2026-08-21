@@ -1465,7 +1465,7 @@
       "sha256": "99998dd48f293d26f14d96eda004b63b0c90923a5622234343d606604df8bff4"
     },
     {
-      "bytes": 4844,
+      "bytes": 5113,
       "origin": {
         "kind": "copy_candidate",
         "project": "claim-linter",
@@ -1474,7 +1474,7 @@
       },
       "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/local_io.py",
       "release_wave": 1,
-      "sha256": "c7829feaf3d19ba944bba0211e31c17af1b13aba70fa351d554195841fce5854"
+      "sha256": "69f5549e9a4729268cf7e753690b2416be681ed738d1cf82de686ba7210cbfa6"
     },
     {
       "bytes": 11259,
