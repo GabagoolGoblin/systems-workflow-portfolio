@@ -1,6 +1,6 @@
 # Project index
 
-| Project | Capability | Entry point | Candidate evidence | Explicit non-claim |
+| Project | Capability | Entry point | Evidence | Explicit non-claim |
 | --- | --- | --- | --- | --- |
 | [API Integration Contracts](../projects/api-integration-contracts/README.md) | Request/webhook contracts, retry, quarantine, human gate | [Static demo](../projects/api-integration-contracts/index.html) | 48 tests; 12 browser checks | No live API, credential, or production integration |
 | [Public Product Validation](../projects/public-product-validation/README.md) | Adverse input, barcode validation, public identity corroboration, human gate | [Static demo](../projects/public-product-validation/index.html) | 19 tests; 12 browser checks | Public identity is not authoritative; prices are synthetic; no writes |
@@ -15,4 +15,4 @@
 | [Catalog Lifecycle](../projects/catalog-lifecycle/README.md) | Operational state, held values, human review | [Static demo](../projects/catalog-lifecycle/index.html) | 12 tests | No integration or production automation |
 | [Bulk Price Control](../projects/bulk-price-control/README.md) | Preview, stage, exact confirmation, verified local commit | CLI | 43 tests | No POS, database, or cloud connector |
 
-Counts above describe this rewritten candidate. Exact exported-tree evidence is produced by release verification; deterministic tests remain separate from browser checks.
+Counts above describe this repository. Exact exported-tree evidence is produced by release verification; deterministic tests remain separate from browser checks.

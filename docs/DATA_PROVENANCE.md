@@ -4,7 +4,7 @@
 
 Every bundled operational fixture, visible person or organization, identifier, price, event, timestamp, prompt, output, score, and decision was created for these demonstrations except the explicitly bounded Open Food Facts text identity fields below. No employer, customer, vendor tenant, applicant, or production-system extract is represented.
 
-Selected hero images are local renders of checked-in synthetic interfaces. The three Wave-2 replacement heroes were captured from the genericized public runtimes at 1440×960 and reviewed at native resolution. No hero contains a remote font, third-party logo, product screenshot, or external image asset.
+Selected hero images are local renders of checked-in synthetic interfaces. Three featured screenshots were captured from the public demo interfaces at 1440×960 and reviewed at native resolution. No hero contains a remote font, third-party logo, product screenshot, or external image asset.
 
 ## Open Food Facts snapshot
 

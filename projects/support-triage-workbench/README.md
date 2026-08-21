@@ -45,4 +45,4 @@ python3 -B tools/publication_scan.py
 
 Every ticket, person, site, identifier, observation, time, and value is invented. The workbench has no network client, account, credential, ticketing adapter, send action, or external persistence. A rendered reply is local JSON, not a sent message. The rules are demo logic, not an organization's operating model or a measured production result.
 
-See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). The old project-local review license is intentionally excluded; owner-created material is governed by the common root `LICENSE`. This project README grants no separate rights.
+See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). All owner-created material is governed by the common root `LICENSE`.

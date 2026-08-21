@@ -1,13 +1,12 @@
 # Contributing
 
-This employer-viewable portfolio is not accepting external contributions. The
-intended public-repository settings disable both Issues and pull requests, and
-no outside account receives write access. Any intake template retained in the
-tree is dormant scaffolding, not an invitation or review commitment.
+This employer-viewable portfolio is not accepting external contributions.
+Issues are disabled, pull requests are not reviewed, and no outside account
+has write access. Any intake template retained in the tree is dormant
+scaffolding, not an invitation or review commitment.
 
-The requirements below apply only to an owner-authorized local change. They
-grant no additional permission to copy, modify, or redistribute repository
-material beyond GitHub's Terms of Service and applicable law.
+The requirements below apply to the maintainer's own local changes. They do
+not change the repository license.
 
 ## Required boundaries
 
@@ -30,6 +29,4 @@ make browser
 
 Do not commit caches, local output, logs, browser reports, or generated operational data.
 
-Unsolicited patches are not accepted. If pull-request mechanics are ever
-temporarily available before the required settings are applied, unsolicited
-pull requests are closed without review.
+The repository does not accept pull requests.

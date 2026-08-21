@@ -150,7 +150,7 @@ class ProjectContractTests(unittest.TestCase):
             readme,
         )
         self.assertIn(
-            "The root `LICENSE` governs cleared owner-created material.",
+            "The root `LICENSE` governs owner-created material.",
             provenance,
         )
         stale = (

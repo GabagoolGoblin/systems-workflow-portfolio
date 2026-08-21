@@ -2,7 +2,7 @@
   "all12_artifact_review": {
     "approved": true,
     "artifacts": {
-      "projects/public-product-validation/DATA_LICENSE.md": "17237603ddb48981c34f12eccb1f2530424fe15593eb58aa59f0f413d1e99a4c",
+      "projects/public-product-validation/DATA_LICENSE.md": "e45d665c8c2f714568bf1d2c55ce647db9554dc8c51bf1f96c5dec41fe1463ef",
       "projects/public-product-validation/data/DATA_REDACTION_RECEIPT.json": "c04b783538aa631981e970bd2aa8dbe94b4e6b4672a0d6749911a463c5067f80",
       "projects/public-product-validation/data/open_food_facts_snapshot.json": "2bd27bdbb6b89e323ec1083dd01f0962f6c73a8df1da0a172a2c7e3bb0f1c9fb",
       "third_party/licenses/DbCL-1.0.txt": "3cbfa990f26df856c6a7d3fff3d1f236e3b0165b1e8257ca0d00f15758754f81",
@@ -79,62 +79,62 @@
     "ai-release-gate": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "9de46efd91abe054224ad442f6d8f3c8e0defa1682c81d849221fe3db906f9ba"
+      "provenance_sha256": "24b3b744dae86abc9d09066c62367f543370969cb17529fecb99a1c2a50aa57f"
     },
     "api-contracts": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "39534581722b6b40a518c6a05b9d9a9a4b0ec11539e5a521df61e09f4e0e826b"
+      "provenance_sha256": "572dcdac8c2171ce59636d9a6f1fd5e60bcaa836a2fda3acb0aaa0751f9b5f5a"
     },
     "claim-linter": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "a0fc96a5f701f3e0faa7d42fcc42e7ef5a797fd96b38d3a699beb2b41ea590d6"
+      "provenance_sha256": "e7cd30d2e75edd029c6cf71b6757853161e70e510832633200407b683181c371"
     },
     "hitl-controls": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "3f319f2b6053654e84e2283187e1d93b51e139423e40f8d37061e572acfe27c6"
+      "provenance_sha256": "f92f288a04d7b76224ffdca2d49e4d6bbbf95688a563ed4ae937e10f0bc562ed"
     },
     "launch-lab": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "c7d41121a3eabc1bdc684581c38615c88e13a52ebb7028df5ae524861adc020c"
+      "provenance_sha256": "d0cfafc57bed4796b581188990c994f3bed31da123f9b60622f3b978fde6fbdb"
     },
     "lifecycle": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "62bf86d39123774d0de01769f58306868be6ae4fc785cf81f707140a86d3a943"
+      "provenance_sha256": "7dba923eb08b7b93b5465d89283fdd897e57f74d0a0da0f66f21e0c6ee537d64"
     },
     "migration-validator": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "8994fae4322e460e4d85e5e635ce8bbe96254d7977c1edbdf8d93ad305fa2285"
+      "provenance_sha256": "81b3828be78b2733e2975de5a0740eb9dcbb38589403f7e00630dfc3b544c5e9"
     },
     "price-controls": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "1fd2282e2184bc4fecae9f9b328e26021cd7c3dfa996fe6c8962c18ce4d8924d"
+      "provenance_sha256": "d0e51ab32ee1e8d0bc1b8a38fc2a49fe591a229cb47cdbc7e7e08a3131619438"
     },
     "product-validation": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "e41818753842401153e6055a36b930ed51e96983a4cad2aabc3b2abd9a92e1c6"
+      "provenance_sha256": "e8df61652bec78450cf11685d0856d43f755bb763ee91307e9a31727ff341a3d"
     },
     "readiness": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "0717668be50b23fbac1bd7ff41da1c82d332ba6efb838c1d8793ed29b397dd67"
+      "provenance_sha256": "22187e434242f8ecbc64d2f3688f98c72eb2794970fbd1f3f6d203af11c16c25"
     },
     "support-workbench": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "f58e1073113ea4c9cc9d49e85129f829977df8327d593df2d03197a767e32c17"
+      "provenance_sha256": "95d1ff395650551a01a020fad69ade3c7daa817cda28a6d963771e10f7b069d6"
     },
     "wcag-harness": {
       "include": true,
       "provenance_approved": true,
-      "provenance_sha256": "238bab7b94906c755f03117eab913c0e97e154dfb87d6af5621df04cdfc7530c"
+      "provenance_sha256": "eebab8aa2c8051d17c202abf145366c4478f0ac4b48688e2d59cb45ae57e3aec"
     }
   },
   "public_git_identity": {

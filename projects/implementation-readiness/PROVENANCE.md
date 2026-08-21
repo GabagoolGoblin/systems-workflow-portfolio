@@ -6,4 +6,4 @@ No employer or customer code, screenshot, record, schema, credential, documentat
 
 All runtime records are synthetic. The project has no third-party runtime asset or bundled third-party dataset. Verification-only tooling is documented at the repository root and is not shipped into the browser runtime.
 
-Owner-created material is governed by the common root `LICENSE`, and its approved provenance is recorded in `release-decisions.json`. This file records the technical boundary and grants no separate rights.
+Owner-created material is governed by the common root `LICENSE`, and its provenance is recorded in `release-decisions.json`.

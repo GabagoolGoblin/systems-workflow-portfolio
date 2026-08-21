@@ -4,4 +4,4 @@ This clean-room project contains original HTML, CSS, JavaScript, Python, tests, 
 
 The selected hero is a local render of the checked-in synthetic interface. The generated receipt and browser snapshot derive only from the two checked-in fixture files and reproduce exactly in a temporary copy.
 
-Runtime dependencies are a current browser and Python standard library. Playwright/Firefox is verification-only. The root `LICENSE` governs cleared owner-created material; this record is not a production or employment attestation.
+Runtime dependencies are a current browser and Python standard library. Playwright/Firefox is verification-only. The root `LICENSE` governs owner-created material; this record is not a production or employment attestation.

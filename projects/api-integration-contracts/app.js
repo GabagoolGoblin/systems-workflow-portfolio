@@ -158,10 +158,10 @@
       viewHeader(
         "Personal integration systems lab",
         "Make every boundary testable.",
-        "A deterministic, offline simulation for request contracts, signed webhooks, bounded retry, quarantine, human promotion, and audit evidence—without claiming paid production API experience.",
+        "A deterministic, offline simulation for request contracts, signed webhooks, bounded retry, quarantine, human promotion, and audit evidence, without claiming paid production API experience.",
         [{ label: "Inspect 429 recovery →", view: "exchange", primary: true }]
       ),
-      disclosure("PERSONAL PROJECT ONLY — this original lab uses synthetic vendors, paths, tenants, keys, payloads, responses, and timestamps. It demonstrates implementation skill; it is not evidence of a production deployment."),
+      disclosure("PERSONAL PROJECT ONLY: this original lab uses synthetic vendors, paths, tenants, keys, payloads, responses, and timestamps. It demonstrates implementation skill; it is not evidence of a production deployment."),
       metrics([
         ["Webhook deliveries", report.webhook_summary.total, "all synthetic", "↘"],
         ["Ready for a person", report.webhook_summary.states.ready_for_human, "never auto-promoted", "✓"],
@@ -213,7 +213,7 @@
         "Three supplied responses are validated in memory. HTTP 429 produces a virtual schedule; no socket opens and no timer sleeps.",
         [{ label: "Open human gate →", view: "gate", primary: true }]
       ),
-      disclosure("SIMULATION BOUNDARY — the endpoint is an allowlisted synthetic path, response attempts are fixture records, elapsed time is virtual, and the recovered 202 stops at review-ready."),
+      disclosure("SIMULATION BOUNDARY: the endpoint is an allowlisted synthetic path, response attempts are fixture records, elapsed time is virtual, and the recovered 202 stops at review-ready."),
       metrics([
         ["Attempts", exchange.attempts.length, "fixture records", "#"],
         ["429 responses", 2, "bounded, not retried live", "↻"],
@@ -478,7 +478,7 @@
         "Deterministic controls can make a candidate eligible. An exact visible review token plus a personal-project acknowledgement advances this browser-memory simulation; the token is a control-flow gate, not authentication.",
         [{ label: "Inspect receipt →", view: "audit", primary: false }]
       ),
-      disclosure("PROMOTION IS SIMULATED ONLY — the visible review token is an acknowledgement/control-flow gate, not a secret or authentication. This screen changes browser memory and has no endpoint, credential, persistence, deployment action, tenant mutation, or production authority."),
+      disclosure("PROMOTION IS SIMULATED ONLY: the visible review token is an acknowledgement/control-flow gate, not a secret or authentication. This screen changes browser memory and has no endpoint, credential, persistence, deployment action, tenant mutation, or production authority."),
       metrics([
         ["Prerequisites", "6/6", "scope-limited checks", "✓"],
         ["Review token", "Exact", "digest-derived", "#"],
@@ -623,7 +623,7 @@
       if (button.dataset.view === activeView) button.setAttribute("aria-current", "page");
       else button.removeAttribute("aria-current");
     });
-    document.title = `${viewTitles[activeView]} — Contract Lab`;
+    document.title = `${viewTitles[activeView]} | Contract Lab`;
     footerState.textContent = promoted
       ? "Browser-only simulated promotion · base receipt preserved"
       : `Base receipt · ${report.audit.events.length} hash-linked events`;

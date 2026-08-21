@@ -12,7 +12,7 @@ On **Blind review**, select `DEV-003` and run the exact contract: one response a
 
 ## 3. Reveal the holdout deliberately
 
-Filter to holdouts. Before reveal, the base bundle contains IDs, slices, veto flags, and hashes—but no task briefs, outputs, grader details, or candidate bindings. Trigger reveal; the browser loads a second local file and recomputes the complete-payload hash before exposing details.
+Filter to holdouts. Before reveal, the base bundle contains IDs, slices, veto flags, and hashes, but no task briefs, outputs, grader details, or candidate bindings. Trigger reveal; the browser loads a second local file and recomputes the complete-payload hash before exposing details.
 
 ## 4. Trace a hard veto
 

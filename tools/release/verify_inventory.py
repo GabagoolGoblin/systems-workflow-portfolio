@@ -10,8 +10,6 @@ from pathlib import Path, PurePosixPath
 
 
 META_PATHS = {
-    "PUBLICATION_HOLD.md",
-    "RELEASE_BUILD_REPORT.json",
     "RELEASE_MANIFEST.sha256",
     "release-inventory.json",
 }

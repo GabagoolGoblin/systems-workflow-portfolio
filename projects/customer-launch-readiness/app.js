@@ -563,7 +563,7 @@ function renderEnablement() {
   const complete = Object.values(state.trainingStatuses).filter((value) => value === "complete").length;
   const acknowledgments = Object.values(state.handoffAcks).filter(Boolean).length;
   return `
-    ${pageHead("Training + adoption", "Make the receiving team capable—not merely informed", "Practice signals, named owners, and handoff artifacts use entirely invented participants and records.", `<span class="tag">${complete}/${FIXTURE.training.length} practice modules</span>`)}
+    ${pageHead("Training + adoption", "Make the receiving team capable, not merely informed", "Practice signals, named owners, and handoff artifacts use entirely invented participants and records.", `<span class="tag">${complete}/${FIXTURE.training.length} practice modules</span>`)}
     <div class="grid-2">
       <section class="card">
         <div class="card-head"><div><h2>Enablement plan</h2><p>Attendance is context; demonstrated practice is the stronger signal</p></div><span class="tag">Synthetic cohort</span></div>
@@ -613,7 +613,7 @@ function renderAcceptance() {
   const checks = acceptanceChecks();
   const passed = checks.filter((check) => check.pass).length;
   const prerequisitesPass = checks.slice(0, -1).every((check) => check.pass);
-  const scoreText = state.checksRun ? `${passed}/${checks.length}` : "—/9";
+  const scoreText = state.checksRun ? `${passed}/${checks.length}` : "-/9";
   const scorePercent = state.checksRun ? Math.round((passed / checks.length) * 100) : 0;
   return `
     ${pageHead("Go-live acceptance", "Make the decision auditable, scoped, and human", "Passing checks supports a synthetic portfolio decision; it never authorizes a production launch.", '<button class="button-secondary" type="button" data-view-jump="overview">Return to command center</button>')}
@@ -636,7 +636,7 @@ function renderAcceptance() {
           <button class="button" style="width: 100%; margin-top: 16px" type="button" data-record-acceptance ${!state.checksRun || !prerequisitesPass || state.goLiveAccepted ? "disabled" : ""}>${state.goLiveAccepted ? "Synthetic acceptance recorded" : "Record synthetic go-live acceptance"}</button>
         </section>
         <section class="card">
-          <div class="card-head"><div><h2>Decision boundary</h2><p>What this interaction does—and does not—mean</p></div></div>
+          <div class="card-head"><div><h2>Decision boundary</h2><p>What this interaction does, and does not, mean</p></div></div>
           <div class="card-body">
             <div class="risk-callout"><span class="risk-icon" aria-hidden="true">!</span><div><strong>No production authority</strong><p>This click changes only in-memory demo state. It is not a vendor action, deployment, certification, customer instruction, or authorization.</p></div></div>
             <div class="detail-grid">

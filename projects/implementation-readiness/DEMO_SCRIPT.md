@@ -4,13 +4,13 @@
 
 ## 90-second path
 
-**0:00–0:15 — Readiness board**
+**0:00–0:15 - Readiness board**
 
 “This is a clean-room, offline implementation workflow using an entirely fictional baseline. I designed it to answer three questions quickly: what is known, what is blocked, and who owns the next move. The status labels are operational; they never claim compliance.”
 
 Point to the permanent disclosure, the four summary cards, and the control implementation board.
 
-**0:15–0:35 — Gap triage**
+**0:15–0:35 - Gap triage**
 
 Open **Gap triage** and select `GAP-07`.
 
@@ -18,13 +18,13 @@ Open **Gap triage** and select `GAP-07`.
 
 Use the filters briefly, then click **Open owner action**.
 
-**0:35–0:55 — Owner actions**
+**0:35–0:55 - Owner actions**
 
 Find `ACT-204` and advance it twice.
 
 “Completing the queued work changes the linked gap to review-ready. It does not silently accept the record. That separation is important when implementation work and customer review happen at different times.”
 
-**0:55–1:15 — Acceptance desk**
+**0:55–1:15 - Acceptance desk**
 
 Open **Acceptance desk**, choose `IR-01`, and run the checks.
 
@@ -34,7 +34,7 @@ Click **Record reviewer acknowledgment**.
 
 “Now seven of seven local prerequisites pass. The label is carefully scoped: locally ready, not compliant or certified.”
 
-**1:15–1:30 — Audit trail**
+**1:15–1:30 - Audit trail**
 
 Open **Audit trail**.
 

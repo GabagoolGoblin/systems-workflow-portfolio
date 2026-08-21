@@ -5,7 +5,7 @@
 - Implemented a deterministic, non-rendering HTML fixture regression harness.
 - Documented and tested nine bounded accessibility-oriented contracts.
 - Added fail-closed parsing, exact expected fingerprints, reproducible reports, and a SHA-256 evidence chain.
-- Verified the frozen source with 41 unit tests and exact audit verification.
+- Verified this project with 41 unit tests and exact audit verification.
 
 ## Not supported
 

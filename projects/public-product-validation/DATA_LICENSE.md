@@ -4,9 +4,9 @@ This project contains a small, frozen, text-only data component from Open Food F
 
 ## Covered paths
 
-- `data/open_food_facts_snapshot.json` — six retained API response records: five found products and one not-found control.
-- `data/catalog_snapshot.js` — a deterministic browser-oriented transformation of that JSON snapshot.
-- `data/DATA_REDACTION_RECEIPT.json` — hashes and exact JSON-pointer evidence for the public contact-metadata omission; it is provenance metadata, not an Open Food Facts response.
+- `data/open_food_facts_snapshot.json`: six retained API response records: five found products and one not-found control.
+- `data/catalog_snapshot.js`: a deterministic browser-oriented transformation of that JSON snapshot.
+- `data/DATA_REDACTION_RECEIPT.json`: hashes and exact JSON-pointer evidence for the public contact-metadata omission; it is provenance metadata, not an Open Food Facts response.
 
 ## Attribution
 
@@ -36,6 +36,6 @@ The JavaScript file renames selected fields for browser use and excludes no reta
 
 ## Synthetic operations boundary
 
-**Synthetic price — not sourced from Open Food Facts.** Open Food Facts supplied no price, site/menu, operator note, run event, decision, workflow state, or outcome used by the demo. Those values are invented and are not part of the ODbL/DbCL data component.
+**Synthetic price (not sourced from Open Food Facts).** Open Food Facts supplied no price, site/menu, operator note, run event, decision, workflow state, or outcome used by the demo. Those values are invented and are not part of the ODbL/DbCL data component.
 
 The frozen facts describe what the API returned at the recorded times. They do not establish current availability, correctness, endorsement, or authority to update any catalog. This notice records provenance and license scope; it is not legal advice.

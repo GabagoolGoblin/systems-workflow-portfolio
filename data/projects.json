@@ -1,7 +1,7 @@
 {
   "schema": "systems-workflow-portfolio-projects/v1",
   "boundary": "INDEPENDENT PORTFOLIO DEMOS · SYNTHETIC WORKFLOWS · ATTRIBUTED PUBLIC PRODUCT IDENTITY · NO AFFILIATION · NO PRODUCTION ACTION",
-  "evidence_note": "Counts describe this rewritten candidate; exact exported-tree evidence is produced by release verification.",
+  "evidence_note": "Counts describe this repository; exact exported-tree evidence is produced by release verification.",
   "projects": [
     {
       "id": "api-integration-contracts",

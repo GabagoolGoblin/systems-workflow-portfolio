@@ -35,7 +35,7 @@
     {
       "path": "build/report.md",
       "role": "output",
-      "sha256": "062e24b265caae2fb4900a495dc7c0fd73db248056f5583f515abc9158d461c2"
+      "sha256": "1b3ff6e04f152a5756f4f80c2688f0e90ab08ccb1c07f12c762339f9d20ef8e7"
     }
   ],
   "fixture_bundle_sha256": "5f6e01efaa8cd0fc916c19b0bbede35f2b23c8b06390bfc7f5838dff7df267eb",

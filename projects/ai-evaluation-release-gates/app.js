@@ -132,7 +132,7 @@
     select.id = `score-${label.toLowerCase()}`;
     select.dataset.scoreLabel = label;
     for (let score = 0; score <= 4; score += 1) {
-      const option = make('option', '', `${score} — ${base.rubric.anchors[String(score)]}`);
+      const option = make('option', '', `${score}: ${base.rubric.anchors[String(score)]}`);
       option.value = String(score);
       option.selected = current === score;
       select.appendChild(option);

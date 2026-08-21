@@ -45,4 +45,4 @@ The browser smoke uses Playwright only for verification. The runtime itself is p
 
 The organization, framework, controls, records, people, dates, evidence, and decisions are invented. “Locally ready” means only that the seven demo prerequisites passed. It is not compliance, certification, legal advice, professional assessment, production readiness, or a depiction of any vendor product.
 
-See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). Owner-created material is governed by the root `LICENSE`; this project README grants no separate rights.
+See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). Owner-created material is governed by the root `LICENSE`.

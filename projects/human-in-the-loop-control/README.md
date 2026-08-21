@@ -51,4 +51,4 @@ The headless suite uses only the Python standard library. `smoke_test.py` additi
 
 Every name, identifier, price, state, and result is invented. “Write,” “save,” and “approve” refer only to local synthetic state. There is no system integration, credential, remote endpoint, durable store, product behavior, deployment, or production authority.
 
-See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). Owner-created material is governed by the common root `LICENSE`, and the clean-room provenance approval is recorded in `release-decisions.json`. This project README grants no separate rights.
+See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). Owner-created material is governed by the common root `LICENSE`, and the clean-room provenance is recorded in `release-decisions.json`.

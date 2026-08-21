@@ -13,7 +13,7 @@ const DEMO_DATA = Object.freeze({
     { id: "SYN-1042", initials: "CP", tone: "coral", name: "Canyon Peach Sparkler", location: "Atrium Market", before: "$4.20", after: "$4.45", delta: "+6.0%", property: "Price", status: "verified", reason: "Matched source value and expected rounding policy.", source: "Price plan 04", confidence: "High" },
     { id: "SYN-1057", initials: "NM", tone: "blue", name: "Night Mesa Tonic", location: "Pool Kiosk", before: "$3.80", after: "$3.95", delta: "+3.9%", property: "Price", status: "verified", reason: "Matched source value and location scope.", source: "Price plan 04", confidence: "High" },
     { id: "SYN-1061", initials: "JL", tone: "green", name: "Juniper Lime Soda", location: "Lobby Pantry", before: "$4.10", after: "$4.10", delta: "0.0%", property: "Price", status: "verified", reason: "No change required after comparison.", source: "Price plan 04", confidence: "High" },
-    { id: "SYN-1088", initials: "DS", tone: "gold", name: "Dune Salt Lemonade", location: "Atrium Market", before: "$4.35", after: "Unknown", delta: "—", property: "Price", status: "held", reason: "The proposed value is absent. Policy requires a human decision; the demo never guesses.", source: "Price plan 04", confidence: "Blocked" },
+    { id: "SYN-1088", initials: "DS", tone: "gold", name: "Dune Salt Lemonade", location: "Atrium Market", before: "$4.35", after: "Unknown", delta: "-", property: "Price", status: "held", reason: "The proposed value is absent. Policy requires a human decision; the demo never guesses.", source: "Price plan 04", confidence: "Blocked" },
     { id: "SYN-1093", initials: "RM", tone: "violet", name: "Red Mesa Cold Brew", location: "Lobby Pantry", before: "$5.40", after: "$5.85", delta: "+8.3%", property: "Price", status: "review", reason: "Change exceeds the illustrative 8% review threshold.", source: "Price plan 04", confidence: "Medium" },
     { id: "SYN-1104", initials: "AS", tone: "blue", name: "Agave Sky Water", location: "Pool Kiosk", before: "$3.25", after: "$3.10", delta: "−4.6%", property: "Price", status: "verified", reason: "Matched source value and expected rounding policy.", source: "Price plan 04", confidence: "High" },
     { id: "SYN-1119", initials: "DR", tone: "coral", name: "Desert Rose Seltzer", location: "Atrium Market", before: "$3.90", after: "$4.05", delta: "+3.8%", property: "Price", status: "verified", reason: "Matched source value and expected rounding policy.", source: "Price plan 04", confidence: "High" },
@@ -239,7 +239,7 @@ function recordRow(record) {
     <td>${record.location}</td>
     <td><span class="old-value">${record.before}</span></td>
     <td><span class="${unknown ? "unknown-value" : "new-value"}">${record.after}</span></td>
-    <td><span class="${record.delta === "—" ? "unknown-value" : deltaTone}">${record.delta}</span></td>
+    <td><span class="${record.delta === "-" ? "unknown-value" : deltaTone}">${record.delta}</span></td>
     <td>${statusPill(record.status, record.status === "review" ? "Review" : record.status)}</td>
   </tr>`;
 }

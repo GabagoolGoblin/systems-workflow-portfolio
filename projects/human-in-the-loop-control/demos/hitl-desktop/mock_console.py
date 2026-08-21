@@ -1,5 +1,5 @@
 """
-Synthetic control console: dense grid + status — lab only.
+Synthetic control console: dense grid + status, lab only.
 Run: python mock_console.py
 """
 from __future__ import annotations
@@ -11,7 +11,7 @@ from tkinter import ttk, messagebox
 class MockConsole(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
-        self.title("Synthetic Control Console (LAB) — Menu Item Maintenance")
+        self.title("Synthetic Control Console (LAB) - Menu Item Maintenance")
         self.geometry("900x420")
         self.minsize(800, 360)
 
@@ -54,14 +54,14 @@ class MockConsole(tk.Tk):
         bar.pack(fill=tk.X)
         ttk.Button(bar, text="Save (human)", command=self._save).pack(side=tk.LEFT, padx=4)
         ttk.Button(bar, text="Inject bad price (demo fail)", command=self._inject_bad).pack(side=tk.LEFT, padx=4)
-        self.status = tk.StringVar(value="Ready — lab data only")
+        self.status = tk.StringVar(value="Ready (lab data only)")
         ttk.Label(bar, textvariable=self.status).pack(side=tk.LEFT, padx=12)
 
         # Same-process hook used by the lab automator.
         self.bind("<<AutomatorSetPrice>>", self._on_set_price)
 
     def _save(self) -> None:
-        self.status.set("Saved (lab) — human confirm path")
+        self.status.set("Saved (lab): human confirm path")
         messagebox.showinfo("LAB", "Human save acknowledged (lab only).")
 
     def _inject_bad(self) -> None:

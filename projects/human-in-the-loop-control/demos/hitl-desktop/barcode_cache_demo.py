@@ -134,9 +134,9 @@ class BarcodeCacheDemo(tk.Tk):
                     row.item_name,
                     f"${row.current_price}",
                     f"${row.requested_price}",
-                    row.menu_item_id or "—",
-                    f"${row.staged_price}" if row.staged_price else "—",
-                    f"${row.reread_price}" if row.reread_price else "—",
+                    row.menu_item_id or "-",
+                    f"${row.staged_price}" if row.staged_price else "-",
+                    f"${row.reread_price}" if row.reread_price else "-",
                     row.status,
                 ),
             )

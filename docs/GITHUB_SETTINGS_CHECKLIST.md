@@ -10,7 +10,7 @@ Complete these settings only after the owner approves the release and remote cre
 - [ ] Enable private vulnerability reporting and use Security Advisories for vulnerability intake.
 - [ ] Keep Pages and release automation disabled until separately approved.
 - [ ] Disable Issues.
-- [ ] Disable pull requests in repository Features; no external contribution intake or review commitment is offered.
+- [ ] Pull requests cannot be disabled on a public GitHub repository; protect `main`, grant no outside write access, and close unsolicited pull requests without review.
 - [ ] Use GitHub platform report/block controls for conduct abuse.
 - [ ] Record a separate post-remote settings receipt proving the intended settings; this pre-remote checklist is not evidence that they are active.
 - [ ] Disable wiki and discussions unless they will be maintained.

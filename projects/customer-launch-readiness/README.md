@@ -45,4 +45,4 @@ The runtime is plain HTML, CSS, and JavaScript. Playwright is verification-only.
 
 Every customer, person, record, metric, date, artifact, and program event is invented. The demo depicts no vendor product or internal workflow. “Acceptance” changes only the synthetic browser session; it is not a deployment, customer instruction, production-readiness finding, or authorization to go live.
 
-See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). Owner-created material is governed by the common root `LICENSE`; this project README grants no separate rights.
+See [CLAIMS_AND_BOUNDARIES.md](CLAIMS_AND_BOUNDARIES.md) and [PROVENANCE.md](PROVENANCE.md). Owner-created material is governed by the common root `LICENSE`.

@@ -16,14 +16,14 @@ JSON report SHA-256: `e77102dd29f482aa68443f5df4992eafd1e119b590c6724e85184bafac
 
 ## Cases
 
-### accessible-operations-panel — PASS
+### accessible-operations-panel: PASS
 
 Fixture: `components/accessible-operations-panel.html`  
 Fixture SHA-256: `a8997c00a56c725d2c2027e07be450a78a7a567e0ae988647b9ac6d26f59bb6b`
 
 No violations in the selected contract scope.
 
-### missing-names-panel — PASS
+### missing-names-panel: PASS
 
 Fixture: `components/missing-names-panel.html`  
 Fixture SHA-256: `9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee293`
@@ -38,7 +38,7 @@ Fixture SHA-256: `9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee2
 | `aria-reference-integrity` | `html[1]/body[1]/main[1]/section[1]/form[1]/input[1]` | 14:8 | aria-describedby references missing ids: owner-help |
 | `explicit-button-type` | `html[1]/body[1]/main[1]/section[1]/form[1]/button[1]` | 15:8 | button type must be explicitly button, reset, or submit |
 
-### structural-regressions — PASS
+### structural-regressions: PASS
 
 Fixture: `components/structural-regressions.html`  
 Fixture SHA-256: `49753386ec2cc6de5fba50798796d8fb8236cd4d5db3d9acc278f3a7e4b6d289`

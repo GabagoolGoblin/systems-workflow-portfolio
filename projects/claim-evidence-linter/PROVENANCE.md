@@ -4,4 +4,4 @@ This clean-room project contains original Python code, synthetic contract/eviden
 
 The runtime uses only the Python standard library and opens no network connection. Package-build tools are separate development dependencies, not runtime dependencies.
 
-The root `LICENSE` governs cleared owner-created material. This provenance record documents origin and limitations; it does not attest that any user-supplied evidence is true.
+The root `LICENSE` governs owner-created material. This provenance record documents origin and limitations; it does not attest that any user-supplied evidence is true.

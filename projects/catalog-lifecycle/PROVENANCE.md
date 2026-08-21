@@ -6,4 +6,4 @@ No historical employer screenshot, customer record, vendor asset, private docume
 
 Runtime dependencies: a current browser. External requests, remote assets, persistence, authentication, secrets, and production connectors: none.
 
-The root `LICENSE` governs cleared owner-created material. This file records provenance and grants no separate license or publication authority.
+The root `LICENSE` governs owner-created material.

@@ -51,7 +51,7 @@ def _markdown(report: dict[str, Any], report_json_sha256: str) -> bytes:
         icon = "PASS" if case["status"] == "matched" else "REGRESSION"
         lines.extend(
             [
-                f"### {case['id']} — {icon}",
+                f"### {case['id']}: {icon}",
                 "",
                 f"Fixture: `{case['html']}`  ",
                 f"Fixture SHA-256: `{case['fixture_sha256']}`",

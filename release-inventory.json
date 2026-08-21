@@ -73,31 +73,31 @@
       "sha256": "d94db86042ccb7fe8e05d0ccb15811d753123cdab048a3219c8b5b2620a6f86f"
     },
     {
-      "bytes": 924,
+      "bytes": 745,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "CHANGELOG.md",
       "release_wave": null,
-      "sha256": "eceec2bc5081d9ac60a3a23e1a2ab98e41ddc1f6afd13e25a69e1725236d2040"
+      "sha256": "cb1f6d9424261079968c0aabfad6a17edf32c5417237c1d92a2608844da47c7a"
     },
     {
-      "bytes": 939,
+      "bytes": 762,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "CODE_OF_CONDUCT.md",
       "release_wave": null,
-      "sha256": "6579946884de0d6c1fc38f018338f03699b4db5ce77d0f949372bb52609290ef"
+      "sha256": "5f400f418a7e9ef5717a107e0a6e69775f764274f20816156a6bb199e5b00355"
     },
     {
-      "bytes": 1583,
+      "bytes": 1306,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "CONTRIBUTING.md",
       "release_wave": null,
-      "sha256": "1301d40ea85945ede5c7cc09248aedd8970d4417e0813e6fbc9c23dd82d086fa"
+      "sha256": "07cb5fccf089b0e2b615814c881ad017f6c7ac8ba0418e03b75f3f30f4c7b3df"
     },
     {
       "bytes": 855,
@@ -118,31 +118,31 @@
       "sha256": "d1919917ebb1318b1536534f2e8e6c14ffe6e35f2a257785bd7d1590ba3d8898"
     },
     {
-      "bytes": 1060,
+      "bytes": 1052,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "NOTICE.md",
       "release_wave": null,
-      "sha256": "e42b3333b30876fbea77149f68be923d096fddb49a3edc0f50afa72807cb16b1"
+      "sha256": "bbc1ec9b8f0eb6889f1ebcbae2c6a49e5e2947a458dd046881cb1a21ff6e95b3"
     },
     {
-      "bytes": 4334,
+      "bytes": 4146,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "README.md",
       "release_wave": null,
-      "sha256": "56a12bf41408f8d295b5438ed62d54d49fee9a9dcca46dab2d2f9715b5f7009e"
+      "sha256": "04b6f633c871c79d1da2d283e23c1cc49732cfd0d4b62833c064f7b75fd76d83"
     },
     {
-      "bytes": 1108,
+      "bytes": 1072,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "SECURITY.md",
       "release_wave": null,
-      "sha256": "d387e063d25564069b9730b78c3818b360b24218370e3871bcd7b890a4354c49"
+      "sha256": "cdd558a8d5ae5267a7431b5289aa7cd4582f22bdd4fde073d1964b5aa2a2957b"
     },
     {
       "bytes": 1549,
@@ -226,13 +226,13 @@
       "sha256": "7da0a365a28b1a2e350d99e6c5ded56d36fbec6443930d1eae2c7eaa2c95459f"
     },
     {
-      "bytes": 9516,
+      "bytes": 9507,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "data/projects.json",
       "release_wave": null,
-      "sha256": "00ce3d17a9d784d111c63127a8c5cac50a4102a59f581be7bb30f9e47178563b"
+      "sha256": "80aa55767ed9febb5a30c3bc77a053ced24d60d015ad5ade32e8216a17ee5884"
     },
     {
       "bytes": 3284,
@@ -244,13 +244,13 @@
       "sha256": "3428e653a8a8edd622d146c4312cc2f27f1fada450fa4f246148c0845166a495"
     },
     {
-      "bytes": 1909,
+      "bytes": 1895,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "docs/DATA_PROVENANCE.md",
       "release_wave": null,
-      "sha256": "be445a42456b8d880004e6915edb0aff704e62fc8c4ce587606a2fef6d1dc311"
+      "sha256": "ba984b1ede97fa5151ea83dfc1f0a204671bdb9c8ee15f4fc5d357519ae12755"
     },
     {
       "bytes": 1371,
@@ -262,67 +262,67 @@
       "sha256": "f7264e16d0fb1543e91f35a8c454a855274133d3b81ea27ac9a7e7cc5a676bce"
     },
     {
-      "bytes": 1481,
+      "bytes": 1533,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "docs/GITHUB_SETTINGS_CHECKLIST.md",
       "release_wave": null,
-      "sha256": "bfd2eed5b33dc974eeb6d6821e8520c7bf2e9f3e5eecd848fd3321b51fbccb95"
+      "sha256": "00c242823814d1e5f685be5507cdc47b1ff556de7a3d12d5d3497709ddcba89c"
     },
     {
-      "bytes": 3453,
+      "bytes": 3434,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "docs/PROJECT_INDEX.md",
       "release_wave": null,
-      "sha256": "897d913771ab9079d512bbee8ee724fe441ef78acce1b4d8f0ea923d08489b2f"
+      "sha256": "2e76abfec8b4031eb5aaee2f3d2f87866465fc54007901b4158e602cf0bf59ea"
     },
     {
-      "bytes": 3276,
+      "bytes": 3258,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "docs/RELEASE_PROCESS.md",
       "release_wave": null,
-      "sha256": "4c182a4494035cc33b207048c9577113aede478d21b4a8be5259a6cf84993f06"
+      "sha256": "92ab4f2f2450d13defd2cd46d035bf5add50e1b7cb233c0aa3e57db0f9c5c55d"
     },
     {
-      "bytes": 3454,
+      "bytes": 3433,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "index.html",
       "release_wave": null,
-      "sha256": "75cc7ea699ca61788e60c05d3caec980b2980e92a59ac4ab47ce8d8c0f9ab11e"
+      "sha256": "1d2d87da404f688556ee63ce069ade8afa4a04c3b5d4b75d23874a39a7073bf2"
     },
     {
-      "bytes": 9640,
+      "bytes": 9631,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "project-data.js",
       "release_wave": null,
-      "sha256": "07cdeabc3f811456c6e6e1da01e15aca25afc57526829102d7b552d1b6125ce1"
+      "sha256": "c1401a4de6fdb36f5e5c7add4c2bbf2160e53d204e9f0680293a06176df266c8"
     },
     {
-      "bytes": 1048,
+      "bytes": 1021,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "037f11c94d94f1676b90b8c51090c1055e6be545d98a096e08095cf7cde99d49"
+      "sha256": "cd38a2bc2627e9b6ccb79e31f0c29ed25b6cd68900318cb7ae82baf8597802e3"
     },
     {
-      "bytes": 1410,
+      "bytes": 1409,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/DEMO_SCRIPT.md",
       "release_wave": null,
-      "sha256": "4e1e606c9edfbe41d20a6084ffea7c4780690fd2b3551f7040a2f460afbd0e32"
+      "sha256": "f06030458f1cc5d10e5e947bdf38b87af8613abb71964667e94749be6a36773c"
     },
     {
       "bytes": 1403,
@@ -334,13 +334,13 @@
       "sha256": "cb448cf94670b5a1d7ce083f342464d4b6553f6148aac748f64df9e327812567"
     },
     {
-      "bytes": 947,
+      "bytes": 939,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "9de46efd91abe054224ad442f6d8f3c8e0defa1682c81d849221fe3db906f9ba"
+      "sha256": "24b3b744dae86abc9d09066c62367f543370969cb17529fecb99a1c2a50aa57f"
     },
     {
       "bytes": 3578,
@@ -361,13 +361,13 @@
       "sha256": "b6ac79bcd2f88b0f89d13e2aefb7f49e74e0e56adb7197447cfe791b5f813b91"
     },
     {
-      "bytes": 25475,
+      "bytes": 25472,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/app.js",
       "release_wave": null,
-      "sha256": "3d3459d88235f0739b990862adee99334533090998e95afdae4e9cfdafff8474"
+      "sha256": "5f79ef2308339e3125b21c37583f062abc6746f58f115093de682b340b43cbe6"
     },
     {
       "bytes": 11379,
@@ -436,13 +436,13 @@
       "sha256": "edebcee9e2550edee99faca47dcbf0efe7281105a7b6ef53287a1e567ae00657"
     },
     {
-      "bytes": 9780,
+      "bytes": 9782,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/index.html",
       "release_wave": null,
-      "sha256": "790273dc681e523e32a4c4b5126682fcd59ef6788e51d3de556df194f2d94469"
+      "sha256": "2f2f6e1c71a5f62b0218fd6cbd971213b111866c7a1ff95a94ab76964287926c"
     },
     {
       "bytes": 353,
@@ -511,13 +511,13 @@
       "sha256": "f54fc3e721f3195bdbe5d644653466a2f5eb5b3fa935427c15e03e2f2f6f76be"
     },
     {
-      "bytes": 7481,
+      "bytes": 7478,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/scripts/security_privacy_scan.py",
       "release_wave": null,
-      "sha256": "247481d005b32a32c7a144e9abcc94866075c78d6c75fcef04cd5104b07e2049"
+      "sha256": "41bd58ae53fbaec94865d778094e159e9e92f491f5b451bdedc35355fc24bbae"
     },
     {
       "bytes": 17563,
@@ -547,13 +547,13 @@
       "sha256": "a6531aadd4ac25ae66519edbb80d0712d4cb350d44760e138026dd5fc24e6123"
     },
     {
-      "bytes": 1052,
+      "bytes": 1020,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/api-integration-contracts/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "731f6a9075325eb99ee8ba289cbce47af4e945b5178fcc8ae8b88dd1921410f5"
+      "sha256": "55d4ef24b1397c76c9b1b065f75dbb81cce3f4d16950804b5260c6dad92324ae"
     },
     {
       "bytes": 1401,
@@ -574,25 +574,25 @@
       "sha256": "c5296acab2b1f240ee88e5ada40da2b7fb3fd46edd6692225fc2d95bcdebdc46"
     },
     {
-      "bytes": 810,
+      "bytes": 802,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/api-integration-contracts/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "39534581722b6b40a518c6a05b9d9a9a4b0ec11539e5a521df61e09f4e0e826b"
+      "sha256": "572dcdac8c2171ce59636d9a6f1fd5e60bcaa836a2fda3acb0aaa0751f9b5f5a"
     },
     {
-      "bytes": 3321,
+      "bytes": 3320,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/api-integration-contracts/README.md",
       "release_wave": null,
-      "sha256": "2638edd81fcde93350ef812eb6b231b49a8d5b5e35d2ca70d07eb915ebd358c5"
+      "sha256": "49cfaf909c516481d76317f71bee5f4faffa17967d32f202074715ebcda04b20"
     },
     {
-      "bytes": 33472,
+      "bytes": 33460,
       "origin": {
         "kind": "copy_candidate",
         "project": "api-contracts",
@@ -601,7 +601,7 @@
       },
       "path": "projects/api-integration-contracts/app.js",
       "release_wave": 1,
-      "sha256": "93302b56a0b29a29cd36e694e18f6b1cdfd155d6080343f7b80b8a672c079383"
+      "sha256": "3f71f2c3f5044f816f68c4e81c4478950300f75449781d0bc67ca39e8afb4060"
     },
     {
       "bytes": 10547,
@@ -709,13 +709,13 @@
       "sha256": "5198df788208557a266a6a10a9782f982efe583b64aed66fd6d4ffea4199438b"
     },
     {
-      "bytes": 5617,
+      "bytes": 5615,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/api-integration-contracts/scripts/browser_verify.py",
       "release_wave": null,
-      "sha256": "5cb2cd0fadc6c9d177f6159e5f4e1eb868bdd47fab44ddcb812d9b503e11b7a1"
+      "sha256": "8c63c6e00e287f9311ba63da42e9847a4b691b281560475a388f820766f76616"
     },
     {
       "bytes": 2526,
@@ -730,13 +730,13 @@
       "sha256": "41abeb8f77f7e55d936612919c877a55f5d0482987369aacbbf6256547a02ffc"
     },
     {
-      "bytes": 3842,
+      "bytes": 3839,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/api-integration-contracts/scripts/security_privacy_scan.py",
       "release_wave": null,
-      "sha256": "2072ae89985e99a743b070cec313fcda738fcc2cb4a81213722a3238b6be6100"
+      "sha256": "72974bfd6b258cd4a0af06f009f0983e68c26672331a33cdb1ead8b1d12416ef"
     },
     {
       "bytes": 22984,
@@ -805,22 +805,22 @@
       "sha256": "ef43b3263328217dce3f986d3bac2d54379efc61b6293a8ba5e9c7062277237a"
     },
     {
-      "bytes": 806,
+      "bytes": 801,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/bulk-price-control/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "ab12623aa4090f09416bbef75214b4020afc0d816b141051447a7db32c65c42d"
+      "sha256": "ab6d048af7c8b8bcc43c4276be990f91c0d9f142cb9dfcf963556bbf4a965ddb"
     },
     {
-      "bytes": 678,
+      "bytes": 667,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/bulk-price-control/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "1fd2282e2184bc4fecae9f9b328e26021cd7c3dfa996fe6c8962c18ce4d8924d"
+      "sha256": "d0e51ab32ee1e8d0bc1b8a38fc2a49fe591a229cb47cdbc7e7e08a3131619438"
     },
     {
       "bytes": 2997,
@@ -1036,22 +1036,22 @@
       "sha256": "a6818bb9f273f670ae815b6c912316cc67920b8f8a0fb8fa484e2a7087f26910"
     },
     {
-      "bytes": 862,
+      "bytes": 757,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/catalog-lifecycle/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "ef5658cfadd13bacbf53d6891607f68b183e712b2c832fe46ce2d55260e30888"
+      "sha256": "295312c754e856bf55190857ef86de3a0269f7d014d2dd9768e16bd9e394f6bd"
     },
     {
-      "bytes": 830,
+      "bytes": 736,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/catalog-lifecycle/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "62bf86d39123774d0de01769f58306868be6ae4fc785cf81f707140a86d3a943"
+      "sha256": "7dba923eb08b7b93b5465d89283fdd897e57f74d0a0da0f66f21e0c6ee537d64"
     },
     {
       "bytes": 2916,
@@ -1063,7 +1063,7 @@
       "sha256": "317e06ac83d77de1738a19b9ae4316af6dde388ef913d239307eb2a1cb224236"
     },
     {
-      "bytes": 31040,
+      "bytes": 31036,
       "origin": {
         "kind": "copy_candidate",
         "project": "lifecycle",
@@ -1072,7 +1072,7 @@
       },
       "path": "projects/catalog-lifecycle/app.js",
       "release_wave": 1,
-      "sha256": "5b947e9cee1aff5ef10dd6cba009ddeea8ca1535d372a0575d0c37ae3030d9be"
+      "sha256": "b0f38616916d27fe9aace24dcb2eb2e5fafc88fa9717c8ab2bef609ff8d300e9"
     },
     {
       "bytes": 4702,
@@ -1093,31 +1093,31 @@
       "sha256": "0f4392a39f15f9afffd360e2ab5292d6ef4bd42d2f320c008d22ff38f497e817"
     },
     {
-      "bytes": 7449,
+      "bytes": 7441,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/catalog-lifecycle/tests/test_project_contracts.py",
       "release_wave": null,
-      "sha256": "ac39b7836d0dd6384b8bb9aa9dd7a3cf1fe0858681889fd4a7a3147d594176c0"
+      "sha256": "62a2bf4e6a21ca222e3c5f07d377becffeabc3da61788c9a0ab627bffd04cd49"
     },
     {
-      "bytes": 786,
+      "bytes": 781,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/catalog-migration-validator/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "9eb8ef80ea1c9b8291c3ba63adfa930571761ed50e2860d86d00026101321ab4"
+      "sha256": "ce8894945a0b9db69b63a1da843252748677381de0b518b7f68e726c44c58e52"
     },
     {
-      "bytes": 668,
+      "bytes": 654,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/catalog-migration-validator/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "8994fae4322e460e4d85e5e635ce8bbe96254d7977c1edbdf8d93ad305fa2285"
+      "sha256": "81b3828be78b2733e2975de5a0740eb9dcbb38589403f7e00630dfc3b544c5e9"
     },
     {
       "bytes": 3313,
@@ -1321,13 +1321,13 @@
       "sha256": "b937ffaacf0b30fecd5bb95e0f7edfe8d29dc7632614532b6645e2f456601c4a"
     },
     {
-      "bytes": 886,
+      "bytes": 868,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/claim-evidence-linter/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "31365dec44b3d7b657e75c92205e6d952103be96a6b9bbe451d1177e7abf5bee"
+      "sha256": "522e7c35e408d2055527b876656f3a73f4fa77caf124a4646373e064b2b8678a"
     },
     {
       "bytes": 385,
@@ -1342,13 +1342,13 @@
       "sha256": "573c63d266c1f074e7f4101bbf8a900399b3e6bc390b0fff77ddfd30931a940a"
     },
     {
-      "bytes": 668,
+      "bytes": 660,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/claim-evidence-linter/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "a0fc96a5f701f3e0faa7d42fcc42e7ef5a797fd96b38d3a699beb2b41ea590d6"
+      "sha256": "e7cd30d2e75edd029c6cf71b6757853161e70e510832633200407b683181c371"
     },
     {
       "bytes": 2820,
@@ -1579,13 +1579,13 @@
       "sha256": "0bf342e9be9b323756145195fe693d961cb62fc3e67695751c6b1a3e452b4565"
     },
     {
-      "bytes": 3815,
+      "bytes": 3797,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/customer-launch-readiness/DEMO_SCRIPT.md",
       "release_wave": null,
-      "sha256": "660165f685c2f2b0addf52cf2e1d82b96fa68f4717f728c862cedffe6528d8a5"
+      "sha256": "0814904381bbc47eb1357011521ca9ea215e9f6e19748f70c6e43ac3f4687c9d"
     },
     {
       "bytes": 266,
@@ -1597,40 +1597,40 @@
       "sha256": "3e60e811662af8d2fc7daba665d8cd859700c9da341bd997d60a4e7fd48ddc58"
     },
     {
-      "bytes": 923,
+      "bytes": 854,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/customer-launch-readiness/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "c7d41121a3eabc1bdc684581c38615c88e13a52ebb7028df5ae524861adc020c"
+      "sha256": "d0cfafc57bed4796b581188990c994f3bed31da123f9b60622f3b978fde6fbdb"
     },
     {
-      "bytes": 2267,
+      "bytes": 2220,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/customer-launch-readiness/README.md",
       "release_wave": null,
-      "sha256": "98372b4cb57455fd171b0e18b2d5dfd244ebbd5bb25036cb3d023b6a82c6afbb"
+      "sha256": "cca851263fb7fbe5ee808400c2f3022cba4d52f9c7360dcf9285fed90088ad09"
     },
     {
-      "bytes": 51865,
+      "bytes": 51860,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/customer-launch-readiness/app.js",
       "release_wave": null,
-      "sha256": "afa0575418c7108c0d509750ed3d6f19cb38b42a7a02dbbfe09970ca88dfb6c6"
+      "sha256": "f1e5c1d4a81527ba3775abefe2c029f7f019ff36ab5a47775e66bfcb93a78fb5"
     },
     {
-      "bytes": 4873,
+      "bytes": 4871,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/customer-launch-readiness/index.html",
       "release_wave": null,
-      "sha256": "833e164e02dd5c1059eea221a1a9c552d6077e28857435f575cbdc5006440e67"
+      "sha256": "96024f3bcb9a7a0b8602b143f6f739020af0ef06b260b074c88949f045ff8362"
     },
     {
       "bytes": 7380,
@@ -1642,13 +1642,13 @@
       "sha256": "76833839b1fea132dd71c17c1dfa8661503d8cf871c15e67f055d56d4e8218f9"
     },
     {
-      "bytes": 3170,
+      "bytes": 3167,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/customer-launch-readiness/scripts/security_privacy_scan.py",
       "release_wave": null,
-      "sha256": "3a291afd904ef52fdee69adec7cebd826a9f070bdcdd27c75e801ac91030c6e1"
+      "sha256": "9ecb6577d3b3fd6289587bf832c816318791df920e669545a856ab4b36ef5969"
     },
     {
       "bytes": 21758,
@@ -1681,22 +1681,22 @@
       "sha256": "4e5148d958c83a187fcf3f01942bd814d29d36d764d3157a99b4b3d095b19e9d"
     },
     {
-      "bytes": 1102,
+      "bytes": 914,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "3f319f2b6053654e84e2283187e1d93b51e139423e40f8d37061e572acfe27c6"
+      "sha256": "f92f288a04d7b76224ffdca2d49e4d6bbbf95688a563ed4ae937e10f0bc562ed"
     },
     {
-      "bytes": 2708,
+      "bytes": 2652,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/README.md",
       "release_wave": null,
-      "sha256": "6767909b6fe52e29e504231edba1d1457a9df148df18fdc71825583a4d0d841c"
+      "sha256": "1769725390b425915a788f7d0b497c79662de572a27f829d6bb9eaae670a4594"
     },
     {
       "bytes": 4110,
@@ -1708,13 +1708,13 @@
       "sha256": "df3b72a544386955e489447f098f309264845c253d606bd34b86e7cb5146c241"
     },
     {
-      "bytes": 8106,
+      "bytes": 8100,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/barcode_cache_demo.py",
       "release_wave": null,
-      "sha256": "e3718d4df491483d9e44c498bbdebe7d617fcf19081ec51aaae5e8363955ea0c"
+      "sha256": "d3d0b2a6ce9cca75a669253af365e5cb2768e2958e65cd0b063395b7060a6c0f"
     },
     {
       "bytes": 1128,
@@ -1741,13 +1741,13 @@
       "sha256": "ca0e725bd618f5fce65b1302a41f4cc9a4b4643589bce3bf1e71c77bf17beb8b"
     },
     {
-      "bytes": 3755,
+      "bytes": 3745,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/mock_console.py",
       "release_wave": null,
-      "sha256": "3e92e53d7f5f18da60f8efa6621994ca64c5314e5038caa2383bfcc66e4ab592"
+      "sha256": "ff863675fd95343c2a6a8a26efc5650def4ad66e75548b0b79e10ae7bbbd8dc4"
     },
     {
       "bytes": 6204,
@@ -1813,13 +1813,13 @@
       "sha256": "249ab19db1736a163d40982323ea0923b7457ac0c21ede4ea0beba4eda3ef2d8"
     },
     {
-      "bytes": 3193,
+      "bytes": 3183,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/implementation-readiness/DEMO_SCRIPT.md",
       "release_wave": null,
-      "sha256": "5b27b84295b37fbcc0c9e56cfaf5f48c383ffe5319cc906594be52035988bdde"
+      "sha256": "47ccb3442a86680fc9c72481b42cd7f99bb5d3c054cfdea441932a3ca40b4f24"
     },
     {
       "bytes": 237,
@@ -1831,40 +1831,40 @@
       "sha256": "0918df0913a512fd1cf598fe8f057504e435d41e7439027dba395864c0b84153"
     },
     {
-      "bytes": 1002,
+      "bytes": 921,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/implementation-readiness/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "0717668be50b23fbac1bd7ff41da1c82d332ba6efb838c1d8793ed29b397dd67"
+      "sha256": "22187e434242f8ecbc64d2f3688f98c72eb2794970fbd1f3f6d203af11c16c25"
     },
     {
-      "bytes": 2177,
+      "bytes": 2130,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/implementation-readiness/README.md",
       "release_wave": null,
-      "sha256": "ac9f5cddb00a1e6387945f7fddd9bdac7c82d783ee2149a206e3c4363658306a"
+      "sha256": "15b116e82e3b2cda0bdd5e63c3e7acbd4c79f52b8396681d1c97cef5a1e716b6"
     },
     {
-      "bytes": 43793,
+      "bytes": 43788,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/implementation-readiness/app.js",
       "release_wave": null,
-      "sha256": "c6c2ff1bc47e0a798ce44aa7d46a09633cf6efce56bb7ab4f848bda726ed21bd"
+      "sha256": "1219628c74bcbd8e80f43eef378e2939617322a56b1c0100eb708516ed7c98de"
     },
     {
-      "bytes": 3492,
+      "bytes": 3490,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/implementation-readiness/index.html",
       "release_wave": null,
-      "sha256": "1ee57163f779d2b7027435ca06990827f462a7f0abf4fbbd8bbc25263864aac6"
+      "sha256": "f36a23aa7767ff082cb0a3ebade10173fd06e2410c50233cc97df9a738b16692"
     },
     {
       "bytes": 4069,
@@ -1906,13 +1906,13 @@
       "sha256": "d45e23ee87243341aef2e520046c6201d40a1c338a9781244e11fea72ed50b04"
     },
     {
-      "bytes": 903,
+      "bytes": 898,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/interface-contract-harness/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "8e50ae5b32b98a872df2032339a55e808ead4fcdf6e3333a32e85dec03a23c6f"
+      "sha256": "c36ea0cd0f3b9eb46a92c6d1f6e4843c8e44f7a160aad44aadcbfca90511f861"
     },
     {
       "bytes": 657,
@@ -1927,13 +1927,13 @@
       "sha256": "e49ebf4aed3492255d930786e383a9614ee0e2a7315fa77b1076efca78a2d4eb"
     },
     {
-      "bytes": 793,
+      "bytes": 733,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/interface-contract-harness/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "238bab7b94906c755f03117eab913c0e97e154dfb87d6af5621df04cdfc7530c"
+      "sha256": "eebab8aa2c8051d17c202abf145366c4478f0ac4b48688e2d59cb45ae57e3aec"
     },
     {
       "bytes": 3017,
@@ -1951,7 +1951,7 @@
       },
       "path": "projects/interface-contract-harness/build/audit.json",
       "release_wave": null,
-      "sha256": "c27e57ff4e9e1aff6ba5ac241424699d8b5578296858961187005f1e11864046"
+      "sha256": "8729bff396d4c0fabc1a79660240e6d53852aa7061cb152314265bcfd4507902"
     },
     {
       "bytes": 77,
@@ -1960,7 +1960,7 @@
       },
       "path": "projects/interface-contract-harness/build/audit.sha256",
       "release_wave": null,
-      "sha256": "feaeb111f29d275d0d1db8fca0a9804f64ddcf4a1ad67ddb196c1f675b14af66"
+      "sha256": "993e55546ace705f9b5c57a8e786ab39936d5ad543d73edfde84de58a634540d"
     },
     {
       "bytes": 7468,
@@ -1984,7 +1984,7 @@
       "sha256": "e77102dd29f482aa68443f5df4992eafd1e119b590c6724e85184bafac84f021"
     },
     {
-      "bytes": 2627,
+      "bytes": 2618,
       "origin": {
         "kind": "generated_example",
         "project": "wcag-harness",
@@ -1993,16 +1993,16 @@
       },
       "path": "projects/interface-contract-harness/build/report.md",
       "release_wave": 1,
-      "sha256": "062e24b265caae2fb4900a495dc7c0fd73db248056f5583f515abc9158d461c2"
+      "sha256": "1b3ff6e04f152a5756f4f80c2688f0e90ab08ccb1c07f12c762339f9d20ef8e7"
     },
     {
-      "bytes": 5149,
+      "bytes": 5146,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/interface-contract-harness/demo/index.html",
       "release_wave": null,
-      "sha256": "a959d96d3fb548f1ad6ba4937ee8fcb6e1b3f7dbcde6ed4c8b70e283003e0b9a"
+      "sha256": "fcca169742fb42c12deeb6482dc87948e45efdb0978f5a2bbb87e6a184a7e59d"
     },
     {
       "bytes": 1260,
@@ -2203,13 +2203,13 @@
       "sha256": "c217af047767123d041075ced6c38a864b15e0857ff9a460a46fc4674b84ee90"
     },
     {
-      "bytes": 27593,
+      "bytes": 27590,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/interface-contract-harness/wcag_harness/reports.py",
       "release_wave": null,
-      "sha256": "8347b63b0a04fcb712a64e13cd5ddc67b888513ab9206eaa4c4d3c3e2c5302c8"
+      "sha256": "70bb3190a46e665baca4877cce045e80bd78ed231834c37cff23cf14740ea29f"
     },
     {
       "bytes": 10113,
@@ -2233,13 +2233,13 @@
       "sha256": "1dc7eede6cda161a22e04da88eab7942f0bb57b78219835c409a90b28410c571"
     },
     {
-      "bytes": 3161,
+      "bytes": 3150,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/public-product-validation/DATA_LICENSE.md",
       "release_wave": null,
-      "sha256": "17237603ddb48981c34f12eccb1f2530424fe15593eb58aa59f0f413d1e99a4c"
+      "sha256": "e45d665c8c2f714568bf1d2c55ce647db9554dc8c51bf1f96c5dec41fe1463ef"
     },
     {
       "bytes": 3381,
@@ -2254,31 +2254,31 @@
       "sha256": "f4b68627ed9f8dacf3890bdfb54b01022fb0ecf8755202bc6a24460c2c3ba932"
     },
     {
-      "bytes": 1369,
+      "bytes": 1357,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/public-product-validation/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "e41818753842401153e6055a36b930ed51e96983a4cad2aabc3b2abd9a92e1c6"
+      "sha256": "e8df61652bec78450cf11685d0856d43f755bb763ee91307e9a31727ff341a3d"
     },
     {
-      "bytes": 2689,
+      "bytes": 2687,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/public-product-validation/README.md",
       "release_wave": null,
-      "sha256": "17e6ffadff182df0c6d77f6148a13cb0df03cafb6f86163de6a49b904f2ad749"
+      "sha256": "df4367319beda8b47aecc7fbdc12ac5410bf3e1a870e167b6457e81995599785"
     },
     {
-      "bytes": 46253,
+      "bytes": 46245,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/public-product-validation/app.js",
       "release_wave": null,
-      "sha256": "de2b8d1f2390e52dc30f860c90ae65e00aa32bbc5fc1f64a5df03730980514a2"
+      "sha256": "d0710060a4ce82a071d69846aeaff96d3b68c7da4669694efbeebf4ff50d09ed"
     },
     {
       "bytes": 930,
@@ -2338,13 +2338,13 @@
       "sha256": "5cdbe925b102c180ff81028cad3561a6095f91ed242fd3bd511fe8f1c27f9a4c"
     },
     {
-      "bytes": 15301,
+      "bytes": 15297,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/public-product-validation/tests/test_project_contracts.py",
       "release_wave": null,
-      "sha256": "eabc91a7e4ff297b0b59185220d730f702e55645685bed271467530e49c408bc"
+      "sha256": "55b103d2b89180febd78a756e2b475311ce5938233f037abedf0ade2acae1945"
     },
     {
       "bytes": 1011,
@@ -2356,22 +2356,22 @@
       "sha256": "442ed583285bbbbc1fd97f2d05f298d362444316c931ac431e4ee39f3a5e209c"
     },
     {
-      "bytes": 821,
+      "bytes": 649,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/support-triage-workbench/PROVENANCE.md",
       "release_wave": null,
-      "sha256": "f58e1073113ea4c9cc9d49e85129f829977df8327d593df2d03197a767e32c17"
+      "sha256": "95d1ff395650551a01a020fad69ade3c7daa817cda28a6d963771e10f7b069d6"
     },
     {
-      "bytes": 2458,
+      "bytes": 2351,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/support-triage-workbench/README.md",
       "release_wave": null,
-      "sha256": "4369ea25d95f3e87a8da46b84d7948735cba13432b70e04bf2a2b76776ea247a"
+      "sha256": "42680e9105939483cf4b0da826d5cbb9ec5ed8e50b2e69416056ef78f22b6a6d"
     },
     {
       "bytes": 4995,
@@ -2521,7 +2521,7 @@
       },
       "path": "release-decisions.json",
       "release_wave": null,
-      "sha256": "8ba0eb94509e357ba00322ddb2bcb7fb2011870c57529046fc0199a196a9bcec"
+      "sha256": "2878d8eeb397890b5f708ef8be8e11014bf2662e9cb9ac3c3cddf021b583f0f8"
     },
     {
       "bytes": 3899,
@@ -2605,13 +2605,13 @@
       "sha256": "cb90be9a8035757d60b5d449b950ce039f2ecdb20af304a3a749c869eb9637c8"
     },
     {
-      "bytes": 11836,
+      "bytes": 11833,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "tools/release/verify_all.py",
       "release_wave": null,
-      "sha256": "dbbe773327b2e0f88bac6aacc9a2da1c6d1505ba1c38ed59b85b5357e3a96e11"
+      "sha256": "cce8fb008b5e32c9ad4b5ecebaac4bd3d63068e0b587ea6ff6a316037427eda8"
     },
     {
       "bytes": 3945,
@@ -2623,22 +2623,22 @@
       "sha256": "4a4e56f4b1c6c025a2fa70ded388d8dbe77335532ee0d9258b13ab553e1e884c"
     },
     {
-      "bytes": 4917,
+      "bytes": 4857,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "tools/release/verify_inventory.py",
       "release_wave": null,
-      "sha256": "0ac86f5bca0617d8eeec500d36a2645e45c4ba4442f8b234c09a835f53e9cffe"
+      "sha256": "cb92bb9b312837b4fb9b0ea004d9bd57d89079b3f049fe4b776cf757f3905cbd"
     },
     {
-      "bytes": 15520,
+      "bytes": 15250,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "tools/release/verify_landing.py",
       "release_wave": null,
-      "sha256": "7de9779554347b75991a8782a256845b98a9e7f4a3eeb307ae3df30c755e17da"
+      "sha256": "4b37c84a8cd5daf6f567a6b916c7bc8ebaccd287b7d21adbe3da5c668b1cedc5"
     },
     {
       "bytes": 4842,

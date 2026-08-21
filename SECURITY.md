@@ -7,12 +7,12 @@ Only the latest default-branch revision is supported. These portfolio demos are 
 ## Reporting
 
 Do not publish exploit details, credentials, personal information,
-employer/customer material, or production records. After GitHub private
-vulnerability reporting is enabled for the repository, use the repository's
-**Security → Report a vulnerability** flow. If that private flow is unavailable,
-withhold sensitive details until it is enabled.
+employer/customer material, or production records. Use the repository's
+**Security → Report a vulnerability** flow (GitHub private vulnerability
+reporting). If that private flow is unavailable, withhold sensitive details
+until it is restored.
 
-Issues and pull requests are intended to remain disabled. The checked-in bug
+Issues are disabled and pull requests are not reviewed. The checked-in bug
 template is dormant scaffolding and does not create an active bug-intake or
 response commitment.
 

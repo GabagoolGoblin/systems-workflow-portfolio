@@ -39,7 +39,7 @@ SECRET_PATTERNS = {
 
 
 def check(label: str, passed: bool, detail: str) -> bool:
-    print(f"{'PASS' if passed else 'FAIL'}: {label} — {detail}")
+    print(f"{'PASS' if passed else 'FAIL'}: {label}: {detail}")
     return passed
 
 

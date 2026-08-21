@@ -26,7 +26,7 @@ A clean-room Python core, native Tk lab, and code-native browser preview resolve
 
 ## Browse all twelve projects
 
-Open [the static portfolio landing](index.html) or use the [project index](docs/PROJECT_INDEX.md). The candidate covers:
+Open [the static portfolio landing](index.html) or use the [project index](docs/PROJECT_INDEX.md). The repository covers:
 
 - integration reliability: API Integration Contracts;
 - governance: AI Evaluation Release Gates and Claim–Evidence Linter;
@@ -34,7 +34,7 @@ Open [the static portfolio landing](index.html) or use the [project index](docs/
 - quality engineering: Interface Contract Harness; and
 - operational control: Implementation Readiness, Customer Launch Readiness, Support Triage Workbench, and Human-in-the-Loop Control.
 
-The rewritten candidate declares 378 deterministic tests and 79 separately counted project browser checks. These declared counts must be confirmed by the exact candidate receipt produced by `make verify`.
+The repository declares 378 deterministic tests and 79 separately counted project browser checks. `make verify` confirms these counts against the exact tree.
 
 ## Run locally
 
@@ -68,4 +68,4 @@ Browser verification uses the separately locked tooling documented in [Dependenc
 - [Release process](docs/RELEASE_PROCESS.md)
 - [Security policy](SECURITY.md)
 
-Distribution rights are defined only by the root `LICENSE` plus path-level third-party notices. The owner-approved restrictive root `LICENSE` governs cleared owner-created material, and candidate assembly records the approved public scope and Git identity. This README grants no remote-creation, push, release, Pages, deployment, or publication authority.
+Distribution rights are defined only by the root `LICENSE` plus path-level third-party notices. The restrictive root `LICENSE` governs owner-created material, and third-party material keeps its own separate terms.

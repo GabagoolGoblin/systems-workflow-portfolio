@@ -4,7 +4,7 @@
 
 - Implemented a local, deterministic migration workflow with explicit mappings, quarantine, reconciliation, exact confirmation, and verified atomic apply.
 - Added strict schema and identity validation, content-addressed artifacts, target-drift/tamper rejection, rollback evidence, and path-alias controls.
-- Verified the frozen source with 40 standard-library tests.
+- Verified this project with 40 standard-library tests.
 
 ## Not supported
 

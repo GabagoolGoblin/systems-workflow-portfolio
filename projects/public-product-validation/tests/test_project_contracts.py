@@ -252,7 +252,7 @@ class ProjectContractTests(unittest.TestCase):
 
     def test_every_price_surface_has_explicit_source_boundary(self) -> None:
         app = self.text["app.js"]
-        exact = "Synthetic price — not sourced from Open Food Facts"
+        exact = "Synthetic price (not sourced from Open Food Facts)"
         self.assertGreaterEqual(app.count(exact), 3)
         self.assertIn(exact, self.text["README.md"])
         self.assertIn(exact, self.text["DATA_LICENSE.md"])
@@ -300,7 +300,7 @@ class ProjectContractTests(unittest.TestCase):
             self.text["PROVENANCE.md"],
         )
         self.assertIn(
-            "Exact frozen public identity fields—including retained UPC/EAN/GTIN values—are the exception described below.",
+            "Exact frozen public identity fields, including retained UPC/EAN/GTIN values, are the exception described below.",
             self.text["PROVENANCE.md"],
         )
         self.assertNotIn(

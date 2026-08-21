@@ -10,9 +10,7 @@ The maintainer may hide, lock, or remove interactions that violate this policy
 and may block or report an account when necessary.
 
 Do not publish sensitive conduct details. Use GitHub's platform reporting and
-blocking controls for abuse. The intended repository posture disables Issues
-and pull requests; that setting is required after remote creation and must be
-confirmed by a separate post-remote settings receipt. This pre-remote file does
-not claim that any setting is already active.
+blocking controls for abuse. Issues are disabled on this repository and pull
+requests are not reviewed.
 
 This policy applies in repository spaces and in public spaces where someone is representing the project.

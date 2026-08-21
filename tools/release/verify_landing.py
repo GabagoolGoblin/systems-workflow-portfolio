@@ -11,15 +11,15 @@ ROOT = Path(__file__).resolve().parents[2]
 
 PUBLIC_COUNT_TEXT = {
     "README.md": (
-        "The rewritten candidate declares 378 deterministic tests and 79 separately counted project browser checks. "
-        "These declared counts must be confirmed by the exact candidate receipt produced by `make verify`.",
+        "The repository declares 378 deterministic tests and 79 separately counted project browser checks. "
+        "`make verify` confirms these counts against the exact tree.",
     ),
     "docs/PROJECT_INDEX.md": (
-        "Counts above describe this rewritten candidate. Exact exported-tree evidence is produced by release verification; "
+        "Counts above describe this repository. Exact exported-tree evidence is produced by release verification; "
         "deterministic tests remain separate from browser checks.",
     ),
     "index.html": (
-        'aria-label="Rewritten candidate verification scope"',
+        'aria-label="Verification scope"',
         "<div><dt>378</dt><dd>deterministic tests</dd></div>",
         "<div><dt>79</dt><dd>browser checks</dd></div>",
     ),
@@ -40,49 +40,49 @@ PRODUCT_BOUNDARY = (
 )
 ASSEMBLED_REPOSITORY_TEXT = {
     "README.md": (
-        "The owner-approved restrictive root `LICENSE` governs cleared owner-created material",
-        "candidate assembly records the approved public scope and Git identity",
+        "The restrictive root `LICENSE` governs owner-created material",
+        "third-party material keeps its own separate terms",
     ),
     "CHANGELOG.md": (
-        "Applied the owner-approved restrictive root license and public Git identity during candidate assembly",
+        "Applied the restrictive root license and public Git identity",
     ),
-    "NOTICE.md": ("The root `LICENSE` governs cleared owner-created material.",),
+    "NOTICE.md": ("The root `LICENSE` governs owner-created material.",),
     "projects/catalog-lifecycle/README.md": (
         "Owner-created files are governed only by the repository root `LICENSE`.",
     ),
     "projects/catalog-lifecycle/PROVENANCE.md": (
-        "The root `LICENSE` governs cleared owner-created material.",
+        "The root `LICENSE` governs owner-created material.",
     ),
     "projects/support-triage-workbench/README.md": (
         "owner-created material is governed by the common root `LICENSE`",
     ),
     "projects/support-triage-workbench/PROVENANCE.md": (
-        "its approved provenance is recorded in `release-decisions.json`",
+        "its provenance is recorded in `release-decisions.json`",
     ),
     "projects/human-in-the-loop-control/README.md": (
-        "the clean-room provenance approval is recorded in `release-decisions.json`",
+        "the clean-room provenance is recorded in `release-decisions.json`",
     ),
     "projects/human-in-the-loop-control/PROVENANCE.md": (
-        "its approved clean-room provenance is recorded in `release-decisions.json`",
+        "its clean-room provenance is recorded in `release-decisions.json`",
     ),
     "projects/public-product-validation/README.md": (
         "Owner-created code and documentation are governed by the root `LICENSE`.",
     ),
     "projects/public-product-validation/PROVENANCE.md": (
-        "its approved provenance is recorded in `release-decisions.json`",
+        "its provenance is recorded in `release-decisions.json`",
         "The third-party data paths remain under their stated ODbL/DbCL terms.",
     ),
     "projects/implementation-readiness/README.md": (
         "Owner-created material is governed by the root `LICENSE`",
     ),
     "projects/implementation-readiness/PROVENANCE.md": (
-        "its approved provenance is recorded in `release-decisions.json`",
+        "its provenance is recorded in `release-decisions.json`",
     ),
     "projects/customer-launch-readiness/README.md": (
         "Owner-created material is governed by the common root `LICENSE`",
     ),
     "projects/customer-launch-readiness/PROVENANCE.md": (
-        "its approved provenance is recorded in `release-decisions.json`",
+        "its provenance is recorded in `release-decisions.json`",
     ),
 }
 STALE_PREBUILD_TEXT = (
@@ -99,7 +99,7 @@ STALE_PREBUILD_TEXT = (
 
 
 def verify_public_count_wording() -> None:
-    """Bind counts to the rewritten candidate without banning legitimate frozen-data prose."""
+    """Bind counts to the repository without banning legitimate frozen-data prose."""
     for relative, required in PUBLIC_COUNT_TEXT.items():
         text = (ROOT / relative).read_text(encoding="utf-8")
         for phrase in required:
@@ -182,12 +182,12 @@ def main() -> int:
             check(landing.locator("article[data-project-id]").count() == 12, "landing does not render twelve projects")
             evidence_strip = landing.locator(".evidence-strip")
             check(
-                evidence_strip.get_attribute("aria-label") == "Rewritten candidate verification scope"
+                evidence_strip.get_attribute("aria-label") == "Verification scope"
                 and evidence_strip.locator("dt").all_inner_texts() == ["12", "378", "79", "0"]
                 and evidence_strip.locator("dd").all_inner_texts() == [
                     "curated projects", "deterministic tests", "browser checks", "runtime services"
                 ],
-                "landing evidence strip does not bind 378/79 to the rewritten candidate",
+                "landing evidence strip does not bind 378/79 to the repository",
             )
             landing.wait_for_function("[...document.images].every(image => image.complete && image.naturalWidth > 0)")
             check(landing.locator("article[data-project-id] img").count() == 7, "landing does not render seven reviewed previews")
@@ -230,7 +230,7 @@ def main() -> int:
             expect(product.locator(".license-note")).to_contain_text("No live writes")
             product.locator('[data-action="parse-input"]').click()
             expect(product.locator("tbody [data-record-id]")).to_have_count(9)
-            expect(product.locator("table")).to_contain_text("Synthetic price — not sourced from Open Food Facts")
+            expect(product.locator("table")).to_contain_text("Synthetic price (not sourced from Open Food Facts)")
             product.locator('[data-filter="conflict"]').click()
             expect(product.locator("tbody [data-record-id]")).to_have_count(2)
             product.locator("tbody [data-record-id]").first.click()

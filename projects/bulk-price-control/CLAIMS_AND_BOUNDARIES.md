@@ -5,7 +5,7 @@
 - Implemented a local guarded bulk-price workflow with preview, stage, exact confirmation, verified commit, rollback, and audit evidence.
 - Enforced strict schema, policy, money, identity, and batch-size rules using standard-library Python.
 - Added atomic replacement, same-snapshot digest binding, documented lock order, and concurrency/tamper tests.
-- Verified the frozen source with 43 tests.
+- Verified this project with 43 tests.
 
 ## Not supported
 

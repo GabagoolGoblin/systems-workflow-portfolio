@@ -214,7 +214,7 @@ def main() -> int:
         ]
     )
     for label, passed, detail in results:
-        print(f"{'PASS' if passed else 'FAIL'}: {label} — {detail}")
+        print(f"{'PASS' if passed else 'FAIL'}: {label}: {detail}")
     passed = all(item[1] for item in results)
     print(f"OVERALL: {'PASS' if passed else 'FAIL'} ({sum(item[1] for item in results)}/{len(results)} checks)")
     return 0 if passed else 1

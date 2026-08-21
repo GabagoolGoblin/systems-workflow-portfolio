@@ -241,7 +241,7 @@ const viewMeta = {
     label: "Readiness board",
     eyebrow: "Implementation workspace",
     title: "Turn ambiguity into owned next steps.",
-    subtitle: "A fictional baseline is decomposed into evidence, gaps, owners, and acceptance conditions—without claiming compliance."
+    subtitle: "A fictional baseline is decomposed into evidence, gaps, owners, and acceptance conditions, without claiming compliance."
   },
   gaps: {
     label: "Gap triage",
@@ -749,7 +749,7 @@ function renderAcceptance() {
       <article class="acceptance-summary" aria-label="Acceptance check results">
         <div class="acceptance-result-head">
           <div><p class="control-code">${escapeHTML(control.id)}</p><h2 class="card-title">${escapeHTML(control.name)}</h2></div>
-          <div class="inline-cluster"><span class="badge ${resultClass}">${resultLabel}</span><span class="result-score"><strong>${hasRun ? passed : "—"}</strong><span>/ 7</span></span></div>
+          <div class="inline-cluster"><span class="badge ${resultClass}">${resultLabel}</span><span class="result-score"><strong>${hasRun ? passed : "-"}</strong><span>/ 7</span></span></div>
         </div>
         <div class="check-list">
           ${checks.map(check => {
@@ -839,7 +839,7 @@ function render() {
   };
   document.getElementById("view-root").innerHTML = renderers[state.view]();
   document.getElementById("event-count").textContent = `${state.audit.length} logged events`;
-  document.title = `${viewMeta[state.view].label} — Implementation Readiness Lab`;
+  document.title = `${viewMeta[state.view].label} | Implementation Readiness Lab`;
 }
 
 function navigate(view) {

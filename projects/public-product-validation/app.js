@@ -321,7 +321,7 @@ function analyzeInput(rawInput) {
       duplicateIds: duplicates.filter(item => item.id !== record.id).map(item => item.id),
       status,
       reason,
-      confidence: status === "ready" ? "High for identity match" : status === "mismatch" ? "Low — mismatch" : "Blocked / unknown",
+      confidence: status === "ready" ? "High for identity match" : status === "mismatch" ? "Low (mismatch)" : "Blocked / unknown",
       workflowResultClass: "synthetic_demo_only",
     };
   });
@@ -458,10 +458,10 @@ function renderQueue() {
           <span class="demo-result-chip">Demo-only results</span>
         </div>
         <table class="data-table">
-          <thead><tr><th scope="col">Synthetic submission</th><th scope="col">Normalized GTIN</th><th scope="col">Public evidence</th><th scope="col">Synthetic price — not sourced from Open Food Facts</th><th scope="col">Workflow result</th></tr></thead>
+          <thead><tr><th scope="col">Synthetic submission</th><th scope="col">Normalized GTIN</th><th scope="col">Public evidence</th><th scope="col">Synthetic price (not sourced from Open Food Facts)</th><th scope="col">Workflow result</th></tr></thead>
           <tbody>${records.length ? records.map(queueRow).join("") : `<tr><td colspan="5" class="empty-state">No synthetic records match this filter.</td></tr>`}</tbody>
         </table>
-        <div class="table-footer"><span>${records.length} synthetic submissions shown</span><span>Every price is synthetic — not sourced from Open Food Facts; every site, input, and result is demo-only</span></div>
+        <div class="table-footer"><span>${records.length} synthetic submissions shown</span><span>Every price is synthetic and not sourced from Open Food Facts; every site, input, and result is demo-only</span></div>
       </article>
       ${renderInspector(selected)}
     </div>
@@ -555,7 +555,7 @@ function renderReview() {
             ${evidenceField("GS1 barcode gate", selected.barcode.valid ? selected.barcode.addedLeadingZero ? "Valid mod-10 · UPC-A → EAN-13 · leading zero preserved" : `Valid mod-10 · ${selected.barcode.rawDigits.length}-digit input` : selected.barcode.state === "unknown" ? "Unknown · no readable code" : selected.barcode.note)}
             ${evidenceField("Brand / product", `${selected.brand} · ${selected.name}`)}
             ${evidenceField("Quantity", selected.quantity)}
-            ${evidenceField("Synthetic price — not sourced from Open Food Facts", selected.proposedPrice, false, true)}
+            ${evidenceField("Synthetic price (not sourced from Open Food Facts)", selected.proposedPrice, false, true)}
             ${evidenceField("Synthetic site / menu", selected.site, false, true)}
           </section>
           <section class="evidence-pane">
@@ -634,7 +634,7 @@ function renderEvidence() {
           <div class="trust-list">
             ${trustRow("✓", "It can demonstrate", "Parsing, normalization, check-digit validation, mismatch routing, provenance, and human-gated state design.")}
             ${trustRow("≠", "It does not claim", "That a public record is authoritative, current after capture, complete, or sufficient for a real catalog decision.")}
-            ${trustRow("$", "Pricing boundary", "Synthetic price — not sourced from Open Food Facts. Every displayed price is invented for this portfolio demo.")}
+            ${trustRow("$", "Pricing boundary", "Synthetic price (not sourced from Open Food Facts). Every displayed price is invented for this portfolio demo.")}
             ${trustRow("Ⅱ", "Write boundary", "No integration credentials, destination endpoint, form submission, or live write connector exists.")}
           </div>
         </article>

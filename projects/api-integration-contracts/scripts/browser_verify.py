@@ -81,7 +81,7 @@ def main() -> int:
         passed("audit view keeps the verified base chain distinct from browser state")
 
         page.locator("#reset-demo").click()
-        expect(page).to_have_title("Contract map — Contract Lab")
+        expect(page).to_have_title("Contract map | Contract Lab")
         expect(page.locator("footer")).to_contain_text("Base receipt · 11 hash-linked events")
         passed("reset clears transient promotion state and returns to the contract map")
 

@@ -2,7 +2,7 @@
 
 > INDEPENDENT PORTFOLIO DEMO · SYNTHETIC DATA · NO AFFILIATION · NO PRODUCTION ACTION
 
-A clean-room Python contract engine and six-screen browser workspace for inspecting adverse API and webhook behavior. The exact synthetic fixture exercises request/response validation, HMAC verification, replay and idempotency order, schema quarantine, bounded virtual `429` recovery, a human gate, and a hash-linked receipt—with no network, sleep, persistence, or production write.
+A clean-room Python contract engine and six-screen browser workspace for inspecting adverse API and webhook behavior. The exact synthetic fixture exercises request/response validation, HMAC verification, replay and idempotency order, schema quarantine, bounded virtual `429` recovery, a human gate, and a hash-linked receipt, with no network, sleep, persistence, or production write.
 
 ![Synthetic webhook quarantine and review workspace](../../assets/project-previews/api-integration-contracts.png)
 

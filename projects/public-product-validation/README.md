@@ -26,7 +26,7 @@ Then visit `http://127.0.0.1:8765/`. The application makes no automatic network 
 
 Five found records and one not-found control were captured from the Open Food Facts API v3 on 2026-08-20. Only text identity fields are bundled; no product image is included. The public distribution copy is not the exact raw capture: it removes only one locally added request-contact field while leaving every other JSON field and all six retained response records unchanged. The machine-verifiable receipt is `data/DATA_REDACTION_RECEIPT.json`.
 
-**Synthetic price — not sourced from Open Food Facts.** Every price, site/menu, operator note, run event, decision, and workflow result is invented for this demo.
+**Synthetic price (not sourced from Open Food Facts).** Every price, site/menu, operator note, run event, decision, and workflow result is invented for this demo.
 
 See [DATA_LICENSE.md](DATA_LICENSE.md) for exact paths, attribution, transformation notes, and ODbL/DbCL scope.
 
