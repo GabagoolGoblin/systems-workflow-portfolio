@@ -1,0 +1,45 @@
+{
+  "currency": "USD",
+  "items": [
+    {
+      "active": true,
+      "category": "beverage",
+      "name": "Citrus Sparkler",
+      "price": "3.25",
+      "sku": "BEV-1001"
+    },
+    {
+      "active": true,
+      "category": "entree",
+      "name": "Garden Grain Bowl",
+      "price": "11.50",
+      "sku": "ENT-2001"
+    },
+    {
+      "active": true,
+      "category": "side",
+      "name": "Herbed Potato Cup",
+      "price": "4.20",
+      "sku": "SID-3001"
+    },
+    {
+      "active": false,
+      "category": "dessert",
+      "name": "Seasonal Orchard Tart",
+      "price": "5.75",
+      "sku": "DES-4001"
+    }
+  ],
+  "policy": {
+    "allowed_categories": [
+      "beverage",
+      "entree",
+      "side",
+      "dessert"
+    ],
+    "max_batch_size": 100,
+    "max_percent_change": "20.00"
+  },
+  "schema_version": "hospitality-catalog/v1",
+  "venue_id": "demo-venue-alpha"
+}

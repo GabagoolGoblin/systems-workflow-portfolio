@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+  <title>Evaluation Release Gate Lab — Synthetic AI Workflow Controls</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="boundary" data-testid="boundary">INDEPENDENT PORTFOLIO DEMO · SYNTHETIC DATA · NO AFFILIATION · NO PRODUCTION ACTION</div>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Lab navigation">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>Evaluation Release Gate Lab</strong><small>offline workflow evidence</small></span>
+      </div>
+      <nav id="navigation">
+        <button class="nav-item active" type="button" data-view="overview"><span>01</span>Brief</button>
+        <button class="nav-item" type="button" data-view="review"><span>02</span>Blind review</button>
+        <button class="nav-item" type="button" data-view="failures"><span>03</span>Failure atlas</button>
+        <button class="nav-item" type="button" data-view="matrix"><span>04</span>Regression matrix</button>
+        <button class="nav-item" type="button" data-view="gate"><span>05</span>Release gate</button>
+      </nav>
+      <div class="sidebar-note">
+        <span class="pulse"></span>
+        <div><b>Local session</b><small>0 network requests<br>0 production actions</small></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">AI workflow evaluation</span>
+          <h1 id="view-title">Release decision brief</h1>
+        </div>
+        <div class="top-status">
+          <span class="chip neutral" id="seal-chip">HOLDOUT SEALED</span>
+          <span class="chip pending" id="outcome-chip">PENDING</span>
+        </div>
+      </header>
+
+      <section class="view active" id="view-overview" data-screen="overview">
+        <div class="hero-grid">
+          <article class="hero-card">
+            <span class="kicker">Controlled evidence, not vibes</span>
+            <h2>Decide whether a synthetic workflow candidate deserves another review.</h2>
+            <p>Run eight development checks, reveal four hash-bound holdouts, record blind human judgments, then issue a tamper-evident non-authoritative receipt.</p>
+            <div class="hero-actions">
+              <button class="button primary" type="button" data-go="review">Open blind review</button>
+              <button class="button ghost" type="button" data-go="gate">Inspect gate policy</button>
+            </div>
+          </article>
+          <article class="score-card">
+            <div class="score-ring"><strong>12</strong><span>synthetic<br>cases</span></div>
+            <dl>
+              <div><dt>Development</dt><dd>8</dd></div>
+              <div><dt>Sealed holdout</dt><dd>4</dd></div>
+              <div><dt>Exact graders</dt><dd>8</dd></div>
+              <div><dt>Human rubric</dt><dd>4</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric"><span>Grounding</span><strong>3 cases</strong><small>Unsupported facts and evidence bounds</small><i class="bar width-75"></i></article>
+          <article class="metric"><span>Instruction adherence</span><strong>3 cases</strong><small>Declared shape, length, and intent</small><i class="bar width-75"></i></article>
+          <article class="metric"><span>Safe escalation</span><strong>3 cases</strong><small>Authority limits and named ownership</small><i class="bar width-75"></i></article>
+          <article class="metric"><span>Structured fidelity</span><strong>3 cases</strong><small>Exact JSON and usable handoffs</small><i class="bar width-75"></i></article>
+        </div>
+
+        <article class="workflow-card">
+          <div class="section-heading"><div><span class="kicker">Evaluation contract</span><h3>Fail-closed by construction</h3></div><span class="mono">schema / 01</span></div>
+          <ol class="workflow">
+            <li class="done"><span>01</span><div><b>Validate fixtures</b><small>Strict JSON, exact keys, type identity</small></div></li>
+            <li class="current"><span>02</span><div><b>Review blind A/B</b><small>Candidate identities withheld from reviewer input</small></div></li>
+            <li><span>03</span><div><b>Reveal holdout locally</b><small>Hash-bound, not claimed confidential</small></div></li>
+            <li><span>04</span><div><b>Record gate receipt</b><small>HOLD, ROLLBACK, or PENDING only</small></div></li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="view" id="view-review" data-screen="review">
+        <div class="review-layout">
+          <aside class="case-rail">
+            <div class="section-heading compact"><div><span class="kicker">Case queue</span><h3 id="case-count">8 development</h3></div></div>
+            <div class="filter-row" role="group" aria-label="Case partition filter">
+              <button type="button" class="filter active" data-filter="development">DEV</button>
+              <button type="button" class="filter" data-filter="holdout">HOLDOUT</button>
+              <button type="button" class="filter" data-filter="all">ALL</button>
+            </div>
+            <div id="case-list" class="case-list"></div>
+          </aside>
+          <article class="review-panel">
+            <div id="case-detail"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-failures" data-screen="failures">
+        <div class="section-heading"><div><span class="kicker">Failure taxonomy</span><h2>From symptom to release consequence</h2></div><span class="chip neutral">4 DIMENSIONS</span></div>
+        <div id="failure-grid" class="failure-grid"></div>
+        <article class="taxonomy-note">
+          <div><span class="kicker">Interpretation rule</span><h3>Exact failures are facts. Qualitative scores are judgments.</h3></div>
+          <p>The evaluator never converts a human rubric into a fake deterministic claim. Human scores remain explicit, label-blind inputs with controlled rationale codes.</p>
+        </article>
+      </section>
+
+      <section class="view" id="view-matrix" data-screen="matrix">
+        <div class="section-heading"><div><span class="kicker">Slice × partition</span><h2>Regression matrix</h2></div><button id="matrix-reference" class="button ghost" type="button">Load reference review</button></div>
+        <div class="matrix-wrap">
+          <table>
+            <thead><tr><th>Evaluation slice</th><th>Development</th><th>Holdout</th><th>Observed signal</th><th>Gate effect</th></tr></thead>
+            <tbody id="matrix-body"></tbody>
+          </table>
+        </div>
+        <div class="legend"><span><i class="dot pass"></i> exact pass / reviewed</span><span><i class="dot fail"></i> regression</span><span><i class="dot waiting"></i> not yet available</span></div>
+      </section>
+
+      <section class="view" id="view-gate" data-screen="gate">
+        <div class="gate-grid">
+          <article class="gate-panel outcome-panel">
+            <span class="kicker">Fail-closed release state</span>
+            <div class="outcome-display" id="gate-outcome">PENDING</div>
+            <p id="gate-reason">Human adjudication and explicit holdout evaluation remain incomplete.</p>
+            <div class="authority-lock"><span aria-hidden="true">⌁</span><div><b>No action authorized</b><small>This lab cannot promote, deploy, publish, or change a model route.</small></div></div>
+          </article>
+          <article class="gate-panel">
+            <div class="section-heading compact"><div><span class="kicker">Readiness gates</span><h3>Evidence checklist</h3></div><span id="gate-progress" class="mono">1 / 4</span></div>
+            <div id="gate-checklist" class="checklist"></div>
+            <div class="gate-actions">
+              <button id="reveal-holdout" class="button primary" type="button">Reveal + evaluate holdout</button>
+              <button id="load-reference" class="button ghost" type="button">Load reference human review</button>
+              <button id="load-regression" class="button ghost danger" type="button">Load regression drill</button>
+            </div>
+          </article>
+        </div>
+        <article class="receipt-card">
+          <div><span class="kicker">Tamper-evident local receipt</span><h3>Export the visible review state</h3><p>JSON is generated in memory and downloaded only when you click. Its SHA-256 is evidence of content integrity, not identity, approval, or a signature.</p></div>
+          <div class="receipt-actions"><code id="receipt-digest">digest / pending</code><button id="export-receipt" type="button" class="button primary" disabled>Export local JSON</button></div>
+        </article>
+        <div class="seal-disclosure" id="seal-disclosure"><b>“Sealed” is a workflow boundary, not secrecy.</b> Holdout details are excluded from the base browser snapshot and hash-bound until explicit local reveal. Static files remain inspectable; cryptographic confidentiality is not claimed.</div>
+      </section>
+    </main>
+  </div>
+  <footer>PERSONAL PORTFOLIO • ALL NAMES, CASES, OUTPUTS, SCORES, AND PROGRAM DATA ARE INVENTED • OFFLINE • NO AFFILIATION • NO PRODUCTION AUTHORITY</footer>
+  <script src="data/demo_snapshot.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

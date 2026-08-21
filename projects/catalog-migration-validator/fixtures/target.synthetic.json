@@ -1,0 +1,35 @@
+{
+  "currency": "USD",
+  "departments": [
+    {
+      "department_code": "DEPT-BEV",
+      "label": "Beverages"
+    },
+    {
+      "department_code": "DEPT-MAIN",
+      "label": "Entrees"
+    },
+    {
+      "department_code": "DEPT-SIDE",
+      "label": "Sides"
+    }
+  ],
+  "products": [
+    {
+      "active": true,
+      "department_code": "DEPT-BEV",
+      "name": "Cucumber Lime Fizz",
+      "price": "3.20",
+      "product_code": "ITM-100"
+    },
+    {
+      "active": true,
+      "department_code": "DEPT-MAIN",
+      "name": "Roasted Garden Bowl",
+      "price": "11.75",
+      "product_code": "ITM-200"
+    }
+  ],
+  "property_id": "demo-target-lodge",
+  "schema_version": "synthetic-hospitality-target/v2"
+}

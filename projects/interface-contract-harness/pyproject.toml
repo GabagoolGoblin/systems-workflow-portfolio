@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interface-contract-harness"
+version = "1.0.0"
+description = "Deterministic accessibility-oriented HTML fixture contract regression harness"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+license = {text = "License terms are provided in the repository root LICENSE file."}
+
+[project.scripts]
+interface-contract-harness = "wcag_harness.cli:main"
+
+[tool.setuptools]
+packages = ["wcag_harness"]

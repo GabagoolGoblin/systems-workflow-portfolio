@@ -1,0 +1,43 @@
+{
+  "_comment": "Clean-room demonstration data. Every name, identifier, and value is invented.",
+  "schema": "synthetic-lab-v1",
+  "cache": {
+    "100000000011": "7001001",
+    "100000000028": "7001002",
+    "100000000035": "7001003"
+  },
+  "requests": [
+    {
+      "barcode": "100000000011",
+      "item_name": "Citrus Sparkler",
+      "current_price": "2.49",
+      "requested_price": "2.69",
+      "source": "synthetic_fixture"
+    },
+    {
+      "barcode": "100000000028",
+      "item_name": "Berry Iced Tea",
+      "current_price": "2.79",
+      "requested_price": "2.99",
+      "source": "synthetic_fixture"
+    },
+    {
+      "barcode": "100000000035",
+      "item_name": "Vanilla Cold Brew",
+      "current_price": "3.89",
+      "requested_price": "4.19",
+      "source": "synthetic_fixture"
+    },
+    {
+      "barcode": "100000000042",
+      "item_name": "Ginger Lime Soda",
+      "current_price": "2.59",
+      "requested_price": "2.79",
+      "source": "synthetic_fixture"
+    }
+  ],
+  "held_manual_menu_item_id": "7001999",
+  "synthetic_only": true,
+  "invented_values_only": true,
+  "no_external_records": true
+}

@@ -1,0 +1,2 @@
+venue_id,sku,new_price,reason
+demo-venue-alpha,DES-4001,6.00,Attempt to update an inactive item

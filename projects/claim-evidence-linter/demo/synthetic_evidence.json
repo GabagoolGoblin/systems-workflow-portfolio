@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "evidence_set_id": "synthetic-ai-assurance-evidence",
+  "sources": [
+    {
+      "source_id": "run-a",
+      "title": "Invented offline evaluation run A",
+      "content": "Run A used invented tickets. The synthetic assistant escalated 97 of 100 policy-sensitive cases. Two false negatives remained. Results do not establish production readiness.",
+      "assertions": [
+        {
+          "assertion_id": "assert-escalation-a",
+          "fact_id": "escalation-rate-97",
+          "stance": "supports",
+          "start": 29,
+          "end": 96,
+          "quote": "The synthetic assistant escalated 97 of 100 policy-sensitive cases."
+        },
+        {
+          "assertion_id": "assert-errors-remain",
+          "fact_id": "zero-errors",
+          "stance": "contradicts",
+          "start": 97,
+          "end": 126,
+          "quote": "Two false negatives remained."
+        },
+        {
+          "assertion_id": "assert-not-production",
+          "fact_id": "regulated-production-ready",
+          "stance": "qualifies",
+          "start": 127,
+          "end": 173,
+          "quote": "Results do not establish production readiness."
+        }
+      ]
+    },
+    {
+      "source_id": "replay-b",
+      "title": "Invented independent offline replay B",
+      "content": "Independent replay on a separate invented dataset reproduced a 97 percent escalation rate. The replay was offline and contained no customer data.",
+      "assertions": [
+        {
+          "assertion_id": "assert-escalation-b",
+          "fact_id": "escalation-rate-97",
+          "stance": "supports",
+          "start": 0,
+          "end": 90,
+          "quote": "Independent replay on a separate invented dataset reproduced a 97 percent escalation rate."
+        },
+        {
+          "assertion_id": "assert-offline-scope",
+          "fact_id": "regulated-production-ready",
+          "stance": "qualifies",
+          "start": 91,
+          "end": 145,
+          "quote": "The replay was offline and contained no customer data."
+        }
+      ]
+    },
+    {
+      "source_id": "checklist-c",
+      "title": "Invented citation-integrity checklist",
+      "content": "Checklist review found every synthetic citation matched its declared source span. The checklist covers citation integrity only.",
+      "assertions": [
+        {
+          "assertion_id": "assert-citation-integrity",
+          "fact_id": "citation-span-integrity",
+          "stance": "supports",
+          "start": 0,
+          "end": 81,
+          "quote": "Checklist review found every synthetic citation matched its declared source span."
+        },
+        {
+          "assertion_id": "assert-checklist-scope",
+          "fact_id": "regulated-compliance",
+          "stance": "qualifies",
+          "start": 82,
+          "end": 127,
+          "quote": "The checklist covers citation integrity only."
+        }
+      ]
+    }
+  ]
+}
+

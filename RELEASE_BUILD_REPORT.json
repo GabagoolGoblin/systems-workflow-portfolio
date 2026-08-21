@@ -1,0 +1,24 @@
+{
+  "git_actions_performed": 0,
+  "mode": "all12",
+  "network_actions_performed": 0,
+  "override_file_count": 150,
+  "schema": "systems-workflow-portfolio-build-report/v1",
+  "selected_projects": [
+    "readiness",
+    "lifecycle",
+    "product-validation",
+    "wcag-harness",
+    "claim-linter",
+    "price-controls",
+    "migration-validator",
+    "support-workbench",
+    "hitl-controls",
+    "launch-lab",
+    "api-contracts",
+    "ai-release-gate"
+  ],
+  "source_file_count": 109,
+  "source_mutations_performed": 0,
+  "status": "CANDIDATE_BUILT_UNVERIFIED_PUBLICATION_HOLD"
+}

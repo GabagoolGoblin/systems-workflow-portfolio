@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Accessible operations panel fixture</title>
+</head>
+<body>
+  <header>
+    <h1>Release operations</h1>
+    <nav aria-label="Primary navigation">
+      <a href="#queue">Review queue</a>
+      <a href="#history">Run history</a>
+    </nav>
+  </header>
+  <main>
+    <section id="queue" aria-labelledby="queue-title">
+      <h2 id="queue-title">Review queue</h2>
+      <img src="decorative-grid.svg" alt="">
+      <form>
+        <label for="release-name">Release name</label>
+        <input id="release-name" name="release-name" type="text">
+        <label>
+          Environment
+          <select name="environment">
+            <option>Staging</option>
+            <option>Production</option>
+          </select>
+        </label>
+        <button type="submit">Run checks</button>
+      </form>
+    </section>
+    <section id="history" aria-labelledby="history-title">
+      <h2 id="history-title">Recent runs</h2>
+      <table>
+        <caption>Most recent synthetic checks</caption>
+        <thead><tr><th scope="col">Build</th><th scope="col">Result</th></tr></thead>
+        <tbody><tr><td>142</td><td>Matched</td></tr></tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "lab_id": "api_integration_contract_lab",
+  "synthetic": true,
+  "synthetic_secret": "whsec_SYNTHETIC_PERSONAL_LAB_NOT_A_SECRET",
+  "fixed_now_epoch": 1787248800,
+  "replay_window_seconds": 300,
+  "retry_policy": {
+    "max_retries": 3,
+    "base_seconds": 2,
+    "cap_seconds": 8
+  },
+  "allowed_endpoint_paths": [
+    "/v1/synthetic/resources"
+  ],
+  "webhook_contract": {
+    "event_schema_version": 1,
+    "allowed_event_types": [
+      "order.ready"
+    ],
+    "required_data_fields": [
+      "order_id",
+      "status",
+      "amount"
+    ]
+  }
+}

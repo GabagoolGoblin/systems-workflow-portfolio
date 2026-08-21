@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "synthetic-ai-assurance-contract",
+  "policy": {
+    "minimum_distinct_sources": {
+      "low": 1,
+      "medium": 1,
+      "high": 2
+    },
+    "absolute_terms": [
+      "always",
+      "fully compliant",
+      "guaranteed",
+      "production-ready",
+      "zero"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "claim-escalation-rate",
+      "text": "Offline replay measured a 97 percent escalation rate on invented policy-sensitive cases.",
+      "fact_id": "escalation-rate-97",
+      "risk_tier": "high",
+      "citations": [
+        {
+          "source_id": "run-a",
+          "assertion_id": "assert-escalation-a",
+          "start": 29,
+          "end": 96,
+          "quote": "The synthetic assistant escalated 97 of 100 policy-sensitive cases."
+        },
+        {
+          "source_id": "replay-b",
+          "assertion_id": "assert-escalation-b",
+          "start": 0,
+          "end": 90,
+          "quote": "Independent replay on a separate invented dataset reproduced a 97 percent escalation rate."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-zero-errors",
+      "text": "The synthetic assistant made zero errors.",
+      "fact_id": "zero-errors",
+      "risk_tier": "high",
+      "citations": [
+        {
+          "source_id": "run-a",
+          "assertion_id": "assert-errors-remain",
+          "start": 97,
+          "end": 126,
+          "quote": "Two false negatives remained."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-production-ready",
+      "text": "The workflow is production-ready for regulated use.",
+      "fact_id": "regulated-production-ready",
+      "risk_tier": "medium",
+      "citations": [
+        {
+          "source_id": "run-a",
+          "assertion_id": "assert-not-production",
+          "start": 127,
+          "end": 173,
+          "quote": "Results do not establish production readiness."
+        },
+        {
+          "source_id": "replay-b",
+          "assertion_id": "assert-offline-scope",
+          "start": 91,
+          "end": 145,
+          "quote": "The replay was offline and contained no customer data."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-citation-integrity",
+      "text": "Every synthetic citation in the checklist matched its declared source span.",
+      "fact_id": "citation-span-integrity",
+      "risk_tier": "low",
+      "citations": [
+        {
+          "source_id": "checklist-c",
+          "assertion_id": "assert-citation-integrity",
+          "start": 0,
+          "end": 81,
+          "quote": "Checklist review found every synthetic citation matched its declared source span."
+        }
+      ]
+    }
+  ]
+}
+

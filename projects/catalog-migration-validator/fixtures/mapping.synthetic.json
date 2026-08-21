@@ -1,0 +1,41 @@
+{
+  "category_mappings": [
+    {
+      "source_category": "CAT-BEV",
+      "target_department": "DEPT-BEV"
+    },
+    {
+      "source_category": "CAT-MAIN",
+      "target_department": "DEPT-MAIN"
+    },
+    {
+      "source_category": "CAT-SIDE",
+      "target_department": "DEPT-SIDE"
+    }
+  ],
+  "field_mappings": [
+    {
+      "source_field": "item_id",
+      "target_field": "product_code"
+    },
+    {
+      "source_field": "display_name",
+      "target_field": "name"
+    },
+    {
+      "source_field": "category_code",
+      "target_field": "department_code"
+    },
+    {
+      "source_field": "unit_price",
+      "target_field": "price"
+    },
+    {
+      "source_field": "enabled",
+      "target_field": "active"
+    }
+  ],
+  "schema_version": "synthetic-hospitality-mapping/v1",
+  "source_venue_id": "demo-source-cafe",
+  "target_property_id": "demo-target-lodge"
+}

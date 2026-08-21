@@ -1,0 +1,2678 @@
+{
+  "files": [
+    {
+      "bytes": 256,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".editorconfig",
+      "release_wave": null,
+      "sha256": "2c1c0e3743aa3e6c19eab106bc94803be48c3018e4eba2177da6ad36837965a3"
+    },
+    {
+      "bytes": 85,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".gitattributes",
+      "release_wave": null,
+      "sha256": "167a38ccfe4c1ce36faeacbee047b2fc9c55d286710271d9fdc78d966d205069"
+    },
+    {
+      "bytes": 72,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".github/CODEOWNERS",
+      "release_wave": null,
+      "sha256": "85ecfe0951f65344a957e82efd4f33ac8982f0a54d4856f3316cbe33547b53e4"
+    },
+    {
+      "bytes": 1199,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".github/ISSUE_TEMPLATE/bug.yml",
+      "release_wave": null,
+      "sha256": "4fb0234d05d9de0a727c608b095b38db466e3183a3ebd2ad71f10cd95af18924"
+    },
+    {
+      "bytes": 118,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "release_wave": null,
+      "sha256": "347d81038ad3ddb06fa805fabb360a430fd88298dd4bfe914d44aef8dea142cf"
+    },
+    {
+      "bytes": 804,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".github/pull_request_template.md",
+      "release_wave": null,
+      "sha256": "ecb8f5d83dd759d9560a13ac6688be049f36555dbf6eded5db59ce0dec0022e0"
+    },
+    {
+      "bytes": 4805,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".github/workflows/verify.yml",
+      "release_wave": null,
+      "sha256": "af9a37578836ce2d5d0eb75927f95cf50ce4f3bd89f916d53be773a79141e913"
+    },
+    {
+      "bytes": 205,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": ".gitignore",
+      "release_wave": null,
+      "sha256": "d94db86042ccb7fe8e05d0ccb15811d753123cdab048a3219c8b5b2620a6f86f"
+    },
+    {
+      "bytes": 924,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "CHANGELOG.md",
+      "release_wave": null,
+      "sha256": "eceec2bc5081d9ac60a3a23e1a2ab98e41ddc1f6afd13e25a69e1725236d2040"
+    },
+    {
+      "bytes": 939,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "CODE_OF_CONDUCT.md",
+      "release_wave": null,
+      "sha256": "6579946884de0d6c1fc38f018338f03699b4db5ce77d0f949372bb52609290ef"
+    },
+    {
+      "bytes": 1583,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "CONTRIBUTING.md",
+      "release_wave": null,
+      "sha256": "1301d40ea85945ede5c7cc09248aedd8970d4417e0813e6fbc9c23dd82d086fa"
+    },
+    {
+      "bytes": 855,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "LICENSE",
+      "release_wave": null,
+      "sha256": "5da8bf79f676d085e1fb9213f1a37ac47ecdcbe81d3bd4c309d5373003223641"
+    },
+    {
+      "bytes": 3912,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "Makefile",
+      "release_wave": null,
+      "sha256": "d1919917ebb1318b1536534f2e8e6c14ffe6e35f2a257785bd7d1590ba3d8898"
+    },
+    {
+      "bytes": 1060,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "NOTICE.md",
+      "release_wave": null,
+      "sha256": "e42b3333b30876fbea77149f68be923d096fddb49a3edc0f50afa72807cb16b1"
+    },
+    {
+      "bytes": 4334,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "README.md",
+      "release_wave": null,
+      "sha256": "56a12bf41408f8d295b5438ed62d54d49fee9a9dcca46dab2d2f9715b5f7009e"
+    },
+    {
+      "bytes": 1108,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "SECURITY.md",
+      "release_wave": null,
+      "sha256": "d387e063d25564069b9730b78c3818b360b24218370e3871bcd7b890a4354c49"
+    },
+    {
+      "bytes": 1549,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "THIRD_PARTY_NOTICES.md",
+      "release_wave": null,
+      "sha256": "71b22b789f21eacd3836de7cf411f1aff0acecb264d54c9076622531cc4c1dd3"
+    },
+    {
+      "bytes": 2885,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "app.js",
+      "release_wave": null,
+      "sha256": "25da38915bf3160132a4976a6d90ee8417e9b1e6d719e44cfc996af3106d3033"
+    },
+    {
+      "bytes": 230452,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/ai-evaluation-release-gates.png",
+      "release_wave": null,
+      "sha256": "9cffa4bbb328a63f1f5c3b49645da36c4c135b8d9922d4e13b615ce454a67aff"
+    },
+    {
+      "bytes": 207920,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/api-integration-contracts.png",
+      "release_wave": null,
+      "sha256": "28c86747c46886ce7f98bd4a7cfb8d2b53876725d5e13fbb8d2e611113eda203"
+    },
+    {
+      "bytes": 164336,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/catalog-lifecycle.png",
+      "release_wave": null,
+      "sha256": "3ea2bc8422677b7b4679fb3a85d785489a0c830a5ce4c650fbb487bb1bf3ca32"
+    },
+    {
+      "bytes": 192723,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/customer-launch-readiness.png",
+      "release_wave": null,
+      "sha256": "6db3d7672e7665010cab9120669ad88226bbe8c39e226be67856d176675c9dff"
+    },
+    {
+      "bytes": 242691,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/implementation-readiness.png",
+      "release_wave": null,
+      "sha256": "10d5299b27b35cea5d7b68d163d3750b397036f402d81daa1574ae82c0f903c0"
+    },
+    {
+      "bytes": 257294,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/interface-contract-harness.png",
+      "release_wave": null,
+      "sha256": "d3c76e973a1e9f163477987845e40b08d9635aefbb87470bd28a53285040cb29"
+    },
+    {
+      "bytes": 301809,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/project-previews/public-product-validation.png",
+      "release_wave": null,
+      "sha256": "7da0a365a28b1a2e350d99e6c5ded56d36fbec6443930d1eae2c7eaa2c95459f"
+    },
+    {
+      "bytes": 9516,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "data/projects.json",
+      "release_wave": null,
+      "sha256": "00ce3d17a9d784d111c63127a8c5cac50a4102a59f581be7bb30f9e47178563b"
+    },
+    {
+      "bytes": 3284,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "3428e653a8a8edd622d146c4312cc2f27f1fada450fa4f246148c0845166a495"
+    },
+    {
+      "bytes": 1909,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/DATA_PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "be445a42456b8d880004e6915edb0aff704e62fc8c4ce587606a2fef6d1dc311"
+    },
+    {
+      "bytes": 1371,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/DEPENDENCIES.md",
+      "release_wave": null,
+      "sha256": "f7264e16d0fb1543e91f35a8c454a855274133d3b81ea27ac9a7e7cc5a676bce"
+    },
+    {
+      "bytes": 1481,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/GITHUB_SETTINGS_CHECKLIST.md",
+      "release_wave": null,
+      "sha256": "bfd2eed5b33dc974eeb6d6821e8520c7bf2e9f3e5eecd848fd3321b51fbccb95"
+    },
+    {
+      "bytes": 3453,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/PROJECT_INDEX.md",
+      "release_wave": null,
+      "sha256": "897d913771ab9079d512bbee8ee724fe441ef78acce1b4d8f0ea923d08489b2f"
+    },
+    {
+      "bytes": 3276,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/RELEASE_PROCESS.md",
+      "release_wave": null,
+      "sha256": "4c182a4494035cc33b207048c9577113aede478d21b4a8be5259a6cf84993f06"
+    },
+    {
+      "bytes": 3454,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "index.html",
+      "release_wave": null,
+      "sha256": "75cc7ea699ca61788e60c05d3caec980b2980e92a59ac4ab47ce8d8c0f9ab11e"
+    },
+    {
+      "bytes": 9640,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "project-data.js",
+      "release_wave": null,
+      "sha256": "07cdeabc3f811456c6e6e1da01e15aca25afc57526829102d7b552d1b6125ce1"
+    },
+    {
+      "bytes": 1048,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "037f11c94d94f1676b90b8c51090c1055e6be545d98a096e08095cf7cde99d49"
+    },
+    {
+      "bytes": 1410,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/DEMO_SCRIPT.md",
+      "release_wave": null,
+      "sha256": "4e1e606c9edfbe41d20a6084ffea7c4780690fd2b3551f7040a2f460afbd0e32"
+    },
+    {
+      "bytes": 1403,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/HOLDOUT_SEMANTICS.md",
+      "release_wave": null,
+      "sha256": "cb448cf94670b5a1d7ce083f342464d4b6553f6148aac748f64df9e327812567"
+    },
+    {
+      "bytes": 947,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "9de46efd91abe054224ad442f6d8f3c8e0defa1682c81d849221fe3db906f9ba"
+    },
+    {
+      "bytes": 3578,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/README.md",
+      "release_wave": null,
+      "sha256": "b7d403fbf88f6e43b242b026cfad13b284287377e892c43a98822f66e2ccd243"
+    },
+    {
+      "bytes": 818,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/VISUAL_INSPECTION.md",
+      "release_wave": null,
+      "sha256": "b6ac79bcd2f88b0f89d13e2aefb7f49e74e0e56adb7197447cfe791b5f813b91"
+    },
+    {
+      "bytes": 25475,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/app.js",
+      "release_wave": null,
+      "sha256": "3d3459d88235f0739b990862adee99334533090998e95afdae4e9cfdafff8474"
+    },
+    {
+      "bytes": 11379,
+      "origin": {
+        "kind": "generated_example",
+        "project": "ai-release-gate",
+        "source_relative": "artifacts/reference_hold_receipt.json",
+        "source_sha256": "4884c83e5831895c8154350690912c3de86ee454b070e7e10ff20904fb2be4c6"
+      },
+      "path": "projects/ai-evaluation-release-gates/artifacts/reference_hold_receipt.json",
+      "release_wave": 1,
+      "sha256": "4884c83e5831895c8154350690912c3de86ee454b070e7e10ff20904fb2be4c6"
+    },
+    {
+      "bytes": 8279,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/data/demo_snapshot.js",
+      "release_wave": null,
+      "sha256": "424b2789f9bd515d424a33b342f82fd434642e0638a274ed9259924fe94b5a79"
+    },
+    {
+      "bytes": 12755,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/data/holdout_snapshot.js",
+      "release_wave": null,
+      "sha256": "b6f00f658129c6e3afe7fb1892cca75f1fce64195ba6bbf4f103b81a39d584be"
+    },
+    {
+      "bytes": 845,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "fixtures/synthetic_adjudications.json",
+        "source_sha256": "4a91f138fd38fc4c921343d9b9c4c18626f5f7f6b44617d52967f8cf3fc77766"
+      },
+      "path": "projects/ai-evaluation-release-gates/fixtures/synthetic_adjudications.json",
+      "release_wave": 1,
+      "sha256": "4a91f138fd38fc4c921343d9b9c4c18626f5f7f6b44617d52967f8cf3fc77766"
+    },
+    {
+      "bytes": 10759,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "fixtures/synthetic_casebook.json",
+        "source_sha256": "bfc96c3e428b377e0bf0a57dfa95a2a17e3c67a24aba7d8db31adf42879396ac"
+      },
+      "path": "projects/ai-evaluation-release-gates/fixtures/synthetic_casebook.json",
+      "release_wave": 1,
+      "sha256": "bfc96c3e428b377e0bf0a57dfa95a2a17e3c67a24aba7d8db31adf42879396ac"
+    },
+    {
+      "bytes": 1455,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "fixtures/synthetic_evaluation_contract.json",
+        "source_sha256": "edebcee9e2550edee99faca47dcbf0efe7281105a7b6ef53287a1e567ae00657"
+      },
+      "path": "projects/ai-evaluation-release-gates/fixtures/synthetic_evaluation_contract.json",
+      "release_wave": 1,
+      "sha256": "edebcee9e2550edee99faca47dcbf0efe7281105a7b6ef53287a1e567ae00657"
+    },
+    {
+      "bytes": 9780,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/index.html",
+      "release_wave": null,
+      "sha256": "790273dc681e523e32a4c4b5126682fcd59ef6788e51d3de556df194f2d94469"
+    },
+    {
+      "bytes": 353,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "release_gate/__init__.py",
+        "source_sha256": "bd783d4e480c6ce0c928afb204dc3dc46444b0a0796494b0b931fa02f380225d"
+      },
+      "path": "projects/ai-evaluation-release-gates/release_gate/__init__.py",
+      "release_wave": 1,
+      "sha256": "bd783d4e480c6ce0c928afb204dc3dc46444b0a0796494b0b931fa02f380225d"
+    },
+    {
+      "bytes": 80,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "release_gate/__main__.py",
+        "source_sha256": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a"
+      },
+      "path": "projects/ai-evaluation-release-gates/release_gate/__main__.py",
+      "release_wave": 1,
+      "sha256": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a"
+    },
+    {
+      "bytes": 3518,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "release_gate/cli.py",
+        "source_sha256": "6dd5f9d619926e5120939537be828d06e2453fb5f9e4dcdc51873b285c49381e"
+      },
+      "path": "projects/ai-evaluation-release-gates/release_gate/cli.py",
+      "release_wave": 1,
+      "sha256": "6dd5f9d619926e5120939537be828d06e2453fb5f9e4dcdc51873b285c49381e"
+    },
+    {
+      "bytes": 31185,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "ai-release-gate",
+        "source_relative": "release_gate/core.py",
+        "source_sha256": "709b84a514bb064964d88348192e54c0dda1ea09ec7f0475d9e19366bb475a4d"
+      },
+      "path": "projects/ai-evaluation-release-gates/release_gate/core.py",
+      "release_wave": 1,
+      "sha256": "709b84a514bb064964d88348192e54c0dda1ea09ec7f0475d9e19366bb475a4d"
+    },
+    {
+      "bytes": 5836,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/scripts/build_artifacts.py",
+      "release_wave": null,
+      "sha256": "7b40029b993a590b78b2c5daeab7076d76e276a8b604bb20b2be3a8124cbdc13"
+    },
+    {
+      "bytes": 11884,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/scripts/interaction_smoke.py",
+      "release_wave": null,
+      "sha256": "f54fc3e721f3195bdbe5d644653466a2f5eb5b3fa935427c15e03e2f2f6f76be"
+    },
+    {
+      "bytes": 7481,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/scripts/security_privacy_scan.py",
+      "release_wave": null,
+      "sha256": "247481d005b32a32c7a144e9abcc94866075c78d6c75fcef04cd5104b07e2049"
+    },
+    {
+      "bytes": 17563,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/styles.css",
+      "release_wave": null,
+      "sha256": "8c4f475c90a28e9ee1566f08415df1c9893eaf803d6744acafaa6790fb34ab24"
+    },
+    {
+      "bytes": 19712,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/ai-evaluation-release-gates/tests/test_release_gate.py",
+      "release_wave": null,
+      "sha256": "2bc3067b90b7231a8f4c7f91ff5e29d27a3a54b3adca48e3d1d9bcb79542b7a3"
+    },
+    {
+      "bytes": 2249,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/ARCHITECTURE.md",
+      "release_wave": null,
+      "sha256": "a6531aadd4ac25ae66519edbb80d0712d4cb350d44760e138026dd5fc24e6123"
+    },
+    {
+      "bytes": 1052,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "731f6a9075325eb99ee8ba289cbce47af4e945b5178fcc8ae8b88dd1921410f5"
+    },
+    {
+      "bytes": 1401,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/DEMO_SCRIPT.md",
+      "release_wave": null,
+      "sha256": "62cdf8fbe945ef8ea59e4384f54d2563b06d4e986b9d5cb4845489a2d077133e"
+    },
+    {
+      "bytes": 537,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/Makefile",
+      "release_wave": null,
+      "sha256": "c5296acab2b1f240ee88e5ada40da2b7fb3fd46edd6692225fc2d95bcdebdc46"
+    },
+    {
+      "bytes": 810,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "39534581722b6b40a518c6a05b9d9a9a4b0ec11539e5a521df61e09f4e0e826b"
+    },
+    {
+      "bytes": 3321,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/README.md",
+      "release_wave": null,
+      "sha256": "2638edd81fcde93350ef812eb6b231b49a8d5b5e35d2ca70d07eb915ebd358c5"
+    },
+    {
+      "bytes": 33472,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "app.js",
+        "source_sha256": "93302b56a0b29a29cd36e694e18f6b1cdfd155d6080343f7b80b8a672c079383"
+      },
+      "path": "projects/api-integration-contracts/app.js",
+      "release_wave": 1,
+      "sha256": "93302b56a0b29a29cd36e694e18f6b1cdfd155d6080343f7b80b8a672c079383"
+    },
+    {
+      "bytes": 10547,
+      "origin": {
+        "kind": "generated_example",
+        "project": "api-contracts",
+        "source_relative": "artifacts/synthetic_receipt.json",
+        "source_sha256": "a095043cd83ec7af88de763f059dc795f5c66dbb30bb951aac659f5ba06bc5d2"
+      },
+      "path": "projects/api-integration-contracts/artifacts/synthetic_receipt.json",
+      "release_wave": 1,
+      "sha256": "a095043cd83ec7af88de763f059dc795f5c66dbb30bb951aac659f5ba06bc5d2"
+    },
+    {
+      "bytes": 12919,
+      "origin": {
+        "kind": "generated_example",
+        "project": "api-contracts",
+        "source_relative": "data/demo_snapshot.js",
+        "source_sha256": "7cc17575c9ee07c2385b813ea44249ef9d92032328c3f71e881642dc987d000a"
+      },
+      "path": "projects/api-integration-contracts/data/demo_snapshot.js",
+      "release_wave": 1,
+      "sha256": "7cc17575c9ee07c2385b813ea44249ef9d92032328c3f71e881642dc987d000a"
+    },
+    {
+      "bytes": 580,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "fixtures/synthetic_contract.json",
+        "source_sha256": "1dec918d22baa65cbd1ba555710fd29d48098cac8be4861c258dcd660925ad14"
+      },
+      "path": "projects/api-integration-contracts/fixtures/synthetic_contract.json",
+      "release_wave": 1,
+      "sha256": "1dec918d22baa65cbd1ba555710fd29d48098cac8be4861c258dcd660925ad14"
+    },
+    {
+      "bytes": 5624,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "fixtures/synthetic_run.json",
+        "source_sha256": "5d9b346fa87ed6b427f704c1b4afffb5045aa4c9883c3ff493879dcd297ccf24"
+      },
+      "path": "projects/api-integration-contracts/fixtures/synthetic_run.json",
+      "release_wave": 1,
+      "sha256": "5d9b346fa87ed6b427f704c1b4afffb5045aa4c9883c3ff493879dcd297ccf24"
+    },
+    {
+      "bytes": 3383,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/index.html",
+      "release_wave": null,
+      "sha256": "52ec0f627f60200390cedbaa3033fd9535797bf6f9c9d186a681f669e6396e2b"
+    },
+    {
+      "bytes": 322,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "integration_lab/__init__.py",
+        "source_sha256": "35dc7604580b00e2f453548f973ddc3d47dcdcd159c23ccf6e40d7ec1aaa17ea"
+      },
+      "path": "projects/api-integration-contracts/integration_lab/__init__.py",
+      "release_wave": 1,
+      "sha256": "35dc7604580b00e2f453548f973ddc3d47dcdcd159c23ccf6e40d7ec1aaa17ea"
+    },
+    {
+      "bytes": 80,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "integration_lab/__main__.py",
+        "source_sha256": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a"
+      },
+      "path": "projects/api-integration-contracts/integration_lab/__main__.py",
+      "release_wave": 1,
+      "sha256": "3d2438ae92f4746e9ffaa1f837b1fe803f6281091d1f31f8c95643716f257d9a"
+    },
+    {
+      "bytes": 2656,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "integration_lab/cli.py",
+        "source_sha256": "967895fe37d9fa7f3774882471802d5230dbf5a897a98885cb1d652a78bee621"
+      },
+      "path": "projects/api-integration-contracts/integration_lab/cli.py",
+      "release_wave": 1,
+      "sha256": "967895fe37d9fa7f3774882471802d5230dbf5a897a98885cb1d652a78bee621"
+    },
+    {
+      "bytes": 33127,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "integration_lab/core.py",
+        "source_sha256": "5198df788208557a266a6a10a9782f982efe583b64aed66fd6d4ffea4199438b"
+      },
+      "path": "projects/api-integration-contracts/integration_lab/core.py",
+      "release_wave": 1,
+      "sha256": "5198df788208557a266a6a10a9782f982efe583b64aed66fd6d4ffea4199438b"
+    },
+    {
+      "bytes": 5617,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/scripts/browser_verify.py",
+      "release_wave": null,
+      "sha256": "5cb2cd0fadc6c9d177f6159e5f4e1eb868bdd47fab44ddcb812d9b503e11b7a1"
+    },
+    {
+      "bytes": 2526,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "scripts/build_artifacts.py",
+        "source_sha256": "41abeb8f77f7e55d936612919c877a55f5d0482987369aacbbf6256547a02ffc"
+      },
+      "path": "projects/api-integration-contracts/scripts/build_artifacts.py",
+      "release_wave": 1,
+      "sha256": "41abeb8f77f7e55d936612919c877a55f5d0482987369aacbbf6256547a02ffc"
+    },
+    {
+      "bytes": 3842,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/scripts/security_privacy_scan.py",
+      "release_wave": null,
+      "sha256": "2072ae89985e99a743b070cec313fcda738fcc2cb4a81213722a3238b6be6100"
+    },
+    {
+      "bytes": 22984,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "styles.css",
+        "source_sha256": "724ab1a87e6e0c1ac7be0acc868b723961d12b8d1907a58ae7798a31edf3e078"
+      },
+      "path": "projects/api-integration-contracts/styles.css",
+      "release_wave": 1,
+      "sha256": "724ab1a87e6e0c1ac7be0acc868b723961d12b8d1907a58ae7798a31edf3e078"
+    },
+    {
+      "bytes": 61,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "tests/__init__.py",
+        "source_sha256": "6b49f58c3cd6094bae743adc2dee4f5fcbba52052ef109337c6516e6039b6239"
+      },
+      "path": "projects/api-integration-contracts/tests/__init__.py",
+      "release_wave": 1,
+      "sha256": "6b49f58c3cd6094bae743adc2dee4f5fcbba52052ef109337c6516e6039b6239"
+    },
+    {
+      "bytes": 945,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "tests/support.py",
+        "source_sha256": "7eaec2ca868f4055464f58acd4395b1fe979b486b4602f7695c54d252bac9416"
+      },
+      "path": "projects/api-integration-contracts/tests/support.py",
+      "release_wave": 1,
+      "sha256": "7eaec2ca868f4055464f58acd4395b1fe979b486b4602f7695c54d252bac9416"
+    },
+    {
+      "bytes": 4678,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/tests/test_cli_and_artifacts.py",
+      "release_wave": null,
+      "sha256": "16ea0ccb8614834fc5bd1384df9e8bd833d11d87cd8d051986537b2214b5e6e6"
+    },
+    {
+      "bytes": 13495,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "api-contracts",
+        "source_relative": "tests/test_core.py",
+        "source_sha256": "52c8a67bb212577d51a02b262865293e4864a00cefcc8e36bea68e5c84297288"
+      },
+      "path": "projects/api-integration-contracts/tests/test_core.py",
+      "release_wave": 1,
+      "sha256": "52c8a67bb212577d51a02b262865293e4864a00cefcc8e36bea68e5c84297288"
+    },
+    {
+      "bytes": 2763,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/api-integration-contracts/tests/test_project_contracts.py",
+      "release_wave": null,
+      "sha256": "ef43b3263328217dce3f986d3bac2d54379efc61b6293a8ba5e9c7062277237a"
+    },
+    {
+      "bytes": 806,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/bulk-price-control/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "ab12623aa4090f09416bbef75214b4020afc0d816b141051447a7db32c65c42d"
+    },
+    {
+      "bytes": 678,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/bulk-price-control/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "1fd2282e2184bc4fecae9f9b328e26021cd7c3dfa996fe6c8962c18ce4d8924d"
+    },
+    {
+      "bytes": 2997,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/bulk-price-control/README.md",
+      "release_wave": null,
+      "sha256": "818c446654d8714fe8cd25b63b17f39e6d4a1ce921fb1d6cf592e20fe16caa3c"
+    },
+    {
+      "bytes": 885,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "fixtures/catalog.synthetic.json",
+        "source_sha256": "fec7df1e0d99e9f9068659c8740d8509dc7933958f8d9d157f1ec88445cd2962"
+      },
+      "path": "projects/bulk-price-control/fixtures/catalog.synthetic.json",
+      "release_wave": 1,
+      "sha256": "fec7df1e0d99e9f9068659c8740d8509dc7933958f8d9d157f1ec88445cd2962"
+    },
+    {
+      "bytes": 96,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "fixtures/changes.rejected.synthetic.csv",
+        "source_sha256": "3d68e90e74bd90977508bf339dc7f3c45c300331754c9e14b39575db867615c5"
+      },
+      "path": "projects/bulk-price-control/fixtures/changes.rejected.synthetic.csv",
+      "release_wave": 1,
+      "sha256": "3d68e90e74bd90977508bf339dc7f3c45c300331754c9e14b39575db867615c5"
+    },
+    {
+      "bytes": 202,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "fixtures/changes.synthetic.csv",
+        "source_sha256": "7b00fc105e96769e5c129f2de58a01e5337155d0483cbd6bbb27c64e88cd4bca"
+      },
+      "path": "projects/bulk-price-control/fixtures/changes.synthetic.csv",
+      "release_wave": 1,
+      "sha256": "7b00fc105e96769e5c129f2de58a01e5337155d0483cbd6bbb27c64e88cd4bca"
+    },
+    {
+      "bytes": 113,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/__init__.py",
+        "source_sha256": "f88827c4df510ed6d7d966a48ed971c7ae9cea969ed8e8556adc72e512175ff3"
+      },
+      "path": "projects/bulk-price-control/price_tool/__init__.py",
+      "release_wave": 1,
+      "sha256": "f88827c4df510ed6d7d966a48ed971c7ae9cea969ed8e8556adc72e512175ff3"
+    },
+    {
+      "bytes": 118,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/__main__.py",
+        "source_sha256": "d75ba45aa16e721834271104ac0482136df4b6cb276c76ecf60ca38f4d8e3bc8"
+      },
+      "path": "projects/bulk-price-control/price_tool/__main__.py",
+      "release_wave": 1,
+      "sha256": "d75ba45aa16e721834271104ac0482136df4b6cb276c76ecf60ca38f4d8e3bc8"
+    },
+    {
+      "bytes": 6162,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/audit.py",
+        "source_sha256": "06f2136ff47b40a301ddcebf6734b5e13bf6eb8d72b40ebd7ad867fdd787c33e"
+      },
+      "path": "projects/bulk-price-control/price_tool/audit.py",
+      "release_wave": 1,
+      "sha256": "06f2136ff47b40a301ddcebf6734b5e13bf6eb8d72b40ebd7ad867fdd787c33e"
+    },
+    {
+      "bytes": 3722,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/cli.py",
+        "source_sha256": "04be88e1b22e21176248cc89e5a56c57a0276f26f5a4001a3045575373f1c662"
+      },
+      "path": "projects/bulk-price-control/price_tool/cli.py",
+      "release_wave": 1,
+      "sha256": "04be88e1b22e21176248cc89e5a56c57a0276f26f5a4001a3045575373f1c662"
+    },
+    {
+      "bytes": 21614,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/core.py",
+        "source_sha256": "79c62aa953613175a813902b43c1d32fb35f663528ca477834cf0c4b2f7b266b"
+      },
+      "path": "projects/bulk-price-control/price_tool/core.py",
+      "release_wave": 1,
+      "sha256": "79c62aa953613175a813902b43c1d32fb35f663528ca477834cf0c4b2f7b266b"
+    },
+    {
+      "bytes": 965,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/errors.py",
+        "source_sha256": "2a23ae4f5fa1c9243164848544ae3242fc2131a7821377aa5f2213c8799b09bb"
+      },
+      "path": "projects/bulk-price-control/price_tool/errors.py",
+      "release_wave": 1,
+      "sha256": "2a23ae4f5fa1c9243164848544ae3242fc2131a7821377aa5f2213c8799b09bb"
+    },
+    {
+      "bytes": 1561,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/locking.py",
+        "source_sha256": "af83b1cd995b3d015fb7ff19ff15f9dd480f6251f676111cdb46a293fcc6f649"
+      },
+      "path": "projects/bulk-price-control/price_tool/locking.py",
+      "release_wave": 1,
+      "sha256": "af83b1cd995b3d015fb7ff19ff15f9dd480f6251f676111cdb46a293fcc6f649"
+    },
+    {
+      "bytes": 10086,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "price_tool/workflow.py",
+        "source_sha256": "850053c350c4aba8f1d89d674f8531d2285f283aef10a76ee78e4a13a5053cb8"
+      },
+      "path": "projects/bulk-price-control/price_tool/workflow.py",
+      "release_wave": 1,
+      "sha256": "850053c350c4aba8f1d89d674f8531d2285f283aef10a76ee78e4a13a5053cb8"
+    },
+    {
+      "bytes": 62,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "tests/__init__.py",
+        "source_sha256": "dfff787b73e1763f3e6747aee18a34f44b1dc9183245c81340c880860abfcad4"
+      },
+      "path": "projects/bulk-price-control/tests/__init__.py",
+      "release_wave": 1,
+      "sha256": "dfff787b73e1763f3e6747aee18a34f44b1dc9183245c81340c880860abfcad4"
+    },
+    {
+      "bytes": 2846,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "tests/support.py",
+        "source_sha256": "16e0b27655d4f3aa870b8ede3727f53ff3665f4cb6fef84aacddbaa3768a0d23"
+      },
+      "path": "projects/bulk-price-control/tests/support.py",
+      "release_wave": 1,
+      "sha256": "16e0b27655d4f3aa870b8ede3727f53ff3665f4cb6fef84aacddbaa3768a0d23"
+    },
+    {
+      "bytes": 2242,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "tests/test_cli.py",
+        "source_sha256": "9ec5722a0510d33153e9ca6d42f81f5211dcd3f9a99b77b1aa3727f6fba7821e"
+      },
+      "path": "projects/bulk-price-control/tests/test_cli.py",
+      "release_wave": 1,
+      "sha256": "9ec5722a0510d33153e9ca6d42f81f5211dcd3f9a99b77b1aa3727f6fba7821e"
+    },
+    {
+      "bytes": 7050,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "tests/test_concurrency.py",
+        "source_sha256": "7b333229c3196885f065595f0deaf2a53cafae6eaf1eb9a00908d5e2a71a411a"
+      },
+      "path": "projects/bulk-price-control/tests/test_concurrency.py",
+      "release_wave": 1,
+      "sha256": "7b333229c3196885f065595f0deaf2a53cafae6eaf1eb9a00908d5e2a71a411a"
+    },
+    {
+      "bytes": 6518,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "tests/test_core.py",
+        "source_sha256": "dac3df61b6c1d0ae8580bbe0a4d426144deda6e000eb9e067c0a16ae89f8c9f0"
+      },
+      "path": "projects/bulk-price-control/tests/test_core.py",
+      "release_wave": 1,
+      "sha256": "dac3df61b6c1d0ae8580bbe0a4d426144deda6e000eb9e067c0a16ae89f8c9f0"
+    },
+    {
+      "bytes": 12825,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "price-controls",
+        "source_relative": "tests/test_workflow.py",
+        "source_sha256": "a6818bb9f273f670ae815b6c912316cc67920b8f8a0fb8fa484e2a7087f26910"
+      },
+      "path": "projects/bulk-price-control/tests/test_workflow.py",
+      "release_wave": 1,
+      "sha256": "a6818bb9f273f670ae815b6c912316cc67920b8f8a0fb8fa484e2a7087f26910"
+    },
+    {
+      "bytes": 862,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-lifecycle/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "ef5658cfadd13bacbf53d6891607f68b183e712b2c832fe46ce2d55260e30888"
+    },
+    {
+      "bytes": 830,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-lifecycle/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "62bf86d39123774d0de01769f58306868be6ae4fc785cf81f707140a86d3a943"
+    },
+    {
+      "bytes": 2916,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-lifecycle/README.md",
+      "release_wave": null,
+      "sha256": "317e06ac83d77de1738a19b9ae4316af6dde388ef913d239307eb2a1cb224236"
+    },
+    {
+      "bytes": 31040,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "lifecycle",
+        "source_relative": "app.js",
+        "source_sha256": "5b947e9cee1aff5ef10dd6cba009ddeea8ca1535d372a0575d0c37ae3030d9be"
+      },
+      "path": "projects/catalog-lifecycle/app.js",
+      "release_wave": 1,
+      "sha256": "5b947e9cee1aff5ef10dd6cba009ddeea8ca1535d372a0575d0c37ae3030d9be"
+    },
+    {
+      "bytes": 4702,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-lifecycle/index.html",
+      "release_wave": null,
+      "sha256": "738a42a73ed689e4deb2c34b50fe3e2e5e8be711e75f6c89804b039df448b50a"
+    },
+    {
+      "bytes": 31793,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-lifecycle/styles.css",
+      "release_wave": null,
+      "sha256": "0f4392a39f15f9afffd360e2ab5292d6ef4bd42d2f320c008d22ff38f497e817"
+    },
+    {
+      "bytes": 7449,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-lifecycle/tests/test_project_contracts.py",
+      "release_wave": null,
+      "sha256": "ac39b7836d0dd6384b8bb9aa9dd7a3cf1fe0858681889fd4a7a3147d594176c0"
+    },
+    {
+      "bytes": 786,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-migration-validator/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "9eb8ef80ea1c9b8291c3ba63adfa930571761ed50e2860d86d00026101321ab4"
+    },
+    {
+      "bytes": 668,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-migration-validator/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "8994fae4322e460e4d85e5e635ce8bbe96254d7977c1edbdf8d93ad305fa2285"
+    },
+    {
+      "bytes": 3313,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/catalog-migration-validator/README.md",
+      "release_wave": null,
+      "sha256": "64bee108b143b114708adb0d2ecd492bf7b57e3bce328385c224b9bf70832871"
+    },
+    {
+      "bytes": 876,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "fixtures/mapping.synthetic.json",
+        "source_sha256": "97f3d42963bde81b2033cadade4d86f8c7b984f9c4bc80deb675e1d424608b4b"
+      },
+      "path": "projects/catalog-migration-validator/fixtures/mapping.synthetic.json",
+      "release_wave": 1,
+      "sha256": "97f3d42963bde81b2033cadade4d86f8c7b984f9c4bc80deb675e1d424608b4b"
+    },
+    {
+      "bytes": 1239,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "fixtures/source.synthetic.json",
+        "source_sha256": "03b78823b7bea4aeff38fa5fb3be3df09dc5f663f44778e56108d55a42f887a8"
+      },
+      "path": "projects/catalog-migration-validator/fixtures/source.synthetic.json",
+      "release_wave": 1,
+      "sha256": "03b78823b7bea4aeff38fa5fb3be3df09dc5f663f44778e56108d55a42f887a8"
+    },
+    {
+      "bytes": 716,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "fixtures/target.synthetic.json",
+        "source_sha256": "98a3bf9a7a939b28a03aeb580d825a1ac70893b8900ef1b342ba8ef060ccf8c6"
+      },
+      "path": "projects/catalog-migration-validator/fixtures/target.synthetic.json",
+      "release_wave": 1,
+      "sha256": "98a3bf9a7a939b28a03aeb580d825a1ac70893b8900ef1b342ba8ef060ccf8c6"
+    },
+    {
+      "bytes": 171,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/__init__.py",
+        "source_sha256": "cd9f354e579bbeb6853de815947ac16400e379049610d9b2dbe4edc4c88d4ed0"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/__init__.py",
+      "release_wave": 1,
+      "sha256": "cd9f354e579bbeb6853de815947ac16400e379049610d9b2dbe4edc4c88d4ed0"
+    },
+    {
+      "bytes": 48,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/__main__.py",
+        "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/__main__.py",
+      "release_wave": 1,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "bytes": 6010,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/audit.py",
+        "source_sha256": "58b28e0c3c62bc57983014873a04ef3433f84cb76b21f5a2a4b7c6bc04614774"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/audit.py",
+      "release_wave": 1,
+      "sha256": "58b28e0c3c62bc57983014873a04ef3433f84cb76b21f5a2a4b7c6bc04614774"
+    },
+    {
+      "bytes": 4027,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/cli.py",
+        "source_sha256": "a6b5af3c60940abf28b238d212bc36f1e2eba279e7215e6f05753a89645f4668"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/cli.py",
+      "release_wave": 1,
+      "sha256": "a6b5af3c60940abf28b238d212bc36f1e2eba279e7215e6f05753a89645f4668"
+    },
+    {
+      "bytes": 34769,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/core.py",
+        "source_sha256": "4d0f14c14ab0702145ffb2578ebdb0e168a9ec61dffab9403979f52dcbc54f8d"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/core.py",
+      "release_wave": 1,
+      "sha256": "4d0f14c14ab0702145ffb2578ebdb0e168a9ec61dffab9403979f52dcbc54f8d"
+    },
+    {
+      "bytes": 473,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/errors.py",
+        "source_sha256": "d9fef34da03c9cd2d76cd5151b4128c30ac769a55b429be09d6d648ab7623045"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/errors.py",
+      "release_wave": 1,
+      "sha256": "d9fef34da03c9cd2d76cd5151b4128c30ac769a55b429be09d6d648ab7623045"
+    },
+    {
+      "bytes": 1580,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/locking.py",
+        "source_sha256": "aabc458d6ee26ce1947e214f1281a2f05d820a13bf16cc7aa5a9141e6a463a09"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/locking.py",
+      "release_wave": 1,
+      "sha256": "aabc458d6ee26ce1947e214f1281a2f05d820a13bf16cc7aa5a9141e6a463a09"
+    },
+    {
+      "bytes": 11694,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "migration_tool/workflow.py",
+        "source_sha256": "0f9eb0c0c804967ff5e6e85227dbd0b298b4e67cb054acf191d0ae37c7247b60"
+      },
+      "path": "projects/catalog-migration-validator/migration_tool/workflow.py",
+      "release_wave": 1,
+      "sha256": "0f9eb0c0c804967ff5e6e85227dbd0b298b4e67cb054acf191d0ae37c7247b60"
+    },
+    {
+      "bytes": 60,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "tests/__init__.py",
+        "source_sha256": "c4678a2b1ec8bc6a1adb10d356e3d3c65031f488aaeb784e5c376858d7605585"
+      },
+      "path": "projects/catalog-migration-validator/tests/__init__.py",
+      "release_wave": 1,
+      "sha256": "c4678a2b1ec8bc6a1adb10d356e3d3c65031f488aaeb784e5c376858d7605585"
+    },
+    {
+      "bytes": 1557,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "tests/support.py",
+        "source_sha256": "13475893572e57945c180d8041f4fb3676726ae9a734ae46c65c6b31e5770335"
+      },
+      "path": "projects/catalog-migration-validator/tests/support.py",
+      "release_wave": 1,
+      "sha256": "13475893572e57945c180d8041f4fb3676726ae9a734ae46c65c6b31e5770335"
+    },
+    {
+      "bytes": 2297,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "tests/test_cli.py",
+        "source_sha256": "6e2d070f877543d196a5dd8ce8246f2efa11baf2f20c76438f1a1d736fa31c3e"
+      },
+      "path": "projects/catalog-migration-validator/tests/test_cli.py",
+      "release_wave": 1,
+      "sha256": "6e2d070f877543d196a5dd8ce8246f2efa11baf2f20c76438f1a1d736fa31c3e"
+    },
+    {
+      "bytes": 8391,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "tests/test_core.py",
+        "source_sha256": "9d27f6663342e6eee2eb3439a977f919c7ce42cb7bdd8b8bb80683b9bd629a41"
+      },
+      "path": "projects/catalog-migration-validator/tests/test_core.py",
+      "release_wave": 1,
+      "sha256": "9d27f6663342e6eee2eb3439a977f919c7ce42cb7bdd8b8bb80683b9bd629a41"
+    },
+    {
+      "bytes": 10773,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "migration-validator",
+        "source_relative": "tests/test_workflow.py",
+        "source_sha256": "b937ffaacf0b30fecd5bb95e0f7edfe8d29dc7632614532b6645e2f456601c4a"
+      },
+      "path": "projects/catalog-migration-validator/tests/test_workflow.py",
+      "release_wave": 1,
+      "sha256": "b937ffaacf0b30fecd5bb95e0f7edfe8d29dc7632614532b6645e2f456601c4a"
+    },
+    {
+      "bytes": 886,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/claim-evidence-linter/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "31365dec44b3d7b657e75c92205e6d952103be96a6b9bbe451d1177e7abf5bee"
+    },
+    {
+      "bytes": 385,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "Makefile",
+        "source_sha256": "573c63d266c1f074e7f4101bbf8a900399b3e6bc390b0fff77ddfd30931a940a"
+      },
+      "path": "projects/claim-evidence-linter/Makefile",
+      "release_wave": 1,
+      "sha256": "573c63d266c1f074e7f4101bbf8a900399b3e6bc390b0fff77ddfd30931a940a"
+    },
+    {
+      "bytes": 668,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/claim-evidence-linter/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "a0fc96a5f701f3e0faa7d42fcc42e7ef5a797fd96b38d3a699beb2b41ea590d6"
+    },
+    {
+      "bytes": 2820,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/claim-evidence-linter/README.md",
+      "release_wave": null,
+      "sha256": "d7a54f6388d855aadb578e77fc5651535cb39d3cadd7f22eecdfd608e8fa9da5"
+    },
+    {
+      "bytes": 2675,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "demo/synthetic_contract.json",
+        "source_sha256": "87d305c7c0f422b465361e73bafb5d1e47f2d570c9a8f78b135a6511338b099d"
+      },
+      "path": "projects/claim-evidence-linter/demo/synthetic_contract.json",
+      "release_wave": 1,
+      "sha256": "87d305c7c0f422b465361e73bafb5d1e47f2d570c9a8f78b135a6511338b099d"
+    },
+    {
+      "bytes": 2924,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "demo/synthetic_evidence.json",
+        "source_sha256": "cdd2a528cebda3019f05f71ef7d97bd796b2a57c6e27beb936fbd81af9d52275"
+      },
+      "path": "projects/claim-evidence-linter/demo/synthetic_evidence.json",
+      "release_wave": 1,
+      "sha256": "cdd2a528cebda3019f05f71ef7d97bd796b2a57c6e27beb936fbd81af9d52275"
+    },
+    {
+      "bytes": 653,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/claim-evidence-linter/pyproject.toml",
+      "release_wave": null,
+      "sha256": "74c282d45ecbe5cc8192a5958c385adbc0d5d4f0c89ddfd2a9053c4764a077c9"
+    },
+    {
+      "bytes": 218,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/__init__.py",
+        "source_sha256": "a421e69084240cad4c8719a17404b055487aefbefdfb0af043e075a3c31fff41"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/__init__.py",
+      "release_wave": 1,
+      "sha256": "a421e69084240cad4c8719a17404b055487aefbefdfb0af043e075a3c31fff41"
+    },
+    {
+      "bytes": 81,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/__main__.py",
+        "source_sha256": "2cdd23d4f5cd6c3b3e4cb690ad16d560637767b9ca5b2a3cf129fcc0a5ebc82b"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/__main__.py",
+      "release_wave": 1,
+      "sha256": "2cdd23d4f5cd6c3b3e4cb690ad16d560637767b9ca5b2a3cf129fcc0a5ebc82b"
+    },
+    {
+      "bytes": 1173,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/canonical.py",
+        "source_sha256": "e6aed075d9eeeca34c6e3e3a8baf958b8e16ef46dd95957a4b700513d539e209"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/canonical.py",
+      "release_wave": 1,
+      "sha256": "e6aed075d9eeeca34c6e3e3a8baf958b8e16ef46dd95957a4b700513d539e209"
+    },
+    {
+      "bytes": 5028,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/cli.py",
+        "source_sha256": "9e9390cd8cd8f48ea988e0baa77b82f0e8ee9a63592399749958e23984d2b2e6"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/cli.py",
+      "release_wave": 1,
+      "sha256": "9e9390cd8cd8f48ea988e0baa77b82f0e8ee9a63592399749958e23984d2b2e6"
+    },
+    {
+      "bytes": 9805,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/engine.py",
+        "source_sha256": "2eeed873cc190fd4b5df022287f1017791248b259e61d9e6a1caf45f8011dd15"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/engine.py",
+      "release_wave": 1,
+      "sha256": "2eeed873cc190fd4b5df022287f1017791248b259e61d9e6a1caf45f8011dd15"
+    },
+    {
+      "bytes": 380,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/errors.py",
+        "source_sha256": "99998dd48f293d26f14d96eda004b63b0c90923a5622234343d606604df8bff4"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/errors.py",
+      "release_wave": 1,
+      "sha256": "99998dd48f293d26f14d96eda004b63b0c90923a5622234343d606604df8bff4"
+    },
+    {
+      "bytes": 4844,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/local_io.py",
+        "source_sha256": "c7829feaf3d19ba944bba0211e31c17af1b13aba70fa351d554195841fce5854"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/local_io.py",
+      "release_wave": 1,
+      "sha256": "c7829feaf3d19ba944bba0211e31c17af1b13aba70fa351d554195841fce5854"
+    },
+    {
+      "bytes": 11259,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "src/claim_evidence_contract_linter/validation.py",
+        "source_sha256": "706d7911d1de72e0227d39e5853e2385149af99ea845f5dc57b4a40afe574542"
+      },
+      "path": "projects/claim-evidence-linter/src/claim_evidence_contract_linter/validation.py",
+      "release_wave": 1,
+      "sha256": "706d7911d1de72e0227d39e5853e2385149af99ea845f5dc57b4a40afe574542"
+    },
+    {
+      "bytes": 59,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "tests/__init__.py",
+        "source_sha256": "d399a70a713637edc544cfefd2d3ce247914c5f8bda46a313717f68df46738b1"
+      },
+      "path": "projects/claim-evidence-linter/tests/__init__.py",
+      "release_wave": 1,
+      "sha256": "d399a70a713637edc544cfefd2d3ce247914c5f8bda46a313717f68df46738b1"
+    },
+    {
+      "bytes": 721,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "tests/support.py",
+        "source_sha256": "51c8f55529ed6b6e97939840b99affc6b573014e690d16a3cd46a33a14bf7298"
+      },
+      "path": "projects/claim-evidence-linter/tests/support.py",
+      "release_wave": 1,
+      "sha256": "51c8f55529ed6b6e97939840b99affc6b573014e690d16a3cd46a33a14bf7298"
+    },
+    {
+      "bytes": 7506,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "tests/test_cli.py",
+        "source_sha256": "aeb23b13c9b0c337d6d13e4318fff3f5bf59a424d9d798e23a816f2037fb4279"
+      },
+      "path": "projects/claim-evidence-linter/tests/test_cli.py",
+      "release_wave": 1,
+      "sha256": "aeb23b13c9b0c337d6d13e4318fff3f5bf59a424d9d798e23a816f2037fb4279"
+    },
+    {
+      "bytes": 10939,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "tests/test_engine.py",
+        "source_sha256": "c40ccd41ad5774ffa96b7b7a7efec31d08afbbd774bd134994ce8948611ad7a7"
+      },
+      "path": "projects/claim-evidence-linter/tests/test_engine.py",
+      "release_wave": 1,
+      "sha256": "c40ccd41ad5774ffa96b7b7a7efec31d08afbbd774bd134994ce8948611ad7a7"
+    },
+    {
+      "bytes": 7469,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "tests/test_validation.py",
+        "source_sha256": "0754d0181a0f638120af2338bd466a497cb8ca755caa4f0fa4413432175cbe4e"
+      },
+      "path": "projects/claim-evidence-linter/tests/test_validation.py",
+      "release_wave": 1,
+      "sha256": "0754d0181a0f638120af2338bd466a497cb8ca755caa4f0fa4413432175cbe4e"
+    },
+    {
+      "bytes": 3358,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/claim-evidence-linter/tools/audit_project.py",
+      "release_wave": null,
+      "sha256": "6992776f8bdbe1f83332a8068c35df26170887e0867383b026293dc7cb4b1d84"
+    },
+    {
+      "bytes": 2189,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "claim-linter",
+        "source_relative": "tools/tamper_demo.py",
+        "source_sha256": "b912e72afa096eaa07b3a8a6b27e775515bcc769eae722c7f640ab08b3ec6661"
+      },
+      "path": "projects/claim-evidence-linter/tools/tamper_demo.py",
+      "release_wave": 1,
+      "sha256": "b912e72afa096eaa07b3a8a6b27e775515bcc769eae722c7f640ab08b3ec6661"
+    },
+    {
+      "bytes": 1060,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "0bf342e9be9b323756145195fe693d961cb62fc3e67695751c6b1a3e452b4565"
+    },
+    {
+      "bytes": 3815,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/DEMO_SCRIPT.md",
+      "release_wave": null,
+      "sha256": "660165f685c2f2b0addf52cf2e1d82b96fa68f4717f728c862cedffe6528d8a5"
+    },
+    {
+      "bytes": 266,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/Makefile",
+      "release_wave": null,
+      "sha256": "3e60e811662af8d2fc7daba665d8cd859700c9da341bd997d60a4e7fd48ddc58"
+    },
+    {
+      "bytes": 923,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "c7d41121a3eabc1bdc684581c38615c88e13a52ebb7028df5ae524861adc020c"
+    },
+    {
+      "bytes": 2267,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/README.md",
+      "release_wave": null,
+      "sha256": "98372b4cb57455fd171b0e18b2d5dfd244ebbd5bb25036cb3d023b6a82c6afbb"
+    },
+    {
+      "bytes": 51865,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/app.js",
+      "release_wave": null,
+      "sha256": "afa0575418c7108c0d509750ed3d6f19cb38b42a7a02dbbfe09970ca88dfb6c6"
+    },
+    {
+      "bytes": 4873,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/index.html",
+      "release_wave": null,
+      "sha256": "833e164e02dd5c1059eea221a1a9c552d6077e28857435f575cbdc5006440e67"
+    },
+    {
+      "bytes": 7380,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/scripts/interaction_smoke.py",
+      "release_wave": null,
+      "sha256": "76833839b1fea132dd71c17c1dfa8661503d8cf871c15e67f055d56d4e8218f9"
+    },
+    {
+      "bytes": 3170,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/scripts/security_privacy_scan.py",
+      "release_wave": null,
+      "sha256": "3a291afd904ef52fdee69adec7cebd826a9f070bdcdd27c75e801ac91030c6e1"
+    },
+    {
+      "bytes": 21758,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "launch-lab",
+        "source_relative": "styles.css",
+        "source_sha256": "9d1d2a0517b9b5188c10bde20e3f222c9666a599cdc99b11911b4fd9852932f3"
+      },
+      "path": "projects/customer-launch-readiness/styles.css",
+      "release_wave": 2,
+      "sha256": "9d1d2a0517b9b5188c10bde20e3f222c9666a599cdc99b11911b4fd9852932f3"
+    },
+    {
+      "bytes": 8570,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/customer-launch-readiness/tests/test_project_contracts.py",
+      "release_wave": null,
+      "sha256": "7fed2591cc7940658d8f9cfd1b482cc6e2216cbe62471e8e063a50f788294f88"
+    },
+    {
+      "bytes": 1076,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "4e5148d958c83a187fcf3f01942bd814d29d36d764d3157a99b4b3d095b19e9d"
+    },
+    {
+      "bytes": 1102,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "3f319f2b6053654e84e2283187e1d93b51e139423e40f8d37061e572acfe27c6"
+    },
+    {
+      "bytes": 2708,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/README.md",
+      "release_wave": null,
+      "sha256": "6767909b6fe52e29e504231edba1d1457a9df148df18fdc71825583a4d0d841c"
+    },
+    {
+      "bytes": 4110,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/automate_hitl.py",
+      "release_wave": null,
+      "sha256": "df3b72a544386955e489447f098f309264845c253d606bd34b86e7cb5146c241"
+    },
+    {
+      "bytes": 8106,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/barcode_cache_demo.py",
+      "release_wave": null,
+      "sha256": "e3718d4df491483d9e44c498bbdebe7d617fcf19081ec51aaae5e8363955ea0c"
+    },
+    {
+      "bytes": 1128,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "hitl-controls",
+        "source_relative": "demos/hitl-desktop/fixtures/synthetic_menu_batch.json",
+        "source_sha256": "3b6d42393209aa3fedee8168f3ee5f0a85d311904fd41ad93b989ffe8a58c2d9"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/fixtures/synthetic_menu_batch.json",
+      "release_wave": 3,
+      "sha256": "3b6d42393209aa3fedee8168f3ee5f0a85d311904fd41ad93b989ffe8a58c2d9"
+    },
+    {
+      "bytes": 6444,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "hitl-controls",
+        "source_relative": "demos/hitl-desktop/hitl_core.py",
+        "source_sha256": "ca0e725bd618f5fce65b1302a41f4cc9a4b4643589bce3bf1e71c77bf17beb8b"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/hitl_core.py",
+      "release_wave": 3,
+      "sha256": "ca0e725bd618f5fce65b1302a41f4cc9a4b4643589bce3bf1e71c77bf17beb8b"
+    },
+    {
+      "bytes": 3755,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/mock_console.py",
+      "release_wave": null,
+      "sha256": "3e92e53d7f5f18da60f8efa6621994ca64c5314e5038caa2383bfcc66e4ab592"
+    },
+    {
+      "bytes": 6204,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/smoke_test.py",
+      "release_wave": null,
+      "sha256": "dd3d68283465047effd1bf3bb7dd565a60093257fd9eb3f48e402db14843dfda"
+    },
+    {
+      "bytes": 5019,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/test_hitl_core.py",
+      "release_wave": null,
+      "sha256": "7799c21411dc9ab0f00f41138f48857f9e5f5e53d8afa1a9f4530f61a299cb06"
+    },
+    {
+      "bytes": 4411,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/demos/hitl-desktop/test_public_surface.py",
+      "release_wave": null,
+      "sha256": "afcd3df7916ba515ea57147ee87f1dc511c2d56fcb34467b694e47bf50f279af"
+    },
+    {
+      "bytes": 6061,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/preview/app.js",
+      "release_wave": null,
+      "sha256": "ec7c6de6656f2f972c44e3e77d7278f705c261f1033a251e209dbdd690392a66"
+    },
+    {
+      "bytes": 4501,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/preview/index.html",
+      "release_wave": null,
+      "sha256": "ea03e6fe48ec9c50ee57b1f842ef1beb1e3c777c14ab84bc1d0ec98a386d91bf"
+    },
+    {
+      "bytes": 5937,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/human-in-the-loop-control/preview/styles.css",
+      "release_wave": null,
+      "sha256": "133a9b8b225cb6a92ab6030fe25dc99d4f5465e8f291eb0b5f453dee79a629b2"
+    },
+    {
+      "bytes": 1142,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "249ab19db1736a163d40982323ea0923b7457ac0c21ede4ea0beba4eda3ef2d8"
+    },
+    {
+      "bytes": 3193,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/DEMO_SCRIPT.md",
+      "release_wave": null,
+      "sha256": "5b27b84295b37fbcc0c9e56cfaf5f48c383ffe5319cc906594be52035988bdde"
+    },
+    {
+      "bytes": 237,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/Makefile",
+      "release_wave": null,
+      "sha256": "0918df0913a512fd1cf598fe8f057504e435d41e7439027dba395864c0b84153"
+    },
+    {
+      "bytes": 1002,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "0717668be50b23fbac1bd7ff41da1c82d332ba6efb838c1d8793ed29b397dd67"
+    },
+    {
+      "bytes": 2177,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/README.md",
+      "release_wave": null,
+      "sha256": "ac9f5cddb00a1e6387945f7fddd9bdac7c82d783ee2149a206e3c4363658306a"
+    },
+    {
+      "bytes": 43793,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/app.js",
+      "release_wave": null,
+      "sha256": "c6c2ff1bc47e0a798ce44aa7d46a09633cf6efce56bb7ab4f848bda726ed21bd"
+    },
+    {
+      "bytes": 3492,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/index.html",
+      "release_wave": null,
+      "sha256": "1ee57163f779d2b7027435ca06990827f462a7f0abf4fbbd8bbc25263864aac6"
+    },
+    {
+      "bytes": 4069,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/scripts/interaction_smoke.py",
+      "release_wave": null,
+      "sha256": "7582cd9fa25b1a0946ab3604c86adc0af6e4392e2f184f8e1c0999d572cd990a"
+    },
+    {
+      "bytes": 2865,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/scripts/security_privacy_scan.py",
+      "release_wave": null,
+      "sha256": "f94d7ba59dcb457451e9268c8cfec72cdd29aa9b9bc0dd4a64d8213e5657f470"
+    },
+    {
+      "bytes": 24175,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "readiness",
+        "source_relative": "styles.css",
+        "source_sha256": "d110eea77e2f3ed1a300ca61c8d07dc6bbb76d8f075c19f6a7f23be7c7ec5922"
+      },
+      "path": "projects/implementation-readiness/styles.css",
+      "release_wave": 2,
+      "sha256": "d110eea77e2f3ed1a300ca61c8d07dc6bbb76d8f075c19f6a7f23be7c7ec5922"
+    },
+    {
+      "bytes": 7875,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/implementation-readiness/tests/test_project_contracts.py",
+      "release_wave": null,
+      "sha256": "d45e23ee87243341aef2e520046c6201d40a1c338a9781244e11fea72ed50b04"
+    },
+    {
+      "bytes": 903,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "8e50ae5b32b98a872df2032339a55e808ead4fcdf6e3333a32e85dec03a23c6f"
+    },
+    {
+      "bytes": 657,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "Makefile",
+        "source_sha256": "e49ebf4aed3492255d930786e383a9614ee0e2a7315fa77b1076efca78a2d4eb"
+      },
+      "path": "projects/interface-contract-harness/Makefile",
+      "release_wave": 1,
+      "sha256": "e49ebf4aed3492255d930786e383a9614ee0e2a7315fa77b1076efca78a2d4eb"
+    },
+    {
+      "bytes": 793,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "238bab7b94906c755f03117eab913c0e97e154dfb87d6af5621df04cdfc7530c"
+    },
+    {
+      "bytes": 3017,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/README.md",
+      "release_wave": null,
+      "sha256": "d2c169dbbd19927ffc8d61479697e31cf8559d537eaac227dcdbe681120c359b"
+    },
+    {
+      "bytes": 1457,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/build/audit.json",
+      "release_wave": null,
+      "sha256": "c27e57ff4e9e1aff6ba5ac241424699d8b5578296858961187005f1e11864046"
+    },
+    {
+      "bytes": 77,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/build/audit.sha256",
+      "release_wave": null,
+      "sha256": "feaeb111f29d275d0d1db8fca0a9804f64ddcf4a1ad67ddb196c1f675b14af66"
+    },
+    {
+      "bytes": 7468,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/build/report.html",
+      "release_wave": null,
+      "sha256": "485e3ea5991d1d20be60636bd34c0bfceedf0c4e67c273812cbe382c9e6db23d"
+    },
+    {
+      "bytes": 8081,
+      "origin": {
+        "kind": "generated_example",
+        "project": "wcag-harness",
+        "source_relative": "build/report.json",
+        "source_sha256": "e77102dd29f482aa68443f5df4992eafd1e119b590c6724e85184bafac84f021"
+      },
+      "path": "projects/interface-contract-harness/build/report.json",
+      "release_wave": 1,
+      "sha256": "e77102dd29f482aa68443f5df4992eafd1e119b590c6724e85184bafac84f021"
+    },
+    {
+      "bytes": 2627,
+      "origin": {
+        "kind": "generated_example",
+        "project": "wcag-harness",
+        "source_relative": "build/report.md",
+        "source_sha256": "062e24b265caae2fb4900a495dc7c0fd73db248056f5583f515abc9158d461c2"
+      },
+      "path": "projects/interface-contract-harness/build/report.md",
+      "release_wave": 1,
+      "sha256": "062e24b265caae2fb4900a495dc7c0fd73db248056f5583f515abc9158d461c2"
+    },
+    {
+      "bytes": 5149,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/demo/index.html",
+      "release_wave": null,
+      "sha256": "a959d96d3fb548f1ad6ba4937ee8fcb6e1b3f7dbcde6ed4c8b70e283003e0b9a"
+    },
+    {
+      "bytes": 1260,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "fixtures/components/accessible-operations-panel.html",
+        "source_sha256": "a8997c00a56c725d2c2027e07be450a78a7a567e0ae988647b9ac6d26f59bb6b"
+      },
+      "path": "projects/interface-contract-harness/fixtures/components/accessible-operations-panel.html",
+      "release_wave": 1,
+      "sha256": "a8997c00a56c725d2c2027e07be450a78a7a567e0ae988647b9ac6d26f59bb6b"
+    },
+    {
+      "bytes": 397,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "fixtures/components/missing-names-panel.html",
+        "source_sha256": "9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee293"
+      },
+      "path": "projects/interface-contract-harness/fixtures/components/missing-names-panel.html",
+      "release_wave": 1,
+      "sha256": "9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee293"
+    },
+    {
+      "bytes": 654,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "fixtures/components/structural-regressions.html",
+        "source_sha256": "49753386ec2cc6de5fba50798796d8fb8236cd4d5db3d9acc278f3a7e4b6d289"
+      },
+      "path": "projects/interface-contract-harness/fixtures/components/structural-regressions.html",
+      "release_wave": 1,
+      "sha256": "49753386ec2cc6de5fba50798796d8fb8236cd4d5db3d9acc278f3a7e4b6d289"
+    },
+    {
+      "bytes": 2307,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "fixtures/manifest.json",
+        "source_sha256": "e7f969be024e7300b4b4d8f690f585dc7fe049978082bced653c8928a05cbd0d"
+      },
+      "path": "projects/interface-contract-harness/fixtures/manifest.json",
+      "release_wave": 1,
+      "sha256": "e7f969be024e7300b4b4d8f690f585dc7fe049978082bced653c8928a05cbd0d"
+    },
+    {
+      "bytes": 514,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/pyproject.toml",
+      "release_wave": null,
+      "sha256": "a1083dfb23d89be9fb457cc924a95922bfa52e93e93547c6d23954512840e91a"
+    },
+    {
+      "bytes": 47,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "requirements.txt",
+        "source_sha256": "61f330e46f8861136b2b5884635dd54126ddcedc2747ea0577de14232cb05ad7"
+      },
+      "path": "projects/interface-contract-harness/requirements.txt",
+      "release_wave": 1,
+      "sha256": "61f330e46f8861136b2b5884635dd54126ddcedc2747ea0577de14232cb05ad7"
+    },
+    {
+      "bytes": 35,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "tests/__init__.py",
+        "source_sha256": "a59ab294c27cc60a2ceaa0a322f9b85a294d002b71da7506859d5c3a1c43438b"
+      },
+      "path": "projects/interface-contract-harness/tests/__init__.py",
+      "release_wave": 1,
+      "sha256": "a59ab294c27cc60a2ceaa0a322f9b85a294d002b71da7506859d5c3a1c43438b"
+    },
+    {
+      "bytes": 10318,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/tests/test_engine_and_audit.py",
+      "release_wave": null,
+      "sha256": "74e72ce7a18120046ee0713d12809811686740533a8c328ce3adfa8600eee784"
+    },
+    {
+      "bytes": 2938,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "tests/test_parser.py",
+        "source_sha256": "2989e29f0ecbce470504fdcf0fa27c49d78c9e76d27484948a2b7a79040882bb"
+      },
+      "path": "projects/interface-contract-harness/tests/test_parser.py",
+      "release_wave": 1,
+      "sha256": "2989e29f0ecbce470504fdcf0fa27c49d78c9e76d27484948a2b7a79040882bb"
+    },
+    {
+      "bytes": 5234,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "tests/test_rules.py",
+        "source_sha256": "03c16cab39a70168cb4a83e12baf25554dc4d2da6d92cede60446709ca51ac2c"
+      },
+      "path": "projects/interface-contract-harness/tests/test_rules.py",
+      "release_wave": 1,
+      "sha256": "03c16cab39a70168cb4a83e12baf25554dc4d2da6d92cede60446709ca51ac2c"
+    },
+    {
+      "bytes": 123,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/__init__.py",
+        "source_sha256": "6d7a5f5025b99043423e708c00690b651719206c5cf07ac5ffb02924bce09d3d"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/__init__.py",
+      "release_wave": 1,
+      "sha256": "6d7a5f5025b99043423e708c00690b651719206c5cf07ac5ffb02924bce09d3d"
+    },
+    {
+      "bytes": 48,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/__main__.py",
+        "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/__main__.py",
+      "release_wave": 1,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "bytes": 4234,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/cli.py",
+        "source_sha256": "1324ef34814e9f23a8874c5256c8c94bedd4f15b08bf7bc41c4591a462ba3b76"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/cli.py",
+      "release_wave": 1,
+      "sha256": "1324ef34814e9f23a8874c5256c8c94bedd4f15b08bf7bc41c4591a462ba3b76"
+    },
+    {
+      "bytes": 11026,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/engine.py",
+        "source_sha256": "01ef9702ed39c79fb682e6a4bb5e852bdf7bdbef36b1e9f47ddb8d52fe491960"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/engine.py",
+      "release_wave": 1,
+      "sha256": "01ef9702ed39c79fb682e6a4bb5e852bdf7bdbef36b1e9f47ddb8d52fe491960"
+    },
+    {
+      "bytes": 3829,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/io_utils.py",
+        "source_sha256": "9f93eccf24bcf8ead4e60e1108a4b234ac6a7bdbd23fd37f08bd84799ed8f47b"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/io_utils.py",
+      "release_wave": 1,
+      "sha256": "9f93eccf24bcf8ead4e60e1108a4b234ac6a7bdbd23fd37f08bd84799ed8f47b"
+    },
+    {
+      "bytes": 2356,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/model.py",
+        "source_sha256": "fbd078e898e024d128a66264ffff9cd397215497897fe8c75d99fcb2c1845f80"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/model.py",
+      "release_wave": 1,
+      "sha256": "fbd078e898e024d128a66264ffff9cd397215497897fe8c75d99fcb2c1845f80"
+    },
+    {
+      "bytes": 7069,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/parser.py",
+        "source_sha256": "c217af047767123d041075ced6c38a864b15e0857ff9a460a46fc4674b84ee90"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/parser.py",
+      "release_wave": 1,
+      "sha256": "c217af047767123d041075ced6c38a864b15e0857ff9a460a46fc4674b84ee90"
+    },
+    {
+      "bytes": 27593,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/reports.py",
+      "release_wave": null,
+      "sha256": "8347b63b0a04fcb712a64e13cd5ddc67b888513ab9206eaa4c4d3c3e2c5302c8"
+    },
+    {
+      "bytes": 10113,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "wcag-harness",
+        "source_relative": "wcag_harness/rules.py",
+        "source_sha256": "6e304df5f9147aafe7d805e4d95d38bae99e5e713ccbb82d74742fac03451ad6"
+      },
+      "path": "projects/interface-contract-harness/wcag_harness/rules.py",
+      "release_wave": 1,
+      "sha256": "6e304df5f9147aafe7d805e4d95d38bae99e5e713ccbb82d74742fac03451ad6"
+    },
+    {
+      "bytes": 1464,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "1dc7eede6cda161a22e04da88eab7942f0bb57b78219835c409a90b28410c571"
+    },
+    {
+      "bytes": 3161,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/DATA_LICENSE.md",
+      "release_wave": null,
+      "sha256": "17237603ddb48981c34f12eccb1f2530424fe15593eb58aa59f0f413d1e99a4c"
+    },
+    {
+      "bytes": 3381,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "product-validation",
+        "source_relative": "DEMO_SCRIPT.md",
+        "source_sha256": "f4b68627ed9f8dacf3890bdfb54b01022fb0ecf8755202bc6a24460c2c3ba932"
+      },
+      "path": "projects/public-product-validation/DEMO_SCRIPT.md",
+      "release_wave": 2,
+      "sha256": "f4b68627ed9f8dacf3890bdfb54b01022fb0ecf8755202bc6a24460c2c3ba932"
+    },
+    {
+      "bytes": 1369,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "e41818753842401153e6055a36b930ed51e96983a4cad2aabc3b2abd9a92e1c6"
+    },
+    {
+      "bytes": 2689,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/README.md",
+      "release_wave": null,
+      "sha256": "17e6ffadff182df0c6d77f6148a13cb0df03cafb6f86163de6a49b904f2ad749"
+    },
+    {
+      "bytes": 46253,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/app.js",
+      "release_wave": null,
+      "sha256": "de2b8d1f2390e52dc30f860c90ae65e00aa32bbc5fc1f64a5df03730980514a2"
+    },
+    {
+      "bytes": 930,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/data/DATA_REDACTION_RECEIPT.json",
+      "release_wave": null,
+      "sha256": "c04b783538aa631981e970bd2aa8dbe94b4e6b4672a0d6749911a463c5067f80"
+    },
+    {
+      "bytes": 3269,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/data/catalog_snapshot.js",
+      "release_wave": null,
+      "sha256": "8fbce571c996004671c61348a3103a38d00ffc3cd21c6d6e933737cae6c3ea67"
+    },
+    {
+      "bytes": 7158,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/data/open_food_facts_snapshot.json",
+      "release_wave": null,
+      "sha256": "2bd27bdbb6b89e323ec1083dd01f0962f6c73a8df1da0a172a2c7e3bb0f1c9fb"
+    },
+    {
+      "bytes": 5764,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/index.html",
+      "release_wave": null,
+      "sha256": "9b48d126dae03e121610becb3f69c3429a62ac3ad0f722d65db3a0abadc526e8"
+    },
+    {
+      "bytes": 3861,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/scripts/build_catalog_snapshot.py",
+      "release_wave": null,
+      "sha256": "885583a9c48d236c8565fef17604100e894df0e74df3f04a4ac5f8f1be850607"
+    },
+    {
+      "bytes": 28063,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "product-validation",
+        "source_relative": "styles.css",
+        "source_sha256": "5cdbe925b102c180ff81028cad3561a6095f91ed242fd3bd511fe8f1c27f9a4c"
+      },
+      "path": "projects/public-product-validation/styles.css",
+      "release_wave": 2,
+      "sha256": "5cdbe925b102c180ff81028cad3561a6095f91ed242fd3bd511fe8f1c27f9a4c"
+    },
+    {
+      "bytes": 15301,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/public-product-validation/tests/test_project_contracts.py",
+      "release_wave": null,
+      "sha256": "eabc91a7e4ff297b0b59185220d730f702e55645685bed271467530e49c408bc"
+    },
+    {
+      "bytes": 1011,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/support-triage-workbench/CLAIMS_AND_BOUNDARIES.md",
+      "release_wave": null,
+      "sha256": "442ed583285bbbbc1fd97f2d05f298d362444316c931ac431e4ee39f3a5e209c"
+    },
+    {
+      "bytes": 821,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/support-triage-workbench/PROVENANCE.md",
+      "release_wave": null,
+      "sha256": "f58e1073113ea4c9cc9d49e85129f829977df8327d593df2d03197a767e32c17"
+    },
+    {
+      "bytes": 2458,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/support-triage-workbench/README.md",
+      "release_wave": null,
+      "sha256": "4369ea25d95f3e87a8da46b84d7948735cba13432b70e04bf2a2b76776ea247a"
+    },
+    {
+      "bytes": 4995,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "fixtures/synthetic_tickets.json",
+        "source_sha256": "d2c94b27360dc23e18d3c0c943575d21a413dfc713a1debd46e2cb7b82a7a638"
+      },
+      "path": "projects/support-triage-workbench/fixtures/synthetic_tickets.json",
+      "release_wave": 3,
+      "sha256": "d2c94b27360dc23e18d3c0c943575d21a413dfc713a1debd46e2cb7b82a7a638"
+    },
+    {
+      "bytes": 271,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/__init__.py",
+        "source_sha256": "bfb67a49b57c854b83c3bcb58abc7174130bd1e27a26f544742500322c84d529"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/__init__.py",
+      "release_wave": 3,
+      "sha256": "bfb67a49b57c854b83c3bcb58abc7174130bd1e27a26f544742500322c84d529"
+    },
+    {
+      "bytes": 3966,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/audit.py",
+        "source_sha256": "14953adaaed2aef14570980e932b0124feb8cb6d9e3690c7d90d44b6b734ec90"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/audit.py",
+      "release_wave": 3,
+      "sha256": "14953adaaed2aef14570980e932b0124feb8cb6d9e3690c7d90d44b6b734ec90"
+    },
+    {
+      "bytes": 2935,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/cli.py",
+        "source_sha256": "b41eed5b712d850717cc862be022443eb1f18251b1e5d2c7ce7ee76659a43715"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/cli.py",
+      "release_wave": 3,
+      "sha256": "b41eed5b712d850717cc862be022443eb1f18251b1e5d2c7ce7ee76659a43715"
+    },
+    {
+      "bytes": 3452,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/pipeline.py",
+        "source_sha256": "0c6510a42eea7c9b944b9cac0c96935d820f1f9ae9a3c06ee9e24a187b47fecc"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/pipeline.py",
+      "release_wave": 3,
+      "sha256": "0c6510a42eea7c9b944b9cac0c96935d820f1f9ae9a3c06ee9e24a187b47fecc"
+    },
+    {
+      "bytes": 2633,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/redaction.py",
+        "source_sha256": "bc1527d86690dc7e2556cc823c2279b0d4d676f436f8b6128f1ac7dff624eb81"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/redaction.py",
+      "release_wave": 3,
+      "sha256": "bc1527d86690dc7e2556cc823c2279b0d4d676f436f8b6128f1ac7dff624eb81"
+    },
+    {
+      "bytes": 10619,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/schema.py",
+        "source_sha256": "5e51609348a5a2a3078ed8df935144999e8f0829f371ce1754b738340d4baeea"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/schema.py",
+      "release_wave": 3,
+      "sha256": "5e51609348a5a2a3078ed8df935144999e8f0829f371ce1754b738340d4baeea"
+    },
+    {
+      "bytes": 9777,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "hospitality_workbench/triage.py",
+        "source_sha256": "488b0f52e46d068189f906b7b05461da61c0f5f8fb65b85dc50ed3a9a87623c6"
+      },
+      "path": "projects/support-triage-workbench/hospitality_workbench/triage.py",
+      "release_wave": 3,
+      "sha256": "488b0f52e46d068189f906b7b05461da61c0f5f8fb65b85dc50ed3a9a87623c6"
+    },
+    {
+      "bytes": 1947,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "projects/support-triage-workbench/tests/test_public_contract.py",
+      "release_wave": null,
+      "sha256": "813b08309aff5e9e5ef883ec1f419da745b4db6645bc40c3f9f7a7b8ce4a2601"
+    },
+    {
+      "bytes": 9806,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "tests/test_workbench.py",
+        "source_sha256": "9ddb33bb279911c319f69e5e27007fc9a2ff0b1835f1c4c43c4a757ca66659ec"
+      },
+      "path": "projects/support-triage-workbench/tests/test_workbench.py",
+      "release_wave": 3,
+      "sha256": "9ddb33bb279911c319f69e5e27007fc9a2ff0b1835f1c4c43c4a757ca66659ec"
+    },
+    {
+      "bytes": 4681,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "tools/publication_scan.py",
+        "source_sha256": "8231927293c3258c44b6e98af7bfc7a79debac14d8760c51a501093d7ecd711f"
+      },
+      "path": "projects/support-triage-workbench/tools/publication_scan.py",
+      "release_wave": 3,
+      "sha256": "8231927293c3258c44b6e98af7bfc7a79debac14d8760c51a501093d7ecd711f"
+    },
+    {
+      "bytes": 175,
+      "origin": {
+        "kind": "copy_candidate",
+        "project": "support-workbench",
+        "source_relative": "workbench.py",
+        "source_sha256": "a73395f5dcb0a17c5d4ce501b9bb72038d544948303ab5a4c88e2d15f3481853"
+      },
+      "path": "projects/support-triage-workbench/workbench.py",
+      "release_wave": 3,
+      "sha256": "a73395f5dcb0a17c5d4ce501b9bb72038d544948303ab5a4c88e2d15f3481853"
+    },
+    {
+      "bytes": 6488,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "release-decisions.json",
+      "release_wave": null,
+      "sha256": "8ba0eb94509e357ba00322ddb2bcb7fb2011870c57529046fc0199a196a9bcec"
+    },
+    {
+      "bytes": 3899,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "release-policy.json",
+      "release_wave": null,
+      "sha256": "914226e87238b72ad4f6f8c6ff2e7751212a1020aba1aaec63335c68a746287b"
+    },
+    {
+      "bytes": 625,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "requirements-ci.lock",
+      "release_wave": null,
+      "sha256": "d8132600dafd83140b0b894913ebc14a1b13426d2ab1ca1e3d43309b97fae7b1"
+    },
+    {
+      "bytes": 4730,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "styles.css",
+      "release_wave": null,
+      "sha256": "23fd77acc4547d84ada97402d5b3e834b8b5cc83f48996c1b35c4efdb212838b"
+    },
+    {
+      "bytes": 2374,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "third_party/licenses/DbCL-1.0.txt",
+      "release_wave": null,
+      "sha256": "3cbfa990f26df856c6a7d3fff3d1f236e3b0165b1e8257ca0d00f15758754f81"
+    },
+    {
+      "bytes": 25278,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "third_party/licenses/ODbL-1.0.txt",
+      "release_wave": null,
+      "sha256": "607680718977f6f6c9607972afd98f208573f19251315ed1362a8589b51beaf5"
+    },
+    {
+      "bytes": 2694,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/build_manifest.py",
+      "release_wave": null,
+      "sha256": "63cb038cc93fd85c65b8d7e1a3d0884e08a9258bc77e8e516e6bac2080e9511e"
+    },
+    {
+      "bytes": 3382,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/export_bundle.py",
+      "release_wave": null,
+      "sha256": "aa810caf2e8888c468e420e34596d689b6b05cc568e4db36f141c4687ce74dd8"
+    },
+    {
+      "bytes": 48878,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/publication_scan.py",
+      "release_wave": null,
+      "sha256": "ec9c9ef6dcf2a1250ac42041b1094a3444a3903d715b4ded66c9e13fbf46c7ad"
+    },
+    {
+      "bytes": 3516,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/static_demo_smoke.py",
+      "release_wave": null,
+      "sha256": "cb90be9a8035757d60b5d449b950ce039f2ecdb20af304a3a749c869eb9637c8"
+    },
+    {
+      "bytes": 11836,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/verify_all.py",
+      "release_wave": null,
+      "sha256": "dbbe773327b2e0f88bac6aacc9a2da1c6d1505ba1c38ed59b85b5357e3a96e11"
+    },
+    {
+      "bytes": 3945,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/verify_generated.py",
+      "release_wave": null,
+      "sha256": "4a4e56f4b1c6c025a2fa70ded388d8dbe77335532ee0d9258b13ab553e1e884c"
+    },
+    {
+      "bytes": 4917,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/verify_inventory.py",
+      "release_wave": null,
+      "sha256": "0ac86f5bca0617d8eeec500d36a2645e45c4ba4442f8b234c09a835f53e9cffe"
+    },
+    {
+      "bytes": 15520,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/verify_landing.py",
+      "release_wave": null,
+      "sha256": "7de9779554347b75991a8782a256845b98a9e7f4a3eeb307ae3df30c755e17da"
+    },
+    {
+      "bytes": 4842,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/verify_links.py",
+      "release_wave": null,
+      "sha256": "fa614ba1d250c05105917b8f856a1c53a7bc89bce1cb0a7e4344611ba56b2003"
+    },
+    {
+      "bytes": 3471,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "tools/release/verify_manifest.py",
+      "release_wave": null,
+      "sha256": "d0cd27039f88c25b17f4dea79b4051b818eaf940d77816ff4680bfa2ad357f86"
+    }
+  ],
+  "mode": "all12",
+  "schema": "systems-workflow-portfolio-release-inventory/v1",
+  "selected_projects": [
+    "readiness",
+    "lifecycle",
+    "product-validation",
+    "wcag-harness",
+    "claim-linter",
+    "price-controls",
+    "migration-validator",
+    "support-workbench",
+    "hitl-controls",
+    "launch-lab",
+    "api-contracts",
+    "ai-release-gate"
+  ]
+}

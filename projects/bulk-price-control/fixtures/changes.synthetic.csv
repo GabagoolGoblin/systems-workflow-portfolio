@@ -1,0 +1,4 @@
+venue_id,sku,new_price,reason
+demo-venue-alpha,BEV-1001,3.50,Seasonal ingredient adjustment
+demo-venue-alpha,ENT-2001,12.25,Quarterly menu review
+demo-venue-alpha,SID-3001,4.50,Supplier cost adjustment

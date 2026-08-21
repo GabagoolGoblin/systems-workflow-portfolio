@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claim-evidence-contract-linter"
+version = "1.0.0"
+description = "Deterministic, local-only claim-to-evidence contract linting demo"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+license = {text = "License terms are provided in the repository root LICENSE file."}
+
+[project.scripts]
+claim-contract-lint = "claim_evidence_contract_linter.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.claim-evidence-contract-linter]
+runtime-dependencies = []
+network-access = false

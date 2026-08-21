@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="An offline portfolio demo for barcode normalization, adverse-input parsing, public catalog corroboration, and human-gated staged changes.">
+  <title>Catalog Proof Lab · Public product validation demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .truth-ribbon .boundary-contract {
+      display: inline !important;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+      opacity: 0;
+    }
+    @media (max-width: 760px) {
+      .truth-ribbon {
+        height: 104px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4px 10px;
+        padding: 10px 12px;
+        text-align: center;
+      }
+      .truth-ribbon .truth-dot,
+      .truth-ribbon span { display: none; }
+      .truth-ribbon .boundary-contract { display: inline !important; }
+      .truth-ribbon strong { min-width: 0; line-height: 1.25; }
+      .truth-ribbon .boundary-synthetic { grid-column: 1 / -1; }
+      .app-shell { padding-top: 104px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="truth-ribbon" role="note">
+    <span class="boundary-contract" data-boundary aria-hidden="true">INDEPENDENT PORTFOLIO DEMO · PUBLIC PRODUCT IDENTITY DATA · SYNTHETIC PRICING, OPERATOR INPUTS, AND WORKFLOW · NO AFFILIATION · NO PRODUCTION ACTION</span>
+    <span class="truth-dot" aria-hidden="true"></span>
+    <strong>INDEPENDENT PORTFOLIO DEMO</strong><span>·</span>
+    <strong>PUBLIC PRODUCT IDENTITY DATA</strong><span>·</span>
+    <strong class="boundary-synthetic">SYNTHETIC PRICING, OPERATOR INPUTS, AND WORKFLOW</strong><span>·</span>
+    <strong>NO AFFILIATION</strong><span>·</span>
+    <strong>NO PRODUCTION ACTION</strong>
+  </div>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Demo navigation">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div>
+          <p class="brand-name">Catalog Proof</p>
+          <p class="brand-kicker">Validation lab</p>
+        </div>
+      </div>
+
+      <nav class="view-nav" aria-label="Workflow screens">
+        <p class="nav-label">Demo workflow</p>
+        <button class="nav-item" type="button" data-view="intake" aria-pressed="true">
+          <span class="nav-number">01</span><span>Intake &amp; parse</span><kbd>1</kbd>
+        </button>
+        <button class="nav-item" type="button" data-view="queue" aria-pressed="false">
+          <span class="nav-number">02</span><span>Validation queue</span><span class="nav-count">8</span><kbd>2</kbd>
+        </button>
+        <button class="nav-item" type="button" data-view="review" aria-pressed="false">
+          <span class="nav-number">03</span><span>Human decision</span><span class="nav-count warn">6</span><kbd>3</kbd>
+        </button>
+        <button class="nav-item" type="button" data-view="evidence" aria-pressed="false">
+          <span class="nav-number">04</span><span>Evidence ledger</span><kbd>4</kbd>
+        </button>
+      </nav>
+
+      <section class="boundary-card" aria-labelledby="boundary-title">
+        <p class="nav-label" id="boundary-title">Execution boundary</p>
+        <div class="boundary-row"><span>Public source</span><b>Frozen snapshot</b></div>
+        <div class="boundary-row"><span>Runtime requests</span><b>0</b></div>
+        <div class="boundary-row"><span>Write connector</span><b class="none">None</b></div>
+        <div class="boundary-row"><span>Decision state</span><b>This tab only</b></div>
+      </section>
+
+      <section class="boundary-card" aria-labelledby="public-boundary-title">
+        <p class="nav-label" id="public-boundary-title">Permanent boundary</p>
+        <div class="boundary-row"><b>INDEPENDENT PORTFOLIO DEMO</b></div>
+        <div class="boundary-row"><b>PUBLIC PRODUCT IDENTITY DATA</b></div>
+        <div class="boundary-row"><b>SYNTHETIC PRICING, OPERATOR INPUTS, AND WORKFLOW</b></div>
+        <div class="boundary-row"><b>NO AFFILIATION</b></div>
+        <div class="boundary-row"><b>NO PRODUCTION ACTION</b></div>
+      </section>
+
+      <div class="license-note">
+        <p><strong>Source:</strong> Open Food Facts</p>
+        <p>Database: ODbL · contents: DbCL</p>
+        <p>No product images are used.</p>
+        <p>Public identity facts only; every price and operation is synthetic.</p>
+        <p><strong>No live writes.</strong></p>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+          <span>Portfolio</span><i aria-hidden="true">/</i><span>Catalog operations</span><i aria-hidden="true">/</i><strong id="breadcrumb-view">Intake</strong>
+        </div>
+        <div class="topbar-actions">
+          <span class="mode-pill"><i aria-hidden="true"></i> Offline runtime</span>
+          <span class="snapshot-pill">Snapshot · 20 Aug 2026</span>
+          <button class="quiet-button" type="button" id="reset-demo">Reset demo</button>
+          <button class="avatar-button" type="button" aria-label="Portfolio reviewer profile">RV</button>
+        </div>
+      </header>
+
+      <main id="main-content" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript>This offline demo needs JavaScript enabled to parse and compare its synthetic operator submissions.</noscript>
+  <script src="data/catalog_snapshot.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

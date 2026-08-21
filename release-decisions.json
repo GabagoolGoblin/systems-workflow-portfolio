@@ -1,0 +1,158 @@
+{
+  "all12_artifact_review": {
+    "approved": true,
+    "artifacts": {
+      "projects/public-product-validation/DATA_LICENSE.md": "17237603ddb48981c34f12eccb1f2530424fe15593eb58aa59f0f413d1e99a4c",
+      "projects/public-product-validation/data/DATA_REDACTION_RECEIPT.json": "c04b783538aa631981e970bd2aa8dbe94b4e6b4672a0d6749911a463c5067f80",
+      "projects/public-product-validation/data/open_food_facts_snapshot.json": "2bd27bdbb6b89e323ec1083dd01f0962f6c73a8df1da0a172a2c7e3bb0f1c9fb",
+      "third_party/licenses/DbCL-1.0.txt": "3cbfa990f26df856c6a7d3fff3d1f236e3b0165b1e8257ca0d00f15758754f81",
+      "third_party/licenses/ODbL-1.0.txt": "607680718977f6f6c9607972afd98f208573f19251315ed1362a8589b51beaf5"
+    }
+  },
+  "ci_dependencies_approved": true,
+  "ci_review": {
+    "action_pins": {
+      "actions/checkout@v6": "d23441a48e516b6c34aea4fa41551a30e30af803",
+      "actions/setup-python@v6": "ece7cb06caefa5fff74198d8649806c4678c61a1"
+    },
+    "approved": true,
+    "requirements_ci_lock_sha256": "d8132600dafd83140b0b894913ebc14a1b13426d2ab1ca1e3d43309b97fae7b1",
+    "workflow_sha256": "af9a37578836ce2d5d0eb75927f95cf50ce4f3bd89f916d53be773a79141e913"
+  },
+  "clean_history_clone_gate_required": true,
+  "clean_history_clone_receipt_approved": false,
+  "clean_history_clone_receipt_sha256": null,
+  "codeowners_approved": true,
+  "company_context_approved": true,
+  "decision_status": "APPROVED_FOR_CANDIDATE_BUILD",
+  "hero_assets": {
+    "assets/project-previews/ai-evaluation-release-gates.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "9cffa4bbb328a63f1f5c3b49645da36c4c135b8d9922d4e13b615ce454a67aff"
+    },
+    "assets/project-previews/api-integration-contracts.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "28c86747c46886ce7f98bd4a7cfb8d2b53876725d5e13fbb8d2e611113eda203"
+    },
+    "assets/project-previews/catalog-lifecycle.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "3ea2bc8422677b7b4679fb3a85d785489a0c830a5ce4c650fbb487bb1bf3ca32"
+    },
+    "assets/project-previews/customer-launch-readiness.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "6db3d7672e7665010cab9120669ad88226bbe8c39e226be67856d176675c9dff"
+    },
+    "assets/project-previews/implementation-readiness.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "10d5299b27b35cea5d7b68d163d3750b397036f402d81daa1574ae82c0f903c0"
+    },
+    "assets/project-previews/interface-contract-harness.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "d3c76e973a1e9f163477987845e40b08d9635aefbb87470bd28a53285040cb29"
+    },
+    "assets/project-previews/public-product-validation.png": {
+      "approved": true,
+      "native_visual_review_approved": true,
+      "sha256": "7da0a365a28b1a2e350d99e6c5ded56d36fbec6443930d1eae2c7eaa2c95459f"
+    }
+  },
+  "hero_assets_approved": true,
+  "hitl_asset_provenance_approved": true,
+  "license_approved": true,
+  "license_scope": "owner_created_material_all_rights_reserved_no_additional_license_beyond_github_terms_or_applicable_law_third_party_rights_unchanged",
+  "license_spdx": "NOASSERTION",
+  "open_food_facts_distribution_approved": true,
+  "owner_provenance_approved": true,
+  "pages_approved": false,
+  "private_reporting_channels": {
+    "conduct": "GitHub platform report/block controls",
+    "security": "GitHub private vulnerability reporting"
+  },
+  "product_capture_contact_metadata_approved": true,
+  "projects": {
+    "ai-release-gate": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "9de46efd91abe054224ad442f6d8f3c8e0defa1682c81d849221fe3db906f9ba"
+    },
+    "api-contracts": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "39534581722b6b40a518c6a05b9d9a9a4b0ec11539e5a521df61e09f4e0e826b"
+    },
+    "claim-linter": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "a0fc96a5f701f3e0faa7d42fcc42e7ef5a797fd96b38d3a699beb2b41ea590d6"
+    },
+    "hitl-controls": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "3f319f2b6053654e84e2283187e1d93b51e139423e40f8d37061e572acfe27c6"
+    },
+    "launch-lab": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "c7d41121a3eabc1bdc684581c38615c88e13a52ebb7028df5ae524861adc020c"
+    },
+    "lifecycle": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "62bf86d39123774d0de01769f58306868be6ae4fc785cf81f707140a86d3a943"
+    },
+    "migration-validator": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "8994fae4322e460e4d85e5e635ce8bbe96254d7977c1edbdf8d93ad305fa2285"
+    },
+    "price-controls": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "1fd2282e2184bc4fecae9f9b328e26021cd7c3dfa996fe6c8962c18ce4d8924d"
+    },
+    "product-validation": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "e41818753842401153e6055a36b930ed51e96983a4cad2aabc3b2abd9a92e1c6"
+    },
+    "readiness": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "0717668be50b23fbac1bd7ff41da1c82d332ba6efb838c1d8793ed29b397dd67"
+    },
+    "support-workbench": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "f58e1073113ea4c9cc9d49e85129f829977df8327d593df2d03197a767e32c17"
+    },
+    "wcag-harness": {
+      "include": true,
+      "provenance_approved": true,
+      "provenance_sha256": "238bab7b94906c755f03117eab913c0e97e154dfb87d6af5621df04cdfc7530c"
+    }
+  },
+  "public_git_identity": {
+    "approved": true,
+    "author_email": "137814736+GabagoolGoblin@users.noreply.github.com",
+    "author_name": "GabagoolGoblin",
+    "github_handle": "GabagoolGoblin"
+  },
+  "public_git_identity_approved": true,
+  "publication_approved": false,
+  "push_approved": false,
+  "release_approved": false,
+  "remote_creation_approved": false,
+  "reporting_channels_approved": true,
+  "repository_name": "systems-workflow-portfolio",
+  "repository_topology": "curated_monorepo",
+  "repository_topology_approved": true,
+  "repository_visibility": "public",
+  "restrictive_projects_resolved": true,
+  "schema": "portfolio-release-decisions/v2"
+}

@@ -1,0 +1,247 @@
+{
+  "cases": [
+    {
+      "actual_violations": [],
+      "expected_violations": [],
+      "fixture_sha256": "a8997c00a56c725d2c2027e07be450a78a7a567e0ae988647b9ac6d26f59bb6b",
+      "html": "components/accessible-operations-panel.html",
+      "id": "accessible-operations-panel",
+      "missing_expected": [],
+      "status": "matched",
+      "unexpected": []
+    },
+    {
+      "actual_violations": [
+        {
+          "column": 0,
+          "line": 2,
+          "message": "<html> must declare a lang value",
+          "node": "html[1]",
+          "rule_id": "document-language",
+          "severity": "error"
+        },
+        {
+          "column": 6,
+          "line": 11,
+          "message": "img must declare alt; alt=\"\" is accepted for declared decoration",
+          "node": "html[1]/body[1]/main[1]/section[1]/img[1]",
+          "rule_id": "image-alternative",
+          "severity": "error"
+        },
+        {
+          "column": 6,
+          "line": 12,
+          "message": "interactive element has no accessible name",
+          "node": "html[1]/body[1]/main[1]/section[1]/a[1]",
+          "rule_id": "interactive-name",
+          "severity": "error"
+        },
+        {
+          "column": 8,
+          "line": 15,
+          "message": "interactive element has no accessible name",
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/button[1]",
+          "rule_id": "interactive-name",
+          "severity": "error"
+        },
+        {
+          "column": 8,
+          "line": 14,
+          "message": "form control has no accessible name",
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/input[1]",
+          "rule_id": "form-control-name",
+          "severity": "error"
+        },
+        {
+          "column": 8,
+          "line": 14,
+          "message": "aria-describedby references missing ids: owner-help",
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/input[1]",
+          "rule_id": "aria-reference-integrity",
+          "severity": "error"
+        },
+        {
+          "column": 8,
+          "line": 15,
+          "message": "button type must be explicitly button, reset, or submit",
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/button[1]",
+          "rule_id": "explicit-button-type",
+          "severity": "error"
+        }
+      ],
+      "expected_violations": [
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/input[1]",
+          "rule_id": "aria-reference-integrity"
+        },
+        {
+          "node": "html[1]",
+          "rule_id": "document-language"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/button[1]",
+          "rule_id": "explicit-button-type"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/input[1]",
+          "rule_id": "form-control-name"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/img[1]",
+          "rule_id": "image-alternative"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/a[1]",
+          "rule_id": "interactive-name"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/button[1]",
+          "rule_id": "interactive-name"
+        }
+      ],
+      "fixture_sha256": "9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee293",
+      "html": "components/missing-names-panel.html",
+      "id": "missing-names-panel",
+      "missing_expected": [],
+      "status": "matched",
+      "unexpected": []
+    },
+    {
+      "actual_violations": [
+        {
+          "column": 6,
+          "line": 13,
+          "message": "duplicate id 'deployment'",
+          "node": "html[1]/body[1]/main[1]/section[1]/div[2]",
+          "rule_id": "unique-id",
+          "severity": "error"
+        },
+        {
+          "column": 6,
+          "line": 11,
+          "message": "heading level jumps from h2 to h4",
+          "node": "html[1]/body[1]/main[1]/section[1]/h4[1]",
+          "rule_id": "heading-order",
+          "severity": "error"
+        },
+        {
+          "column": 6,
+          "line": 14,
+          "message": "data table contains td cells but no th cells",
+          "node": "html[1]/body[1]/main[1]/section[1]/table[1]",
+          "rule_id": "table-header-contract",
+          "severity": "error"
+        },
+        {
+          "column": 19,
+          "line": 20,
+          "message": "th scope must be row, col, rowgroup, or colgroup",
+          "node": "html[1]/body[1]/main[1]/section[1]/table[2]/thead[1]/tr[1]/th[1]",
+          "rule_id": "table-header-contract",
+          "severity": "error"
+        }
+      ],
+      "expected_violations": [
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/h4[1]",
+          "rule_id": "heading-order"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/table[1]",
+          "rule_id": "table-header-contract"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/table[2]/thead[1]/tr[1]/th[1]",
+          "rule_id": "table-header-contract"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/div[2]",
+          "rule_id": "unique-id"
+        }
+      ],
+      "fixture_sha256": "49753386ec2cc6de5fba50798796d8fb8236cd4d5db3d9acc278f3a7e4b6d289",
+      "html": "components/structural-regressions.html",
+      "id": "structural-regressions",
+      "missing_expected": [],
+      "status": "matched",
+      "unexpected": []
+    }
+  ],
+  "input_binding": {
+    "bundle_sha256": "5f6e01efaa8cd0fc916c19b0bbede35f2b23c8b06390bfc7f5838dff7df267eb",
+    "files": [
+      {
+        "path": "manifest.json",
+        "sha256": "e7f969be024e7300b4b4d8f690f585dc7fe049978082bced653c8928a05cbd0d"
+      },
+      {
+        "path": "components/accessible-operations-panel.html",
+        "sha256": "a8997c00a56c725d2c2027e07be450a78a7a567e0ae988647b9ac6d26f59bb6b"
+      },
+      {
+        "path": "components/missing-names-panel.html",
+        "sha256": "9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee293"
+      },
+      {
+        "path": "components/structural-regressions.html",
+        "sha256": "49753386ec2cc6de5fba50798796d8fb8236cd4d5db3d9acc278f3a7e4b6d289"
+      }
+    ]
+  },
+  "rules": [
+    {
+      "description": "The html root declares a bounded, syntactically valid lang tag.",
+      "id": "document-language"
+    },
+    {
+      "description": "Declared ids are non-empty and unique within the fixture.",
+      "id": "unique-id"
+    },
+    {
+      "description": "Every img declares alt; empty alt is accepted as intentional decoration.",
+      "id": "image-alternative"
+    },
+    {
+      "description": "Links, buttons, and button/link roles have a computed name.",
+      "id": "interactive-name"
+    },
+    {
+      "description": "Non-hidden input, select, and textarea controls have a computed name.",
+      "id": "form-control-name"
+    },
+    {
+      "description": "aria-labelledby/describedby tokens resolve to fixture ids.",
+      "id": "aria-reference-integrity"
+    },
+    {
+      "description": "After the first heading, levels do not increase by more than one.",
+      "id": "heading-order"
+    },
+    {
+      "description": "Native buttons declare button, submit, or reset explicitly.",
+      "id": "explicit-button-type"
+    },
+    {
+      "description": "Data tables include headers and every th declares a supported scope.",
+      "id": "table-header-contract"
+    }
+  ],
+  "schema_version": 1,
+  "scope_notice": "Deterministic fixture contracts only; not full WCAG conformance, legal certification, browser testing, or assistive-technology certification.",
+  "suite": {
+    "description": "Invented operations UI components with known-good and deliberately regressed accessibility-oriented contracts.",
+    "id": "synthetic-operations-interface",
+    "status": "matched"
+  },
+  "summary": {
+    "actual_violations": 11,
+    "cases": 3,
+    "cases_matched": 3,
+    "cases_regressed": 0,
+    "expected_violations": 11
+  },
+  "tool": {
+    "name": "interface-contract-harness",
+    "version": "1.0.0"
+  }
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; img-src 'self' file: data:; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta name="description" content="Personal offline portfolio demonstration of deterministic API and webhook contract controls using synthetic fixtures only.">
+  <title>Contract Lab · Personal API Integration Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data/demo_snapshot.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to integration workspace</a>
+  <div class="boundary" role="note" data-boundary>INDEPENDENT PORTFOLIO DEMO · SYNTHETIC DATA · NO AFFILIATION · NO PRODUCTION ACTION</div>
+
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Demo navigation">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">↯</span>
+        <div>
+          <p>Contract Lab</p>
+          <span>API + webhook controls</span>
+        </div>
+      </div>
+
+      <p class="nav-label">Personal project flow</p>
+      <nav id="view-nav" aria-label="Workflow screens">
+        <button type="button" data-view="overview"><span>01</span> Contract map</button>
+        <button type="button" data-view="exchange"><span>02</span> Request / response</button>
+        <button type="button" data-view="inbox"><span>03</span> Webhook inbox</button>
+        <button type="button" data-view="quarantine"><span>04</span> Quarantine</button>
+        <button type="button" data-view="gate"><span>05</span> Human gate</button>
+        <button type="button" data-view="audit"><span>06</span> Audit receipt</button>
+      </nav>
+
+      <div class="sidebar-boundary">
+        <p class="mini-label">Execution boundary</p>
+        <dl>
+          <div><dt>Runtime requests</dt><dd>0</dd></div>
+          <div><dt>Sleep calls</dt><dd>0</dd></div>
+          <div><dt>Live credentials</dt><dd>0</dd></div>
+          <div><dt>Production writes</dt><dd>0</dd></div>
+        </dl>
+        <p>Synthetic payloads and a deliberately public demo secret. Nothing here reflects paid production work.</p>
+      </div>
+    </aside>
+
+    <div class="workspace-shell">
+      <header class="topbar">
+        <div>
+          <p class="topbar-label">Synthetic integration workspace</p>
+          <p><strong>Northstar Relay</strong><span aria-hidden="true"> / </span>API-RUN-07</p>
+        </div>
+        <div class="topbar-actions">
+          <span class="offline"><i aria-hidden="true"></i> Offline runtime</span>
+          <span class="personal">Personal project</span>
+          <button type="button" id="reset-demo">Reset demo</button>
+        </div>
+      </header>
+
+      <main id="workspace" tabindex="-1"></main>
+      <footer>
+        <span>All vendors, tenants, endpoints, keys, payloads, and events are synthetic.</span>
+        <span id="footer-state">Base receipt · 11 hash-linked events</span>
+      </footer>
+    </div>
+  </div>
+
+  <noscript>This local portfolio demo needs JavaScript to render its embedded synthetic snapshot.</noscript>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "algorithm": "sha256",
+  "base_directory": "..",
+  "files": [
+    {
+      "path": "fixtures/components/accessible-operations-panel.html",
+      "role": "input",
+      "sha256": "a8997c00a56c725d2c2027e07be450a78a7a567e0ae988647b9ac6d26f59bb6b"
+    },
+    {
+      "path": "fixtures/components/missing-names-panel.html",
+      "role": "input",
+      "sha256": "9908d8ee9108c41ac140dc8a3fe1b2378f24d27e3b6466ee88be79edbdeee293"
+    },
+    {
+      "path": "fixtures/components/structural-regressions.html",
+      "role": "input",
+      "sha256": "49753386ec2cc6de5fba50798796d8fb8236cd4d5db3d9acc278f3a7e4b6d289"
+    },
+    {
+      "path": "fixtures/manifest.json",
+      "role": "input",
+      "sha256": "e7f969be024e7300b4b4d8f690f585dc7fe049978082bced653c8928a05cbd0d"
+    },
+    {
+      "path": "build/report.html",
+      "role": "output",
+      "sha256": "485e3ea5991d1d20be60636bd34c0bfceedf0c4e67c273812cbe382c9e6db23d"
+    },
+    {
+      "path": "build/report.json",
+      "role": "output",
+      "sha256": "e77102dd29f482aa68443f5df4992eafd1e119b590c6724e85184bafac84f021"
+    },
+    {
+      "path": "build/report.md",
+      "role": "output",
+      "sha256": "062e24b265caae2fb4900a495dc7c0fd73db248056f5583f515abc9158d461c2"
+    }
+  ],
+  "fixture_bundle_sha256": "5f6e01efaa8cd0fc916c19b0bbede35f2b23c8b06390bfc7f5838dff7df267eb",
+  "report_json_sha256": "e77102dd29f482aa68443f5df4992eafd1e119b590c6724e85184bafac84f021",
+  "schema_version": 1
+}

@@ -1,0 +1,56 @@
+{
+  "categories": [
+    {
+      "category_code": "CAT-BEV",
+      "label": "Cold Drinks"
+    },
+    {
+      "category_code": "CAT-MAIN",
+      "label": "Main Plates"
+    },
+    {
+      "category_code": "CAT-SIDE",
+      "label": "Side Plates"
+    }
+  ],
+  "currency": "USD",
+  "items": [
+    {
+      "category_code": "CAT-BEV",
+      "display_name": "Cucumber Lime Fizz",
+      "enabled": true,
+      "item_id": "ITM-100",
+      "unit_price": "3.40"
+    },
+    {
+      "category_code": "CAT-MAIN",
+      "display_name": "Roasted Garden Bowl",
+      "enabled": true,
+      "item_id": "ITM-200",
+      "unit_price": "11.75"
+    },
+    {
+      "category_code": "CAT-SIDE",
+      "display_name": "Rosemary Potato Cup",
+      "enabled": true,
+      "item_id": "ITM-300",
+      "unit_price": "4.25"
+    },
+    {
+      "category_code": "CAT-MISSING",
+      "display_name": "Unmapped Sample",
+      "enabled": false,
+      "item_id": "ITM-400",
+      "unit_price": "5.10"
+    },
+    {
+      "category_code": "CAT-SIDE",
+      "display_name": "Malformed Price Sample",
+      "enabled": true,
+      "item_id": "ITM-500",
+      "unit_price": "four"
+    }
+  ],
+  "schema_version": "synthetic-hospitality-source/v1",
+  "venue_id": "demo-source-cafe"
+}

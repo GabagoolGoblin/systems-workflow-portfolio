@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="An independent, offline portfolio demo for implementation launch operations using synthetic data and no production actions.">
+  <title>First Value Launch Lab — Independent Portfolio Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @media (max-width: 720px) {
+      .disclosure { height: auto; min-height: 31px; flex-wrap: wrap; justify-content: center; overflow-x: visible; padding: 6px 12px; white-space: normal; }
+      .page-head { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .head-actions { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body id="page-top">
+  <div class="disclosure" role="note">
+    <strong>INDEPENDENT PORTFOLIO DEMO</strong>
+    <span aria-hidden="true">•</span>
+    <span>SYNTHETIC DATA</span>
+    <span aria-hidden="true">•</span>
+    <span>NO AFFILIATION</span>
+    <span aria-hidden="true">•</span>
+    <span>NO PRODUCTION ACTION</span>
+  </div>
+
+  <header class="app-header">
+    <a class="brand" href="#page-top" aria-label="First Value Launch Lab home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>
+        <strong>First Value</strong>
+        <small>Launch Lab</small>
+      </span>
+    </a>
+    <div class="program-context" aria-label="Synthetic program context">
+      <span class="context-eyebrow">Synthetic implementation</span>
+      <strong>Northstar Grid Services</strong>
+      <span class="status-dot"><i aria-hidden="true"></i> Target: Sep 18</span>
+    </div>
+    <div class="header-actions">
+      <label class="scenario-picker">
+        <span>Demo state</span>
+        <select id="scenario-select" aria-label="Choose synthetic demo scenario">
+          <option value="baseline">Baseline</option>
+          <option value="recovery">Recovery drill</option>
+          <option value="review-ready">Review ready</option>
+        </select>
+      </label>
+      <button class="icon-button" type="button" data-open-help aria-label="Open demo guide">?</button>
+      <button class="avatar" type="button" aria-label="Synthetic review profile">RV</button>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Implementation workflow">
+    <button type="button" data-view="overview"><span>01</span> Command center</button>
+    <button type="button" data-view="discovery"><span>02</span> Discovery</button>
+    <button type="button" data-view="readiness"><span>03</span> Readiness</button>
+    <button type="button" data-view="exceptions"><span>04</span> UAT + exceptions</button>
+    <button type="button" data-view="enablement"><span>05</span> Enablement</button>
+    <button type="button" data-view="acceptance"><span>06</span> Acceptance</button>
+  </nav>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="app-footer">
+    <p><strong>Boundary:</strong> Independent portfolio demo using invented records. It does not represent vendor software, customer data, production readiness, or an authorized go-live.</p>
+    <button type="button" data-reset-demo>Reset in-memory demo</button>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <dialog id="help-dialog" aria-labelledby="help-title">
+    <div class="dialog-head">
+      <div>
+        <span class="eyebrow">Demo guide</span>
+        <h2 id="help-title">Follow one launch to first value</h2>
+      </div>
+      <button type="button" class="icon-button" data-close-help aria-label="Close demo guide">×</button>
+    </div>
+    <ol class="guide-steps">
+      <li><strong>Frame the outcome.</strong><span>Confirm discovery decisions and the measurable first-value event.</span></li>
+      <li><strong>Make readiness visible.</strong><span>Inspect owners, evidence, dependencies, and stalled workstreams.</span></li>
+      <li><strong>Resolve without hiding risk.</strong><span>Advance an exception to review-ready, then record human review.</span></li>
+      <li><strong>Enable the handoff.</strong><span>Complete training practice and named-owner acknowledgments.</span></li>
+      <li><strong>Accept deliberately.</strong><span>Run gates, record a synthetic go-live decision, and export the local audit.</span></li>
+    </ol>
+    <p class="dialog-note">Keyboard: 1–6 switches views, <kbd>?</kbd> opens this guide, and <kbd>Esc</kbd> closes it.</p>
+  </dialog>
+
+  <noscript>This offline demo requires JavaScript for its interactive workflow.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>

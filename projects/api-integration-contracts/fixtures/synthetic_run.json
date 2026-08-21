@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "deliveries": [
+    {
+      "delivery_id": "delivery_demo_001",
+      "headers": {
+        "x-demo-signature": "v1=4fb56cfb32385c9d3b4537e89b2795bd134f68b84ecac488ebcfb02b591c8669",
+        "x-demo-timestamp": "1787248740",
+        "x-correlation-id": "corr_01ab23cd",
+        "idempotency-key": "idem_a1b2c3d4"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_001\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_01\",\"data\":{\"order_id\":\"ord_demo_1001\",\"status\":\"ready\",\"amount\":\"42.50\"}}",
+      "expected_state": "ready_for_human"
+    },
+    {
+      "delivery_id": "delivery_demo_002",
+      "headers": {
+        "x-demo-signature": "v1=4fb56cfb32385c9d3b4537e89b2795bd134f68b84ecac488ebcfb02b591c8669",
+        "x-demo-timestamp": "1787248740",
+        "x-correlation-id": "corr_01ab23cd",
+        "idempotency-key": "idem_a1b2c3d4"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_001\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_01\",\"data\":{\"order_id\":\"ord_demo_1001\",\"status\":\"ready\",\"amount\":\"42.50\"}}",
+      "expected_state": "suppressed_duplicate"
+    },
+    {
+      "delivery_id": "delivery_demo_003",
+      "headers": {
+        "x-demo-signature": "v1=0000000000000000000000000000000000000000000000000000000000000000",
+        "x-demo-timestamp": "1787248750",
+        "x-correlation-id": "corr_02bc34de",
+        "idempotency-key": "idem_b2c3d4e5"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_002\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_01\",\"data\":{\"order_id\":\"ord_demo_1002\",\"status\":\"ready\",\"amount\":\"18.00\"}}",
+      "expected_state": "quarantined_signature"
+    },
+    {
+      "delivery_id": "delivery_demo_004",
+      "headers": {
+        "x-demo-signature": "v1=7b0faf991ae3539eb3978020277675fb1e7f90248bb410d952f466bc57ec5869",
+        "x-demo-timestamp": "1787248000",
+        "x-correlation-id": "corr_03cd45ef",
+        "idempotency-key": "idem_c3d4e5f6"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_003\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_02\",\"data\":{\"order_id\":\"ord_demo_1003\",\"status\":\"ready\",\"amount\":\"7.25\"}}",
+      "expected_state": "quarantined_replay_window"
+    },
+    {
+      "delivery_id": "delivery_demo_005",
+      "headers": {
+        "x-demo-signature": "v1=a92d19e173d3f7510c234d1a32ff6c55a19199c6cc50684863527f531d84cba9",
+        "x-demo-timestamp": "1787248760",
+        "x-correlation-id": "corr_04de56fa",
+        "idempotency-key": "idem_d4e5f6a7"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_004\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_02\",\"data\":{\"order_id\":\"ord_demo_1004\",\"status\":\"ready\",\"amount\":\"63.10\",\"priority\":\"rush\"}}",
+      "expected_state": "quarantined_schema_drift"
+    },
+    {
+      "delivery_id": "delivery_demo_006",
+      "headers": {
+        "x-demo-signature": "v1=23593232cb9bc0bda9fb89e146944502ff56c7563f99ce4d53274e55ce9dc981",
+        "x-demo-timestamp": "1787248770",
+        "x-correlation-id": "corr_BAD",
+        "idempotency-key": "idem_e5f6a7b8"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_005\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_03\",\"data\":{\"order_id\":\"ord_demo_1005\",\"status\":\"ready\",\"amount\":\"12.75\"}}",
+      "expected_state": "quarantined_header_contract"
+    },
+    {
+      "delivery_id": "delivery_demo_007",
+      "headers": {
+        "x-demo-signature": "v1=6641db44a65d4b50da6872a241f09fd36e13d8f6d347184f26db5e8afbffb488",
+        "x-demo-timestamp": "1787248780",
+        "x-correlation-id": "corr_06fa78bc",
+        "idempotency-key": "idem_f6a7b8c9"
+      },
+      "raw_body": "{\"event_id\":\"evt_demo_006\",\"event_type\":\"order.ready\",\"schema_version\":1,\"tenant_id\":\"tenant_demo_03\",\"data\":{\"order_id\":\"ord_demo_1006\",\"status\":\"ready\",\"amount\":\"99.00\"}}",
+      "expected_state": "ready_for_human"
+    }
+  ],
+  "exchange": {
+    "exchange_id": "exchange_demo_001",
+    "method": "POST",
+    "path": "/v1/synthetic/resources",
+    "headers": {
+      "content-type": "application/json",
+      "x-correlation-id": "corr_feed2026",
+      "idempotency-key": "idem_api09001"
+    },
+    "body": {
+      "operation_id": "op_demo_9001",
+      "tenant_id": "tenant_demo_01",
+      "resource_id": "res_demo_1042",
+      "desired_state": "active"
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": 429,
+        "headers": {
+          "retry-after": "2",
+          "x-correlation-id": "corr_feed2026"
+        },
+        "body": {
+          "error": {
+            "code": "synthetic_rate_limited",
+            "message": "Synthetic quota reached; schedule only."
+          }
+        }
+      },
+      {
+        "attempt": 2,
+        "status": 429,
+        "headers": {
+          "retry-after": "3",
+          "x-correlation-id": "corr_feed2026"
+        },
+        "body": {
+          "error": {
+            "code": "synthetic_rate_limited",
+            "message": "Synthetic quota still held; schedule only."
+          }
+        }
+      },
+      {
+        "attempt": 3,
+        "status": 202,
+        "headers": {
+          "x-correlation-id": "corr_feed2026"
+        },
+        "body": {
+          "accepted": true,
+          "operation_id": "op_demo_9001",
+          "state": "queued"
+        }
+      }
+    ],
+    "expected_state": "recovered_ready_for_human"
+  }
+}

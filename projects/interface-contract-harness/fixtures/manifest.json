@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "expected_violations": [],
+      "html": "components/accessible-operations-panel.html",
+      "id": "accessible-operations-panel"
+    },
+    {
+      "expected_violations": [
+        {
+          "node": "html[1]",
+          "rule_id": "document-language"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/img[1]",
+          "rule_id": "image-alternative"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/a[1]",
+          "rule_id": "interactive-name"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/button[1]",
+          "rule_id": "interactive-name"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/input[1]",
+          "rule_id": "form-control-name"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/input[1]",
+          "rule_id": "aria-reference-integrity"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/form[1]/button[1]",
+          "rule_id": "explicit-button-type"
+        }
+      ],
+      "html": "components/missing-names-panel.html",
+      "id": "missing-names-panel"
+    },
+    {
+      "expected_violations": [
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/div[2]",
+          "rule_id": "unique-id"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/h4[1]",
+          "rule_id": "heading-order"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/table[1]",
+          "rule_id": "table-header-contract"
+        },
+        {
+          "node": "html[1]/body[1]/main[1]/section[1]/table[2]/thead[1]/tr[1]/th[1]",
+          "rule_id": "table-header-contract"
+        }
+      ],
+      "html": "components/structural-regressions.html",
+      "id": "structural-regressions"
+    }
+  ],
+  "description": "Invented operations UI components with known-good and deliberately regressed accessibility-oriented contracts.",
+  "rules": [
+    "document-language",
+    "unique-id",
+    "image-alternative",
+    "interactive-name",
+    "form-control-name",
+    "aria-reference-integrity",
+    "heading-order",
+    "explicit-button-type",
+    "table-header-contract"
+  ],
+  "schema_version": 1,
+  "suite_id": "synthetic-operations-interface"
+}

@@ -1,0 +1,213 @@
+{
+  "snapshot_id": "OFF-TEXT-2026-08-20-A",
+  "captured_on": "2026-08-20",
+  "api_version": "v3",
+  "api_host": "https://world.openfoodfacts.org",
+  "request_method": "GET",
+  "requested_fields": [
+    "code",
+    "product_name",
+    "brands",
+    "quantity",
+    "categories",
+    "countries"
+  ],
+  "capture_policy": {
+    "maximum_requests_per_minute": 15,
+    "observed_peak_requests_per_minute": 8,
+    "corrected_capture_get_requests": 6,
+    "retained_requests": 6,
+    "discarded_superseded_requests": 9,
+    "total_development_get_requests": 15,
+    "runtime_requests": 0,
+    "notes": "The retained file is a small frozen snapshot from the corrected six-request capture. It is never refreshed by the browser demo. Nine earlier development requests were discarded when their User-Agent contact was found to be unverified; no response from that superseded attempt is retained."
+  },
+  "attribution": {
+    "database": "Open Food Facts",
+    "database_home": "https://world.openfoodfacts.org/",
+    "license_guidance": "https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/",
+    "database_license": "Open Database License (ODbL)",
+    "database_license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "contents_license": "Database Contents License (DbCL)",
+    "contents_license_url": "https://opendatacommons.org/licenses/dbcl/1-0/",
+    "images_used": false
+  },
+  "records": [
+    {
+      "requested_code": "3017624010701",
+      "retrieved_at": "2026-08-20T18:54:21Z",
+      "source_url": "https://world.openfoodfacts.org/api/v3/product/3017624010701?fields=code,product_name,brands,quantity,categories,countries",
+      "http_status": 200,
+      "response": {
+        "code": "3017624010701",
+        "errors": [],
+        "product": {
+          "brands": "Ferrero",
+          "categories": "Cocoa and hazelnuts spreads, de:Other",
+          "code": "3017624010701",
+          "countries": "France, United Kingdom",
+          "product_name": "Nutella",
+          "quantity": "400.0 g"
+        },
+        "result": {
+          "id": "product_found",
+          "lc_name": "Product found",
+          "name": "Product found"
+        },
+        "status": "success",
+        "warnings": []
+      }
+    },
+    {
+      "requested_code": "034000470693",
+      "retrieved_at": "2026-08-20T18:54:26Z",
+      "source_url": "https://world.openfoodfacts.org/api/v3/product/034000470693?fields=code,product_name,brands,quantity,categories,countries",
+      "http_status": 200,
+      "response": {
+        "code": "0034000470693",
+        "errors": [],
+        "product": {
+          "brands": "Reese's",
+          "categories": "Confectioneries",
+          "code": "0034000470693",
+          "countries": "France, Ireland, United Kingdom",
+          "product_name": "Peanut Butter Cups minis unwrapped",
+          "quantity": "90 g"
+        },
+        "result": {
+          "id": "product_found",
+          "lc_name": "Product found",
+          "name": "Product found"
+        },
+        "status": "success_with_warnings",
+        "warnings": [
+          {
+            "field": {
+              "id": "code",
+              "value": "0034000470693"
+            },
+            "impact": {
+              "id": "none",
+              "lc_name": "None",
+              "name": "None"
+            },
+            "message": {
+              "id": "different_normalized_product_code",
+              "lc_name": "",
+              "name": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "requested_code": "0074570036004",
+      "retrieved_at": "2026-08-20T18:54:31Z",
+      "source_url": "https://world.openfoodfacts.org/api/v3/product/0074570036004?fields=code,product_name,brands,quantity,categories,countries",
+      "http_status": 200,
+      "response": {
+        "code": "0074570036004",
+        "errors": [],
+        "product": {
+          "brands": "H\u00e4agen-Dazs",
+          "categories": "Desserts Frozen foods",
+          "code": "0074570036004",
+          "countries": "United States",
+          "product_name": "Vanilla Milk Chocolate Almond Bar",
+          "quantity": "3 fl. oz. (88 mL)"
+        },
+        "result": {
+          "id": "product_found",
+          "lc_name": "Product found",
+          "name": "Product found"
+        },
+        "status": "success",
+        "warnings": []
+      }
+    },
+    {
+      "requested_code": "3700214614266",
+      "retrieved_at": "2026-08-20T18:54:36Z",
+      "source_url": "https://world.openfoodfacts.org/api/v3/product/3700214614266?fields=code,product_name,brands,quantity,categories,countries",
+      "http_status": 200,
+      "response": {
+        "code": "3700214614266",
+        "errors": [],
+        "product": {
+          "brands": "alter Eco",
+          "categories": "Dark chocolate bar with more than 70% cocoa",
+          "code": "3700214614266",
+          "countries": "France",
+          "product_name": "Chocolat 90% P\u00e9rou",
+          "quantity": "100 g"
+        },
+        "result": {
+          "id": "product_found",
+          "lc_name": "Product found",
+          "name": "Product found"
+        },
+        "status": "success",
+        "warnings": []
+      }
+    },
+    {
+      "requested_code": "3274080005003",
+      "retrieved_at": "2026-08-20T18:54:41Z",
+      "source_url": "https://world.openfoodfacts.org/api/v3/product/3274080005003?fields=code,product_name,brands,quantity,categories,countries",
+      "http_status": 200,
+      "response": {
+        "code": "3274080005003",
+        "errors": [],
+        "product": {
+          "brands": "Cristaline",
+          "categories": "Spring waters, Unsweetened beverages",
+          "code": "3274080005003",
+          "countries": "Belgium, C\u00f4te d'Ivoire, France, Germany, Guadeloupe, Italy, Luxembourg, Mali, Martinique, Netherlands, New Caledonia, Switzerland, United Kingdom, United States",
+          "product_name": "isabelle",
+          "quantity": "1500 ml"
+        },
+        "result": {
+          "id": "product_found",
+          "lc_name": "Product found",
+          "name": "Product found"
+        },
+        "status": "success",
+        "warnings": []
+      }
+    },
+    {
+      "requested_code": "9999991234567",
+      "retrieved_at": "2026-08-20T18:54:46Z",
+      "source_url": "https://world.openfoodfacts.org/api/v3/product/9999991234567?fields=code,product_name,brands,quantity,categories,countries",
+      "http_status": 404,
+      "response": {
+        "code": "9999991234567",
+        "errors": [
+          {
+            "field": {
+              "id": "code",
+              "value": "9999991234567"
+            },
+            "impact": {
+              "id": "failure",
+              "lc_name": "Failure",
+              "name": "Failure"
+            },
+            "message": {
+              "id": "product_not_found",
+              "lc_name": "",
+              "name": ""
+            }
+          }
+        ],
+        "result": {
+          "id": "product_not_found",
+          "lc_name": "Product not found",
+          "name": "Product not found"
+        },
+        "status": "failure",
+        "warnings": []
+      }
+    }
+  ]
+}

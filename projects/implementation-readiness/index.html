@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Implementation Readiness Lab — synthetic portfolio demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to workspace</a>
+  <div class="disclosure" id="page-top" role="note">
+    <strong>INDEPENDENT PORTFOLIO DEMO</strong>
+    <span aria-hidden="true">•</span>
+    <strong>SYNTHETIC DATA</strong>
+    <span aria-hidden="true">•</span>
+    <strong>NO AFFILIATION</strong>
+    <span aria-hidden="true">•</span>
+    <strong>NO PRODUCTION ACTION</strong>
+  </div>
+
+  <div class="app-shell">
+    <aside class="rail" aria-label="Demo navigation">
+      <div class="brand-block">
+        <span class="brand-mark" aria-hidden="true">IR</span>
+        <div>
+          <p class="brand-name">Readiness Lab</p>
+          <p class="brand-subtitle">Implementation workflow</p>
+        </div>
+      </div>
+
+      <nav class="rail-nav" aria-label="Workflow screens">
+        <button class="nav-button" type="button" data-view="overview">
+          <span class="nav-key" aria-hidden="true">01</span><span>Readiness board</span>
+        </button>
+        <button class="nav-button" type="button" data-view="gaps">
+          <span class="nav-key" aria-hidden="true">02</span><span>Gap triage</span>
+        </button>
+        <button class="nav-button" type="button" data-view="evidence">
+          <span class="nav-key" aria-hidden="true">03</span><span>Evidence map</span>
+        </button>
+        <button class="nav-button" type="button" data-view="actions">
+          <span class="nav-key" aria-hidden="true">04</span><span>Owner actions</span>
+        </button>
+        <button class="nav-button" type="button" data-view="acceptance">
+          <span class="nav-key" aria-hidden="true">05</span><span>Acceptance desk</span>
+        </button>
+        <button class="nav-button" type="button" data-view="audit">
+          <span class="nav-key" aria-hidden="true">06</span><span>Audit trail</span>
+        </button>
+      </nav>
+
+      <div class="rail-boundary">
+        <p class="boundary-label">Boundary</p>
+        <p>This lab organizes fictional implementation records. It does not determine or certify compliance.</p>
+      </div>
+    </aside>
+
+    <div class="app-stage">
+      <header class="topbar">
+        <div>
+          <p class="workspace-kicker">Fictional customer workspace</p>
+          <p class="workspace-name">Aster Vale Robotics <span>/</span> Orion baseline</p>
+        </div>
+        <div class="topbar-meta" aria-label="Demo status">
+          <span class="offline-pill"><span class="status-dot" aria-hidden="true"></span>Offline</span>
+          <button class="profile-button" type="button" aria-label="Synthetic implementation reviewer profile">RV</button>
+        </div>
+      </header>
+
+      <main id="workspace" tabindex="-1">
+        <div id="view-root" aria-live="polite"></div>
+      </main>
+
+      <footer class="app-footer">
+        <span>Framework and records are invented</span>
+        <span>In-memory state • no server • no account</span>
+        <span id="event-count">0 logged events</span>
+      </footer>
+    </div>
+  </div>
+
+  <noscript>
+    <p class="noscript">This interactive demo needs JavaScript. It makes no network requests.</p>
+  </noscript>
+  <script src="app.js"></script>
+</body>
+</html>

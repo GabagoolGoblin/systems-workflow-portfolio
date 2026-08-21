@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interface Contract Harness — synthetic demo</title>
+  <style>
+    :root { color-scheme: dark; --bg:#07111f; --panel:#102137; --ink:#f3f8ff; --muted:#a9bbd1; --cyan:#5ee3d5; --rose:#ff7896; --line:#29405c; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at 12% 0,#173c65,transparent 34%),var(--bg); color:var(--ink); font:16px/1.55 system-ui,sans-serif; }
+    main { width:min(1100px,92vw); margin:auto; padding:70px 0; }
+    .boundary { margin:0 0 28px; padding:10px 14px; border:1px solid var(--line); border-radius:12px; color:var(--cyan); font:800 .72rem/1.45 ui-monospace,monospace; letter-spacing:.06em; text-transform:uppercase; }
+    .eyebrow { color:var(--cyan); letter-spacing:.14em; text-transform:uppercase; font-weight:800; }
+    h1 { font-size:clamp(2.6rem,7vw,6.5rem); line-height:.93; margin:.18em 0; max-width:960px; }
+    .lede { color:var(--muted); font-size:1.16rem; max-width:790px; }
+    .flow { display:grid; grid-template-columns:repeat(4,1fr); margin:44px 0; gap:10px; counter-reset:step; }
+    .flow div { background:rgba(16,33,55,.88); border:1px solid var(--line); border-radius:18px; padding:20px; }
+    .flow div::before { counter-increment:step; content:"0" counter(step); display:block; color:var(--cyan); font:800 .8rem ui-monospace,monospace; }
+    .flow strong { display:block; margin:.55rem 0 .2rem; }
+    .flow span,.note { color:var(--muted); }
+    .comparison { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    article { border:1px solid var(--line); border-radius:20px; padding:24px; background:rgba(16,33,55,.88); }
+    .tag { display:inline-flex; padding:5px 10px; border-radius:999px; background:var(--cyan); color:#06131c; font-weight:850; font-size:.75rem; }
+    .bad .tag { background:var(--rose); }
+    .specimen { border:1px solid var(--line); background:#091625; border-radius:14px; padding:18px; margin:20px 0; }
+    label { display:block; font-weight:700; } input { width:100%; padding:10px; margin:7px 0 12px; background:#0d1c2f; color:var(--ink); border:1px solid #55708f; border-radius:8px; }
+    button,.link { display:inline-block; border:0; border-radius:9px; padding:10px 14px; background:var(--cyan); color:#06131c; font-weight:800; text-decoration:none; }
+    code { color:var(--cyan); } pre { overflow:auto; padding:20px; border:1px solid var(--line); border-radius:16px; background:#050d17; }
+    .cta { margin-top:30px; } .cta a { color:var(--cyan); }
+    @media(max-width:760px) { .flow { grid-template-columns:1fr 1fr; } .comparison { grid-template-columns:1fr; } }
+    @media(max-width:460px) { .flow { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body><main>
+  <p class="boundary" role="note" data-boundary>INDEPENDENT PORTFOLIO DEMO · SYNTHETIC DATA · NO AFFILIATION · NO PRODUCTION ACTION</p>
+  <p class="eyebrow">Clean-room QA portfolio demo</p>
+  <h1>Catch interface contract drift before release.</h1>
+  <p class="lede">Invented HTML fixtures, exact expected fingerprints, deterministic output, and a SHA-256 evidence chain—all using Python's standard library.</p>
+  <section class="flow" aria-label="Harness workflow">
+    <div><strong>Parse</strong><span>Reject malformed or unfamiliar inputs.</span></div>
+    <div><strong>Inspect</strong><span>Run nine explicitly bounded contracts.</span></div>
+    <div><strong>Compare</strong><span>Match actual and expected fingerprints.</span></div>
+    <div><strong>Bind</strong><span>Seal fixtures, reports, and audit evidence.</span></div>
+  </section>
+  <section class="comparison" aria-label="Synthetic component comparison">
+    <article><span class="tag">KNOWN GOOD</span><h2>Release form</h2>
+      <div class="specimen"><label for="demo-release">Release name</label><input id="demo-release" value="2026.08" readonly><button type="button">Run checks</button></div>
+      <p class="note">The label association, visible button name, and explicit button type match the fixture contract.</p>
+    </article>
+    <article class="bad"><span class="tag">EXPECTED VIOLATIONS</span><h2>Regressed form</h2>
+      <div class="specimen"><input value="Mystery field" aria-label="Visual simulation only" readonly><span class="link">[blank button]</span></div>
+      <p class="note">The source fixture intentionally omits a control name and button type. Expected findings keep this demo suite green while proving detection.</p>
+    </article>
+  </section>
+  <h2>Run it</h2><pre><code>python3 -m wcag_harness run --manifest fixtures/manifest.json --out build
+python3 -m wcag_harness verify --audit build/audit.json --seal build/audit.sha256
+python3 -m wcag_harness demo --serve --open</code></pre>
+  <p class="cta">After a run, open <a href="../build/report.html">the generated evidence report</a>.</p>
+  <p class="note"><strong>Scope:</strong> This demonstrates deterministic fixture contracts. It is not full WCAG conformance, a legal certification, browser testing, or assistive-technology certification.</p>
+</main></body></html>

@@ -1,0 +1,123 @@
+{
+  "allowed_external_link_domains": [
+    "openfoodfacts.github.io",
+    "opendatacommons.org",
+    "world.openfoodfacts.org"
+  ],
+  "content_scan_exclusions": [
+    "projects/ai-evaluation-release-gates/scripts/security_privacy_scan.py",
+    "projects/api-integration-contracts/scripts/security_privacy_scan.py",
+    "projects/claim-evidence-linter/tools/audit_project.py",
+    "projects/customer-launch-readiness/scripts/security_privacy_scan.py",
+    "projects/implementation-readiness/scripts/security_privacy_scan.py",
+    "projects/support-triage-workbench/tools/publication_scan.py",
+    "release-policy.json",
+    "tools/release/publication_scan.py"
+  ],
+  "decision_project_ids": [
+    "ai-release-gate",
+    "api-contracts",
+    "claim-linter",
+    "hitl-controls",
+    "launch-lab",
+    "lifecycle",
+    "migration-validator",
+    "price-controls",
+    "product-validation",
+    "readiness",
+    "support-workbench",
+    "wcag-harness"
+  ],
+  "forbidden_content_regex": {
+    "AWS access key": "AKIA[0-9A-Z]{16}",
+    "GitHub token": "gh[pousr]_[A-Za-z0-9]{20,}",
+    "absolute home path": "/home/[A-Za-z0-9._-]+/",
+    "email address": "(?i)\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b",
+    "private client or model branding": "(?i)(?<![A-Z0-9_])(?:com(?:pass)(?:[ -]+(?:a(?:i)|gr(?:oup)))?|em(?:c)|secure(?:frame)|tex(?:ture)|pro(?:ton)|lan[-_]llm|work(?:station)|co(?:dex)|open(?:ai)|anthro(?:pic)|clau(?:de)|op(?:us)|fa(?:ble)|gr(?:ok)|qw(?:en)|lla(?:ma)|gem(?:ini)|mis(?:tral))(?![A-Z0-9_])",
+    "private identity or contact": "(?i)(?:sw(?:\\x72\\x61\\x74\\x68)|pro(?:ton)(?:mail))",
+    "private key": "-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
+    "private review-lane marker": "(?i)(?<![A-Z0-9_])lan[_-]advisory(?![A-Z0-9_])",
+    "retired colliding demo name": "(?i)signal(?:room)"
+  },
+  "forbidden_file_names": [
+    ".coverage",
+    ".DS_Store",
+    ".env",
+    "last_run_log.txt"
+  ],
+  "forbidden_path_parts": [
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pycache__",
+    "drafts",
+    "node_modules",
+    "playwright-report",
+    "reviews",
+    "test-results"
+  ],
+  "link_scan_excluded_prefixes": [
+    "projects/interface-contract-harness/fixtures/"
+  ],
+  "manifest_excludes": [
+    ".git",
+    "RELEASE_MANIFEST.sha256"
+  ],
+  "max_regular_file_bytes": 10485760,
+  "mode": "all12",
+  "owner_gate_paths": [
+    "LICENSE",
+    "release-decisions.json"
+  ],
+  "required_paths": [
+    ".github/CODEOWNERS",
+    ".github/workflows/verify.yml",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "NOTICE.md",
+    "README.md",
+    "RELEASE_MANIFEST.sha256",
+    "SECURITY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "assets/project-previews/customer-launch-readiness.png",
+    "assets/project-previews/implementation-readiness.png",
+    "assets/project-previews/public-product-validation.png",
+    "data/projects.json",
+    "index.html",
+    "project-data.js",
+    "projects/public-product-validation/DATA_LICENSE.md",
+    "projects/public-product-validation/data/DATA_REDACTION_RECEIPT.json",
+    "release-decisions.json",
+    "release-inventory.json",
+    "third_party/licenses/DbCL-1.0.txt",
+    "third_party/licenses/ODbL-1.0.txt",
+    "tools/release/verify_all.py"
+  ],
+  "required_project_files": [
+    "README.md",
+    "CLAIMS_AND_BOUNDARIES.md",
+    "PROVENANCE.md"
+  ],
+  "runtime_extensions": [
+    ".css",
+    ".html"
+  ],
+  "schema": "systems-workflow-portfolio-release-policy/v1",
+  "selected_projects": [
+    "ai-evaluation-release-gates",
+    "api-integration-contracts",
+    "bulk-price-control",
+    "catalog-lifecycle",
+    "catalog-migration-validator",
+    "claim-evidence-linter",
+    "customer-launch-readiness",
+    "human-in-the-loop-control",
+    "implementation-readiness",
+    "interface-contract-harness",
+    "public-product-validation",
+    "support-triage-workbench"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "assertions": {
+    "all_other_fields_canonical_sha256": "56cf5198d52c932f69f886758e97ab6d8c7fd2d5110fa594b119d0d549627bd2",
+    "only_json_pointer_removed": true,
+    "release_is_not_claimed_as_exact_raw_capture": true,
+    "retained_records_canonical_sha256": "445eaf1a0dcfe4e10a14004efc1925a6af3d71c103781c78eebc58561a3b51d9",
+    "retained_response_records_semantically_identical": true
+  },
+  "operations": [
+    {
+      "json_pointer": "/user_agent",
+      "op": "remove",
+      "reason": "locally added request-contact metadata is not part of the API response and is omitted from public distribution"
+    }
+  ],
+  "release_snapshot_bytes": 7158,
+  "release_snapshot_sha256": "2bd27bdbb6b89e323ec1083dd01f0962f6c73a8df1da0a172a2c7e3bb0f1c9fb",
+  "schema": "public-data-redaction-receipt/v1",
+  "source_capture_bytes": 7264,
+  "source_capture_sha256": "1958632ef813a3ee0e6a6449f5ca74256b53dc2bfce12e5aecae3ec4f984ec2c"
+}

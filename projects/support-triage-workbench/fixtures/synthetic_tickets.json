@@ -1,0 +1,130 @@
+{
+  "schema_version": "synthetic-support-batch-v1",
+  "synthetic_only": true,
+  "tickets": [
+    {
+      "schema_version": "synthetic-support-ticket-v1",
+      "ticket_id": "LAB-TKT-1001",
+      "created_at": "2026-01-15T09:10:00Z",
+      "requester_role": "site_operator",
+      "site_codes": ["LAB-SITE-001"],
+      "subject": "Menu price preview differs from request",
+      "description": "The synthetic preview shows an invented value that differs from the requested lab value.",
+      "impact": "single_site",
+      "affected_workflow": "menu_configuration",
+      "signals": ["data_mismatch", "error_visible"],
+      "observations": [
+        {
+          "kind": "error_text",
+          "value": "Preview value 4.19 does not match requested value 3.99."
+        },
+        {
+          "kind": "timestamp",
+          "value": "Observed in the lab at 09:08 UTC."
+        }
+      ],
+      "attempted_steps": [
+        "Reloaded the synthetic preview.",
+        "Compared the invented request row with the displayed lab row."
+      ]
+    },
+    {
+      "schema_version": "synthetic-support-ticket-v1",
+      "ticket_id": "LAB-TKT-1002",
+      "created_at": "2026-01-15T09:20:00Z",
+      "requester_role": "regional_support",
+      "site_codes": ["LAB-SITE-002", "LAB-SITE-003"],
+      "subject": "Synthetic order flow is blocked at two lab sites",
+      "description": "Invented test orders remain in a queued state in both offline site simulators.",
+      "impact": "multiple_sites",
+      "affected_workflow": "order_flow",
+      "signals": ["workflow_blocked", "error_visible"],
+      "observations": [
+        {
+          "kind": "error_text",
+          "value": "Lab simulator reports that the synthetic handoff did not complete."
+        },
+        {
+          "kind": "scope_note",
+          "value": "The same invented behavior was observed at both listed lab sites."
+        }
+      ],
+      "attempted_steps": [
+        "Reopened each offline simulator.",
+        "Repeated one invented order at each lab site."
+      ]
+    },
+    {
+      "schema_version": "synthetic-support-ticket-v1",
+      "ticket_id": "LAB-TKT-1003",
+      "created_at": "2026-01-15T09:30:00Z",
+      "requester_role": "implementation_specialist",
+      "site_codes": ["LAB-SITE-004"],
+      "subject": "Reporting result needs review",
+      "description": "The request states that an invented report may be incomplete but provides no direct evidence.",
+      "impact": "unknown",
+      "affected_workflow": "reporting",
+      "signals": [],
+      "observations": [],
+      "attempted_steps": []
+    },
+    {
+      "schema_version": "synthetic-support-ticket-v1",
+      "ticket_id": "LAB-TKT-1004",
+      "created_at": "2026-01-15T09:40:00Z",
+      "requester_role": "site_operator",
+      "site_codes": ["LAB-SITE-001"],
+      "subject": "Menu price preview differs from request!",
+      "description": "A second synthetic intake describes the same invented preview mismatch for duplicate testing.",
+      "impact": "single_site",
+      "affected_workflow": "menu_configuration",
+      "signals": ["data_mismatch", "error_visible"],
+      "observations": [
+        {
+          "kind": "error_text",
+          "value": "Preview value 4.19 does not match requested value 3.99."
+        }
+      ],
+      "attempted_steps": ["Reloaded the synthetic preview."]
+    },
+    {
+      "schema_version": "synthetic-support-ticket-v1",
+      "ticket_id": "LAB-TKT-1005",
+      "created_at": "2026-01-15T09:50:00Z",
+      "requester_role": "site_operator",
+      "site_codes": ["LAB-SITE-005"],
+      "subject": "Menu configuration request reports an access signal",
+      "description": "The invented intake labels the workflow as configuration while its observed signal indicates access denial.",
+      "impact": "single_user",
+      "affected_workflow": "menu_configuration",
+      "signals": ["access_denied", "error_visible"],
+      "observations": [
+        {
+          "kind": "error_text",
+          "value": "The offline lab screen displays an invented access-denied message."
+        }
+      ],
+      "attempted_steps": ["Confirmed the synthetic role selected in the lab."]
+    },
+    {
+      "schema_version": "synthetic-support-ticket-v1",
+      "ticket_id": "LAB-TKT-1006",
+      "created_at": "2026-01-15T10:00:00Z",
+      "requester_role": "regional_support",
+      "site_codes": ["LAB-SITE-006"],
+      "subject": "Device simulation includes a safety-review signal",
+      "description": "The invented scenario intentionally includes a safety flag so automatic approval must remain blocked.",
+      "impact": "single_site",
+      "affected_workflow": "device_sync",
+      "signals": ["safety_concern", "workflow_blocked"],
+      "observations": [
+        {
+          "kind": "observed_behavior",
+          "value": "The synthetic device state remains unconfirmed after the lab action."
+        }
+      ],
+      "attempted_steps": ["Stopped the synthetic workflow and requested human review."]
+    }
+  ]
+}
+
