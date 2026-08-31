@@ -6,6 +6,8 @@ A clean-room Python contract engine and six-screen browser workspace for inspect
 
 ![Synthetic webhook quarantine and review workspace](../../assets/project-previews/api-integration-contracts.png)
 
+[Watch the showcase and how-to videos](../../docs/VIDEO_GUIDES.md#api-integration-contracts).
+
 ## Run in 60 seconds
 
 Open `index.html` in a current browser. For the deterministic engine (Python 3.11 or 3.12, standard library only):

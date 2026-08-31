@@ -24,7 +24,7 @@
   "clean_history_clone_receipt_sha256": null,
   "codeowners_approved": true,
   "company_context_approved": true,
-  "decision_status": "APPROVED_FOR_CANDIDATE_BUILD",
+  "decision_status": "PUBLISHED_BASELINE_WITH_LOCAL_CHANGES_HELD",
   "hero_assets": {
     "assets/project-previews/ai-evaluation-release-gates.png": {
       "approved": true,
@@ -145,6 +145,13 @@
   },
   "public_git_identity_approved": true,
   "publication_approved": false,
+  "published_baseline": {
+    "branch": "main",
+    "commit": "5d2eac2aa025a8ef286d5161c5c9d18256ba8a4f",
+    "published_on": "2026-08-21",
+    "repository_visibility": "public",
+    "status": "OBSERVED_EXISTING_PUBLICATION"
+  },
   "push_approved": false,
   "release_approved": false,
   "remote_creation_approved": false,
@@ -154,5 +161,5 @@
   "repository_topology_approved": true,
   "repository_visibility": "public",
   "restrictive_projects_resolved": true,
-  "schema": "portfolio-release-decisions/v2"
+  "schema": "portfolio-release-decisions/v3"
 }

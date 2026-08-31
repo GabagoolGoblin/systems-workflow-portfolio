@@ -23,8 +23,11 @@ TEXT_SUFFIXES = {
     ".json",
     ".md",
     ".py",
+    ".srt",
+    ".svg",
     ".toml",
     ".txt",
+    ".vtt",
     ".yaml",
     ".yml",
 }
@@ -53,6 +56,7 @@ DECISION_KEYS = {
     "product_capture_contact_metadata_approved", "restrictive_projects_resolved",
     "hitl_asset_provenance_approved", "remote_creation_approved", "push_approved",
     "release_approved", "pages_approved", "publication_approved",
+    "published_baseline",
 }
 IDENTITY_KEYS = {"author_name", "author_email", "github_handle", "approved"}
 REPORTING_CHANNEL_KEYS = {"security", "conduct"}
@@ -62,6 +66,46 @@ CI_REVIEW_KEYS = {
     "workflow_sha256", "requirements_ci_lock_sha256", "action_pins", "approved",
 }
 ALL12_ARTIFACT_REVIEW_KEYS = {"artifacts", "approved"}
+PUBLISHED_BASELINE_KEYS = {
+    "branch", "commit", "published_on", "repository_visibility", "status",
+}
+PUBLISHED_BASELINE_STATUS = "OBSERVED_EXISTING_PUBLICATION"
+EXPECTED_PUBLISHED_BASELINE = {
+    "status": PUBLISHED_BASELINE_STATUS,
+    "branch": "main",
+    "commit": "5d2eac2aa025a8ef286d5161c5c9d18256ba8a4f",
+    "published_on": "2026-08-21",
+    "repository_visibility": "public",
+}
+PROTECTIVE_PREFIX = re.compile(
+    r"(?i)(?:\brefuses?\s+to\s+|"
+    r"\b(?:will not|must not|does not|do not|cannot|can't|won't)\s+|"
+    r"\b(?:rejects?|blocks?|prevents?|prohibits?|forbids?|disallows?|bans?)\s+"
+    r"(?:an?\s+|the\s+)?|\bno\s+(?:support for\s+|ability to\s+)"
+    r"(?:an?\s+|the\s+)?)$"
+)
+PROTECTIVE_SUFFIX = re.compile(
+    r"(?i)^[^.\n]{0,100}\b(?:is|are|will be|must be)\s+"
+    r"(?:rejected|blocked|prevented|prohibited|forbidden|disallowed|not allowed)\b"
+)
+PROTECTIVE_WITHIN = re.compile(
+    r"(?i)\b(?:refuses?\s+to\s+|(?:will not|must not|does not|do not|cannot|can't|won't)\s+)"
+    r"(?:create|generate|write|compose|edit)\b"
+)
+COORDINATING_CONTRAST = re.compile(
+    r"(?i)\b(?:but|however|nevertheless|nonetheless|yet)\b"
+)
+SUBORDINATING_CONTRAST = re.compile(r"(?i)\b(?:although|while|whereas)\b")
+NEW_PREDICATE_CONJUNCTION = re.compile(
+    r"(?i)\band\s+(?=(?:(?:it|this|the)\b(?:\s+[A-Za-z-]+){0,3}\s+)?"
+    r"[A-Za-z-]+s\b)"
+)
+SUBTITLE_TIMING = re.compile(
+    r"^\s*(?:\d{2}:)?\d{2}:\d{2}[,.]\d{3}\s+-->\s+"
+    r"(?:\d{2}:)?\d{2}:\d{2}[,.]\d{3}(?:\s+.*)?$"
+)
+WEBVTT_HEADER = re.compile(r"(?i)^WEBVTT(?:[ \t].*)?$")
+WEBVTT_NOTE_HEADER = re.compile(r"(?i)^NOTE(?:[ \t].*)?$")
 ALL12_ARTIFACT_PATHS = {
     "projects/public-product-validation/DATA_LICENSE.md",
     "projects/public-product-validation/data/DATA_REDACTION_RECEIPT.json",
@@ -185,6 +229,116 @@ def safe_relative(value: object) -> bool:
         and all(part not in {"", ".", ".."} for part in path.parts)
         and path.as_posix() == value
     )
+
+
+def professional_match_is_protective(value: str, match: re.Match[str]) -> bool:
+    line_start = value.rfind("\n", 0, match.start()) + 1
+    line_end = value.find("\n", match.end())
+    if line_end < 0:
+        line_end = len(value)
+    before = value[line_start:match.start()]
+    after = value[match.end():line_end]
+    return bool(
+        PROTECTIVE_PREFIX.search(before)
+        or PROTECTIVE_SUFFIX.search(after)
+        or PROTECTIVE_WITHIN.search(match.group(0))
+    )
+
+
+def professional_blocks(value: str) -> list[str]:
+    lines = value.splitlines()
+    blocks: list[str] = []
+    current: list[str] = []
+
+    def flush() -> None:
+        if current:
+            blocks.append(" ".join(line.strip() for line in current if line.strip()))
+            current.clear()
+
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        next_line = lines[index + 1].strip() if index + 1 < len(lines) else ""
+        if (
+            not stripped
+            or stripped.casefold() == "webvtt"
+            or SUBTITLE_TIMING.fullmatch(stripped)
+            or (stripped.isdecimal() and SUBTITLE_TIMING.fullmatch(next_line))
+        ):
+            flush()
+        else:
+            current.append(line)
+    flush()
+    return [block for block in blocks if block]
+
+
+def caption_cues(value: str) -> list[str]:
+    cues: list[str] = []
+    for block in re.split(r"\n[ \t]*\n", value.replace("\r\n", "\n")):
+        lines = [line.strip() for line in block.splitlines() if line.strip()]
+        if not lines:
+            continue
+        first = lines[0]
+        if (
+            WEBVTT_HEADER.fullmatch(first)
+            or WEBVTT_NOTE_HEADER.fullmatch(first)
+            or first.casefold() in {"style", "region"}
+        ):
+            continue
+        timing_index = next(
+            (
+                index for index, line in enumerate(lines)
+                if SUBTITLE_TIMING.fullmatch(line)
+            ),
+            None,
+        )
+        if timing_index is None:
+            continue
+        payload = " ".join(lines[timing_index + 1:]).strip()
+        if payload:
+            cues.append(payload)
+    return cues
+
+
+def professional_clauses(value: str) -> list[str]:
+    clauses: list[str] = []
+    for block in professional_blocks(value):
+        pending = [segment for segment in block.split(";") if segment.strip()]
+        for pattern in (
+            COORDINATING_CONTRAST,
+            SUBORDINATING_CONTRAST,
+            NEW_PREDICATE_CONJUNCTION,
+        ):
+            split: list[str] = []
+            for segment in pending:
+                match = pattern.search(segment)
+                while match:
+                    if pattern is SUBORDINATING_CONTRAST and not segment[:match.start()].strip():
+                        comma = segment.find(",", match.end())
+                        if comma < 0:
+                            break
+                        split.append(segment[:comma])
+                        segment = segment[comma + 1:]
+                    else:
+                        split.append(segment[:match.start()])
+                        segment = segment[match.end():]
+                    match = pattern.search(segment)
+                split.append(segment)
+            pending = split
+        clauses.extend(segment.strip(" ,;:\t") for segment in pending if segment.strip(" ,;:\t"))
+    return clauses
+
+
+def has_unprotected_professional_match(value: str, pattern: re.Pattern[str]) -> bool:
+    return any(
+        not professional_match_is_protective(clause, match)
+        for clause in professional_clauses(value)
+        for match in pattern.finditer(clause)
+    )
+
+
+def has_unprotected_caption_stream_match(value: str, pattern: re.Pattern[str]) -> bool:
+    stream = " ".join(caption_cues(value))
+    return bool(stream) and has_unprotected_professional_match(stream, pattern)
 
 
 def expected_project_ids(mode: object) -> set[str]:
@@ -460,10 +614,35 @@ def validate_decisions(
         return ["release decisions root must be an object"]
     if set(data) != DECISION_KEYS:
         errors.append("release decisions contain missing or unknown top-level keys")
-    if data.get("schema") != "portfolio-release-decisions/v2":
+    if data.get("schema") != "portfolio-release-decisions/v3":
         errors.append("release decisions use the wrong schema")
-    if data.get("decision_status") != "APPROVED_FOR_CANDIDATE_BUILD":
-        errors.append("decision_status is not APPROVED_FOR_CANDIDATE_BUILD")
+    if data.get("decision_status") != "PUBLISHED_BASELINE_WITH_LOCAL_CHANGES_HELD":
+        errors.append(
+            "decision_status is not PUBLISHED_BASELINE_WITH_LOCAL_CHANGES_HELD"
+        )
+    baseline = data.get("published_baseline")
+    if not isinstance(baseline, dict):
+        errors.append("published_baseline is missing")
+    else:
+        if set(baseline) != PUBLISHED_BASELINE_KEYS:
+            errors.append("published_baseline contains missing or unknown keys")
+        if baseline.get("status") != PUBLISHED_BASELINE_STATUS:
+            errors.append("published_baseline status is invalid")
+        if baseline.get("branch") != "main":
+            errors.append("published_baseline branch must be main")
+        commit = baseline.get("commit")
+        if not isinstance(commit, str) or not re.fullmatch(r"[0-9a-f]{40}", commit):
+            errors.append("published_baseline commit is not a full lowercase Git hash")
+        published_on = baseline.get("published_on")
+        if (
+            not isinstance(published_on, str)
+            or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", published_on)
+        ):
+            errors.append("published_baseline published_on is not an ISO date")
+        if baseline.get("repository_visibility") != "public":
+            errors.append("published_baseline visibility must be public")
+        if baseline != EXPECTED_PUBLISHED_BASELINE:
+            errors.append("published_baseline does not match the observed public state")
     visibility = data.get("repository_visibility")
     license_spdx = data.get("license_spdx")
     if visibility != "public":
@@ -517,7 +696,7 @@ def validate_decisions(
         "pages_approved", "publication_approved",
     ):
         if data.get(key) is not False:
-            errors.append(f"candidate build must not authorize: {key}")
+            errors.append(f"current local changes must not authorize: {key}")
     for key in (
         "company_context_approved", "open_food_facts_distribution_approved",
         "product_capture_contact_metadata_approved", "restrictive_projects_resolved",
@@ -706,7 +885,17 @@ def scan_release(
         for label, pattern in patterns.items():
             if label in BUILTIN_FORBIDDEN or label == "email address":
                 continue
-            if pattern.search(value):
+            if label.startswith("professional "):
+                if path.suffix.lower() in {".srt", ".vtt"}:
+                    cues = caption_cues(value)
+                    cue_value = "\n\n".join(cues) if cues else value
+                    matched = has_unprotected_professional_match(cue_value, pattern)
+                    matched = matched or has_unprotected_caption_stream_match(value, pattern)
+                else:
+                    matched = has_unprotected_professional_match(value, pattern)
+            else:
+                matched = bool(pattern.search(value))
+            if matched:
                 errors.append(f"{label} marker in: {raw}")
         if path.suffix.lower() in runtime_suffixes and re.search(r"https?://", value, re.IGNORECASE):
             errors.append(f"automatic-network-capable URL in runtime text: {raw}")
@@ -786,8 +975,9 @@ def build_self_test_fixture(root: Path, policy: dict[str, object]) -> dict[str, 
     lock = root / "requirements-ci.lock"
     all12 = mode == "all12"
     decisions: dict[str, object] = {
-        "schema": "portfolio-release-decisions/v2",
-        "decision_status": "APPROVED_FOR_CANDIDATE_BUILD",
+        "schema": "portfolio-release-decisions/v3",
+        "decision_status": "PUBLISHED_BASELINE_WITH_LOCAL_CHANGES_HELD",
+        "published_baseline": copy.deepcopy(EXPECTED_PUBLISHED_BASELINE),
         "repository_visibility": "public",
         "repository_topology": "curated_monorepo",
         "repository_name": "systems-workflow-portfolio",
@@ -877,8 +1067,13 @@ def run_self_tests(policy_path: Path, source_root: Path) -> int:
             target[path[-1]] = value  # type: ignore[index]
             cases.append((label, candidate))
 
-        change("wrong schema", ("schema",), "portfolio-release-decisions/v1")
+        change("wrong schema", ("schema",), "portfolio-release-decisions/v2")
         change("wrong status", ("decision_status",), "OWNER_APPROVED")
+        change("published commit short", ("published_baseline", "commit"), "1" * 39)
+        change("published commit drift", ("published_baseline", "commit"), "2" * 40)
+        change("published branch wrong", ("published_baseline", "branch"), "develop")
+        change("published date wrong", ("published_baseline", "published_on"), "01-01-2099")
+        change("published date drift", ("published_baseline", "published_on"), "2026-08-22")
         change("approval false", ("license_approved",), False)
         change("wrong visibility", ("repository_visibility",), "private")
         change("permissive license A", ("license_spdx",), "M" + "IT")
@@ -927,7 +1122,7 @@ def run_self_tests(policy_path: Path, source_root: Path) -> int:
         write_json(decision_path, baseline)
 
         duplicate = decision_path.read_text(encoding="utf-8").replace(
-            "{\n", '{\n  "schema": "portfolio-release-decisions/v2",\n', 1
+            "{\n", '{\n  "schema": "portfolio-release-decisions/v3",\n', 1
         )
         decision_path.write_text(duplicate, encoding="utf-8")
         if not any(
@@ -978,6 +1173,315 @@ def run_self_tests(policy_path: Path, source_root: Path) -> int:
             raise ValueError("non-owner email was accepted")
         negative_count += 1
         note.unlink()
+
+        professional_controls = (
+            ("professional sexual-content generation", "Erotica generator.\n"),
+            ("professional sexual-content generation", "Nude image generator.\n"),
+            ("professional sexual-content generation", "Adult video tool.\n"),
+            ("professional sexual-content generation", "NSFW media editor.\n"),
+            ("professional vulgar-lyric generation", "Dirty song lyrics.\n"),
+            ("professional vulgar-lyric generation", "Obscene song generator.\n"),
+            ("professional hostile example language", "Dumb" + "ass.\n"),
+            ("professional hostile example language", "You are a jerk.\n"),
+            ("professional hostile example language", "Dick" + "head.\n"),
+            ("professional hostile example language", "Shut up, customer.\n"),
+            ("professional hostile example language", "Shut up,\ncustomer.\n"),
+            ("professional hostile example language", "Shut up, you jerk.\n"),
+            ("professional hostile example language", "Client, shut up.\n"),
+            (
+                "professional sexual-content generation",
+                "The generator creates adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content but includes a "
+                "nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content; includes a nude "
+                "image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content; nevertheless, "
+                "includes a nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content; nonetheless, "
+                "includes a nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content and includes a nude "
+                "image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to\ncreate adult content but\nincludes a "
+                "nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content.\n"
+                "It includes a nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content; however, it includes "
+                "a nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "Although the generator refuses to create adult content, it includes "
+                "a nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "While the generator refuses to create adult content, it includes a "
+                "nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "Whereas the generator refuses to create adult content, it includes a "
+                "nude image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator refuses to create adult content yet includes a nude "
+                "image generator.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator includes a nude image generator but refuses to create "
+                "adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator includes a nude image generator; however, it refuses "
+                "to create adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator includes a nude image generator although it refuses "
+                "to create adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator includes a nude image generator while it refuses to "
+                "create adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator includes a nude image generator whereas it refuses to "
+                "create adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "The generator includes a nude image generator yet refuses to create "
+                "adult content.\n",
+            ),
+            (
+                "professional sexual-content generation",
+                "Build a generator that writes sexually explicit scenes.\n",
+            ),
+            (
+                "professional vulgar-lyric generation",
+                "Add a generator for profane song lyrics.\n",
+            ),
+            ("professional vulgar language", "This example is f" + "ucking useless.\n"),
+        )
+        professional = root / "professional-content-control.txt"
+        professional_labels = {label for label, _ in professional_controls}
+        for label, value in professional_controls:
+            professional.write_text(value, encoding="utf-8")
+            findings = scan_release(root, root / "release-policy.json", True)
+            if not any(
+                f"{label} marker in: professional-content-control.txt" in item
+                for item in findings
+            ):
+                raise ValueError(
+                    f"professional-content negative control escaped: {label}"
+                )
+            negative_count += 1
+
+        professional.write_text(
+            "The generator refuses to create adult content.\n"
+            "The generator refuses to create and edit adult content.\n"
+            "The generator refuses to\ncreate adult content.\n"
+            "The generator is flexible, but it refuses to create adult content.\n"
+            "The generator is flexible; however, it refuses to create adult content.\n"
+            "Although the generator is flexible, it refuses to create adult content.\n"
+            "While the generator is flexible, it refuses to create adult content.\n"
+            "Whereas the generator is flexible, it refuses to create adult content.\n"
+            "The generator is flexible, yet it refuses to create adult content.\n"
+            "The generator is flexible; nevertheless, it refuses to create adult content.\n"
+            "The generator is flexible; nonetheless, it refuses to create adult content.\n"
+            "Dirty song lyrics are prohibited.\n"
+            "The service will shut up the test kiosk before restart.\n"
+            "Tell the customer to shut up\nthe test kiosk before retrying.\n"
+            "All rights reserved. No additional license is granted.\n",
+            encoding="utf-8",
+        )
+        findings = scan_release(root, root / "release-policy.json", True)
+        if any(
+            any(
+                f"{label} marker in: professional-content-control.txt" in item
+                for label in professional_labels
+            )
+            for item in findings
+        ):
+            raise ValueError("protective policy or license language was rejected")
+        professional.unlink()
+
+        extension_controls = (
+            (
+                "control.srt",
+                "1\n00:00:00,000 --> 00:00:02,000\nThe generator refuses to\n"
+                "create adult content.\n\n2\n00:00:03,000 --> 00:00:05,000\n"
+                "It includes a nude image\ngenerator.\n",
+            ),
+            (
+                "control.vtt",
+                "WEBVTT\n\n00:00.000 --> 00:02.000\nShut up,\ncustomer.\n",
+            ),
+            (
+                "cross-hostile.srt",
+                "1\n00:00:00,000 --> 00:00:02,000\nShut up,\n\n"
+                "2\n00:00:03,000 --> 00:00:05,000\ncustomer.\n",
+            ),
+            (
+                "identifier-hostile.vtt",
+                "WEBVTT\nKind: captions\nLanguage: en\n\ncue-1\n"
+                "00:00.000 --> 00:02.000 line:90%\nShut up,\n\ncue-2\n"
+                "00:03.000 --> 00:05.000\ncustomer.\n",
+            ),
+            (
+                "three-cue-hostile.vtt",
+                "WEBVTT\n\nfirst\n00:00.000 --> 00:01.000\nShut\n\nsecond\n"
+                "00:01.000 --> 00:02.000\nup,\n\nthird\n"
+                "00:02.000 --> 00:03.000\ncustomer.\n",
+            ),
+            (
+                "noteworthy-identifier.vtt",
+                "WEBVTT\n\nnoteworthy\n00:00.000 --> 00:02.000\n"
+                "Nude image generator.\n",
+            ),
+            (
+                "note-hyphen-identifier.vtt",
+                "WEBVTT\n\nNOTE-1\n00:00.000 --> 00:02.000\n"
+                "Nude image generator.\n",
+            ),
+            (
+                "regional-identifier.vtt",
+                "WEBVTT\n\nregional-demo\n00:00.000 --> 00:02.000\n"
+                "Nude image generator.\n",
+            ),
+            (
+                "region-hyphen-identifier.vtt",
+                "WEBVTT\n\nregion-2\n00:00.000 --> 00:02.000\n"
+                "Nude image generator.\n",
+            ),
+            (
+                "cross-adult.vtt",
+                "WEBVTT\n\n00:00.000 --> 00:02.000\nThis tool can create\n\n"
+                "00:03.000 --> 00:05.000\nadult content.\n",
+            ),
+            (
+                "cross-image.srt",
+                "1\n00:00:00,000 --> 00:00:02,000\nNude image\n\n"
+                "2\n00:00:03,000 --> 00:00:05,000\ngenerator.\n",
+            ),
+            ("control.svg", '<svg><text>Nude image generator.</text></svg>\n'),
+        )
+        for name, value in extension_controls:
+            extension_path = root / name
+            extension_path.write_text(value, encoding="utf-8")
+            findings = scan_release(root, root / "release-policy.json", True)
+            if not any(
+                item.startswith("professional ") and item.endswith(f"marker in: {name}")
+                for item in findings
+            ):
+                raise ValueError(f"professional-content extension control escaped: {name}")
+            negative_count += 1
+            extension_path.unlink()
+
+        safe_extension_controls = (
+            (
+                "safe.srt",
+                "1\n00:00:00,000 --> 00:00:01,000\nThe generator refuses\n\n"
+                "2\n00:00:01,000 --> 00:00:02,000\nto create\n\n"
+                "3\n00:00:02,000 --> 00:00:03,000\nadult content.\n",
+            ),
+            (
+                "safe.vtt",
+                "WEBVTT\n\npart-a\n00:00.000 --> 00:01.000\nTell the customer\n\n"
+                "part-b\n00:01.000 --> 00:02.000\nto shut up\n\npart-c\n"
+                "00:02.000 --> 00:03.000\nthe test kiosk before retrying.\n",
+            ),
+            (
+                "metadata-safe.vtt",
+                "WEBVTT metadata\nKind: captions\nLanguage: en\n\nNOTE\n"
+                "Adult video tool.\n\nNOTE reviewer note\nNude image generator.\n\n"
+                "STYLE\n::cue { color: lime; }\n\n"
+                "REGION\nid:main\nwidth:40%\n\ncue-safe\n"
+                "00:00.000 --> 00:02.000 align:start\nCatalog review complete.\n",
+            ),
+        )
+        for name, value in safe_extension_controls:
+            extension_path = root / name
+            extension_path.write_text(value, encoding="utf-8")
+            findings = scan_release(root, root / "release-policy.json", True)
+            if any(
+                item.startswith("professional ") and item.endswith(f"marker in: {name}")
+                for item in findings
+            ):
+                raise ValueError(f"safe wrapped-caption control was rejected: {name}")
+            extension_path.unlink()
+
+        metadata_secret = root / "secret-metadata.vtt"
+        metadata_secret.write_text(
+            "WEBVTT\n\nNOTE credential inventory\nSynthetic key: "
+            + "AKIA"
+            + "A" * 16
+            + "\n",
+            encoding="utf-8",
+        )
+        findings = scan_release(root, root / "release-policy.json", True)
+        if not any(
+            "AWS access key marker in: secret-metadata.vtt" in item
+            for item in findings
+        ):
+            raise ValueError("raw secret scan skipped WebVTT metadata")
+        negative_count += 1
+        metadata_secret.unlink()
+
+        conduct_path = root / "CODE_OF_CONDUCT.md"
+        original_conduct = conduct_path.read_text(encoding="utf-8")
+        conduct_path.write_text(
+            "NSFW media editors are prohibited. Dirty song lyrics are prohibited. "
+            "Dick" + "head abuse is prohibited.\n",
+            encoding="utf-8",
+        )
+        findings = scan_release(root, root / "release-policy.json", True)
+        if any(
+            any(
+                f"{label} marker in: CODE_OF_CONDUCT.md" in item
+                for label in professional_labels
+            )
+            for item in findings
+        ):
+            raise ValueError("protective CODE_OF_CONDUCT language was rejected")
+        conduct_path.write_text("This file promotes an adult video tool.\n", encoding="utf-8")
+        findings = scan_release(root, root / "release-policy.json", True)
+        if not any(
+            "professional sexual-content generation marker in: CODE_OF_CONDUCT.md"
+            in item for item in findings
+        ):
+            raise ValueError("CODE_OF_CONDUCT received a whole-file exemption")
+        negative_count += 1
+        conduct_path.write_text(original_conduct, encoding="utf-8")
 
         branding = root / "non-owner-branding.txt"
         branding_controls = (
@@ -1105,7 +1609,7 @@ def main() -> int:
         return 1
     mode = "owner gates deferred" if args.allow_owner_gates else "owner gates resolved"
     print(
-        f"PASS: publication scan ({mode}); v2 decisions, paths, content, JSON, "
+        f"PASS: publication scan ({mode}); v3 decisions, paths, content, JSON, "
         "assets, and runtime network boundary verified"
     )
     return 0

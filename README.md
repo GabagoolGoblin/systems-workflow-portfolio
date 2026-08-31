@@ -10,6 +10,8 @@ The workflows and operational decisions are synthetic. The sole data exception i
 
 These projects demonstrate implementation and testing choices. They do not represent employer systems, customer deployments, live integrations, certifications, provider benchmarks, or authority to change a production environment.
 
+[Watch the project video guides](docs/VIDEO_GUIDES.md) for short overviews and focused walkthroughs.
+
 ## Featured work
 
 ### API Integration Contracts

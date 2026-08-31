@@ -6,6 +6,8 @@ A clean-room, executable demonstration of fail-closed automation: resolve known 
 
 This public carve-out contains only executable Python/Tk code, a synthetic JSON fixture, headless tests, an external-path GUI smoke, and a fresh code-native browser preview. It contains no legacy image, generated-image metadata, application history, or unimplemented architecture claim.
 
+[Watch the showcase and how-to videos](../../docs/VIDEO_GUIDES.md#human-in-the-loop-control).
+
 ## Open the browser preview
 
 Open `preview/index.html` directly. It is a small executable HTML/CSS/JavaScript version of the same public state-machine boundary and makes no network request.

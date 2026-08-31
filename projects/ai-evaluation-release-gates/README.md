@@ -6,6 +6,8 @@ An offline evaluation workspace for separating exact grading, blind human judgme
 
 ![Synthetic fail-closed release gate](../../assets/project-previews/ai-evaluation-release-gates.png)
 
+[Watch the showcase video](../../docs/VIDEO_GUIDES.md#ai-evaluation-release-gates).
+
 ## Run in 60 seconds
 
 Open `index.html` directly in a current browser. For the deterministic core (Python 3.11 or 3.12, standard library only):

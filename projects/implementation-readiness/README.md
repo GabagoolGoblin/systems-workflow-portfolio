@@ -4,6 +4,8 @@
 
 An offline, capability-first implementation workspace for turning ambiguous readiness work into explicit owners, evidence, gaps, review steps, and bounded acceptance decisions.
 
+[Watch the how-to video](../../docs/VIDEO_GUIDES.md#implementation-readiness).
+
 ## Run in 60 seconds
 
 Open `index.html` directly in a modern browser, or run:

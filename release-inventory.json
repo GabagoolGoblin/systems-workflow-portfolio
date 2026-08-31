@@ -10,13 +10,13 @@
       "sha256": "2c1c0e3743aa3e6c19eab106bc94803be48c3018e4eba2177da6ad36837965a3"
     },
     {
-      "bytes": 85,
+      "bytes": 98,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": ".gitattributes",
       "release_wave": null,
-      "sha256": "167a38ccfe4c1ce36faeacbee047b2fc9c55d286710271d9fdc78d966d205069"
+      "sha256": "b8b04295a2ceded1f46159c4adefbe20f22da22c6892501330e93a1d5b439519"
     },
     {
       "bytes": 72,
@@ -127,13 +127,13 @@
       "sha256": "bbc1ec9b8f0eb6889f1ebcbae2c6a49e5e2947a458dd046881cb1a21ff6e95b3"
     },
     {
-      "bytes": 4146,
+      "bytes": 4248,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "README.md",
       "release_wave": null,
-      "sha256": "04b6f633c871c79d1da2d283e23c1cc49732cfd0d4b62833c064f7b75fd76d83"
+      "sha256": "4b6e549cb7ab0606efef803c0a8113bd391af6a69abdf6d71a822297268bd4e4"
     },
     {
       "bytes": 1072,
@@ -226,6 +226,168 @@
       "sha256": "7da0a365a28b1a2e350d99e6c5ded56d36fbec6443930d1eae2c7eaa2c95459f"
     },
     {
+      "bytes": 94011,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/video-posters/ai-evaluation-release-gates.png",
+      "release_wave": null,
+      "sha256": "4c0ada571f327979721f4ba91c8ac3f8a90ce5af3639bc0f82b0c3ac862b8466"
+    },
+    {
+      "bytes": 94666,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/video-posters/api-integration-contracts.png",
+      "release_wave": null,
+      "sha256": "8062a3e6edde26a484d589a4841b74dc4b841139953791fa4a5c30777c659e40"
+    },
+    {
+      "bytes": 77668,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/video-posters/bulk-price-control.png",
+      "release_wave": null,
+      "sha256": "fc1401680447e812c385a3e72a6c6e6a6d41be7f7754a640ed63eaf66f7b866b"
+    },
+    {
+      "bytes": 98649,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/video-posters/human-in-the-loop-control.png",
+      "release_wave": null,
+      "sha256": "e0d642a28f394f39004756c641c168476c8a552d35b0f400c064b516a2320459"
+    },
+    {
+      "bytes": 103388,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/video-posters/implementation-readiness.png",
+      "release_wave": null,
+      "sha256": "3095d1ddce554285dda5d441a7cd4706c6cd928f0c4617c327251dfed4e9f9e6"
+    },
+    {
+      "bytes": 2481210,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/ai-evaluation-release-gates-showcase-vertical.mp4",
+      "release_wave": null,
+      "sha256": "ad857685796c3089f8c0848f8c3b1f7c5c25f3822ebb2e090522f2937429930a"
+    },
+    {
+      "bytes": 2689356,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/ai-evaluation-release-gates-showcase.mp4",
+      "release_wave": null,
+      "sha256": "59605bf45ed951f8b0cfe672b7a12f9cc0c0d3cb1091b74374b5395f400e01be"
+    },
+    {
+      "bytes": 3241575,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/api-integration-contracts-how-to-vertical.mp4",
+      "release_wave": null,
+      "sha256": "130160376374d0b8e9e58bf8f2f6a58dacec09f3fd45667faa09a2cc35dadfcc"
+    },
+    {
+      "bytes": 3580706,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/api-integration-contracts-how-to.mp4",
+      "release_wave": null,
+      "sha256": "6b20e1d01b8cd2cc0dfbb0c777e42d53d86716813f97bec3dbe96afaf10658ca"
+    },
+    {
+      "bytes": 2482327,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/api-integration-contracts-showcase-vertical.mp4",
+      "release_wave": null,
+      "sha256": "327371d7563911094f9833ed3512e88faecac293e436faa8a1722dd4a9f67db7"
+    },
+    {
+      "bytes": 2837799,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/api-integration-contracts-showcase.mp4",
+      "release_wave": null,
+      "sha256": "f6616026ed0d3b8451438b51001bee72b8637406e9d77de94f8c7b21c105a6ad"
+    },
+    {
+      "bytes": 4019559,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/bulk-price-control-how-to.mp4",
+      "release_wave": null,
+      "sha256": "03e339fb5a1f6a6d5ab06e427cf6e1288036c3727c87bde68ea0eb9034bee792"
+    },
+    {
+      "bytes": 2777949,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/human-in-the-loop-control-how-to-vertical.mp4",
+      "release_wave": null,
+      "sha256": "d5d2ca6416bb55c127a3852fcb485f2d58d5a97ebf89f9a94c07fdd77e8c4c61"
+    },
+    {
+      "bytes": 3199393,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/human-in-the-loop-control-how-to.mp4",
+      "release_wave": null,
+      "sha256": "88479efcda149a93c85356d8145ddd081089b10e47f402a163b4b1910ed9c43f"
+    },
+    {
+      "bytes": 2360271,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/human-in-the-loop-control-showcase-vertical.mp4",
+      "release_wave": null,
+      "sha256": "7533cae22889f0bb9c96ed58eaad9636fea1df02bc02a0d6f9da31e1eeef0f54"
+    },
+    {
+      "bytes": 2617105,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/human-in-the-loop-control-showcase.mp4",
+      "release_wave": null,
+      "sha256": "d3280605b63cb0e7507d84a2a3cc32a63f02e76c35cb65e257fdaff4e678de0a"
+    },
+    {
+      "bytes": 3081179,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/implementation-readiness-how-to-vertical.mp4",
+      "release_wave": null,
+      "sha256": "a445098fb1251476d9eefc981ee8d8a5a6d47f995aba691b330c383259efffb8"
+    },
+    {
+      "bytes": 3398840,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "assets/videos/implementation-readiness-how-to.mp4",
+      "release_wave": null,
+      "sha256": "094de5ad9af7feaffe4b89911ba05191ac113f9194bf81ddfb33f58d8e9a049d"
+    },
+    {
       "bytes": 9507,
       "origin": {
         "kind": "reviewed_public_override"
@@ -280,13 +442,22 @@
       "sha256": "2e76abfec8b4031eb5aaee2f3d2f87866465fc54007901b4158e602cf0bf59ea"
     },
     {
-      "bytes": 3258,
+      "bytes": 3804,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "docs/RELEASE_PROCESS.md",
       "release_wave": null,
-      "sha256": "92ab4f2f2450d13defd2cd46d035bf5add50e1b7cb233c0aa3e57db0f9c5c55d"
+      "sha256": "0b627ebff9fef8604962cfb9f093d49d02d0b5927500ebd41d33d7a85cc9384e"
+    },
+    {
+      "bytes": 3890,
+      "origin": {
+        "kind": "reviewed_public_override"
+      },
+      "path": "docs/VIDEO_GUIDES.md",
+      "release_wave": null,
+      "sha256": "a112c4e08503b947139db9f5b7d5f3c9e585fd8009021905ddd385ce0bab4d10"
     },
     {
       "bytes": 3433,
@@ -343,13 +514,13 @@
       "sha256": "24b3b744dae86abc9d09066c62367f543370969cb17529fecb99a1c2a50aa57f"
     },
     {
-      "bytes": 3578,
+      "bytes": 3663,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/ai-evaluation-release-gates/README.md",
       "release_wave": null,
-      "sha256": "b7d403fbf88f6e43b242b026cfad13b284287377e892c43a98822f66e2ccd243"
+      "sha256": "afa3bd757999b8711d5df0c8e1176fc10a361c4eaaea135df810b2f636ca7cc6"
     },
     {
       "bytes": 818,
@@ -583,13 +754,13 @@
       "sha256": "572dcdac8c2171ce59636d9a6f1fd5e60bcaa836a2fda3acb0aaa0751f9b5f5a"
     },
     {
-      "bytes": 3320,
+      "bytes": 3415,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/api-integration-contracts/README.md",
       "release_wave": null,
-      "sha256": "49cfaf909c516481d76317f71bee5f4faffa17967d32f202074715ebcda04b20"
+      "sha256": "88e57463e98e6c128fc138991a4315f15add12963d6f628b6ddea8391ecb1211"
     },
     {
       "bytes": 33460,
@@ -823,13 +994,13 @@
       "sha256": "d0e51ab32ee1e8d0bc1b8a38fc2a49fe591a229cb47cdbc7e7e08a3131619438"
     },
     {
-      "bytes": 2997,
+      "bytes": 3076,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/bulk-price-control/README.md",
       "release_wave": null,
-      "sha256": "818c446654d8714fe8cd25b63b17f39e6d4a1ce921fb1d6cf592e20fe16caa3c"
+      "sha256": "029f6826bdb6a399e3dcac26f79703297bf56a86bdcceb88cb6c63af32e46deb"
     },
     {
       "bytes": 885,
@@ -1690,13 +1861,13 @@
       "sha256": "f92f288a04d7b76224ffdca2d49e4d6bbbf95688a563ed4ae937e10f0bc562ed"
     },
     {
-      "bytes": 2652,
+      "bytes": 2747,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/README.md",
       "release_wave": null,
-      "sha256": "1769725390b425915a788f7d0b497c79662de572a27f829d6bb9eaae670a4594"
+      "sha256": "d4639cdb4bfe261f16ca53dea34d17802abb9e9a1996e0d37264071b5c6ab0a9"
     },
     {
       "bytes": 4110,
@@ -1840,13 +2011,13 @@
       "sha256": "22187e434242f8ecbc64d2f3688f98c72eb2794970fbd1f3f6d203af11c16c25"
     },
     {
-      "bytes": 2130,
+      "bytes": 2210,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/implementation-readiness/README.md",
       "release_wave": null,
-      "sha256": "15b116e82e3b2cda0bdd5e63c3e7acbd4c79f52b8396681d1c97cef5a1e716b6"
+      "sha256": "59f1578aa694961c9631f74bfd19ca406c97c48bb5e18f3a17a6adc1a8e0577c"
     },
     {
       "bytes": 43788,
@@ -2515,22 +2686,22 @@
       "sha256": "a73395f5dcb0a17c5d4ce501b9bb72038d544948303ab5a4c88e2d15f3481853"
     },
     {
-      "bytes": 6488,
+      "bytes": 6732,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "release-decisions.json",
       "release_wave": null,
-      "sha256": "2878d8eeb397890b5f708ef8be8e11014bf2662e9cb9ac3c3cddf021b583f0f8"
+      "sha256": "672db6f523ec79b8e499f3cef1dec3ca68d5b84184a9921956599a6b7e70ca23"
     },
     {
-      "bytes": 3899,
+      "bytes": 5907,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "release-policy.json",
       "release_wave": null,
-      "sha256": "914226e87238b72ad4f6f8c6ff2e7751212a1020aba1aaec63335c68a746287b"
+      "sha256": "c9cc40cf59eca36c8418d38cd7eadb7dc565a1a536ac7f0380f594a09582274d"
     },
     {
       "bytes": 625,
@@ -2587,13 +2758,13 @@
       "sha256": "aa810caf2e8888c468e420e34596d689b6b05cc568e4db36f141c4687ce74dd8"
     },
     {
-      "bytes": 48878,
+      "bytes": 70882,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "tools/release/publication_scan.py",
       "release_wave": null,
-      "sha256": "ec9c9ef6dcf2a1250ac42041b1094a3444a3903d715b4ded66c9e13fbf46c7ad"
+      "sha256": "50b66c81f349ed2ad839a3824de08ea6321f83b1dd0dbf387e8d0f8bc99d5505"
     },
     {
       "bytes": 3516,

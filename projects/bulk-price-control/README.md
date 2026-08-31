@@ -4,6 +4,8 @@
 
 A standard-library Python demonstration of a guarded bulk-price workflow. It keeps preview, staging, human confirmation, local commit, reread verification, rollback, and audit evidence distinct so a valid plan is never mistaken for an authorized or successful write.
 
+[Watch the 16:9 how-to video](../../docs/VIDEO_GUIDES.md#bulk-price-control).
+
 ## Run in 60 seconds
 
 Requirements: Python 3.11 or 3.12 on a POSIX system; no runtime package install.
