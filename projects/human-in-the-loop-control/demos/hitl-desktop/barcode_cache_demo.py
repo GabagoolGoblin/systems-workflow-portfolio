@@ -25,8 +25,8 @@ class BarcodeCacheDemo(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
         self.title("Synthetic Identifier Cache Demo")
-        self.geometry("1140x620")
-        self.minsize(980, 540)
+        self.geometry("1240x640")
+        self.minsize(1060, 560)
         self.rows = fresh_rows()
         self.cache = dict(DEMO_CACHE)
         self.force_mismatch = tk.BooleanVar(value=False)
@@ -46,7 +46,7 @@ class BarcodeCacheDemo(tk.Tk):
         ).pack(anchor=tk.W, pady=(0, 6))
         ttk.Label(
             outer,
-            text="Barcode cache → held unknowns → staged updates → reread → human save",
+            text="Barcode cache → duplicate and unknown holds → staged updates → reread → human save",
             font=("Segoe UI", 14, "bold"),
         ).pack(anchor=tk.W)
         ttk.Label(
@@ -55,6 +55,7 @@ class BarcodeCacheDemo(tk.Tk):
         ).pack(anchor=tk.W, pady=(2, 10))
 
         columns = (
+            "request",
             "barcode",
             "item",
             "current",
@@ -66,6 +67,7 @@ class BarcodeCacheDemo(tk.Tk):
         )
         self.table = ttk.Treeview(outer, columns=columns, show="headings", height=12)
         headings = {
+            "request": "Request ID",
             "barcode": "Barcode",
             "item": "Item",
             "current": "Current",
@@ -76,6 +78,7 @@ class BarcodeCacheDemo(tk.Tk):
             "status": "Status",
         }
         widths = {
+            "request": 100,
             "barcode": 120,
             "item": 175,
             "current": 75,
@@ -130,6 +133,7 @@ class BarcodeCacheDemo(tk.Tk):
                 "",
                 tk.END,
                 values=(
+                    row.request_id,
                     row.barcode,
                     row.item_name,
                     f"${row.current_price}",
@@ -149,19 +153,37 @@ class BarcodeCacheDemo(tk.Tk):
 
     def _resolve(self) -> None:
         hits, held = resolve_from_cache(self.rows, self.cache)
+        duplicate_holds = sum(row.duplicate_submission for row in self.rows)
+        unknown_holds = held - duplicate_holds
         self._refresh()
-        self.status_text.set(f"{hits} cache hits; {held} held for manual lookup")
+        self.status_text.set(
+            f"{hits} cache hits, {unknown_holds} unknown held, "
+            f"{duplicate_holds} duplicate held"
+        )
         self._log(
             f"CACHE: {hits} known barcode(s) received menu-item IDs immediately; "
-            f"{held} unknown(s) were held instead of guessed."
+            f"{unknown_holds} unknown(s) and {duplicate_holds} repeated request(s) "
+            "were held instead of guessed."
         )
 
     def _validate_held(self) -> None:
-        held = next((row for row in self.rows if not row.menu_item_id), None)
+        held = next(
+            (
+                row
+                for row in self.rows
+                if not row.menu_item_id and not row.duplicate_submission
+            ),
+            None,
+        )
         if held is None:
-            messagebox.showinfo("Lab", "No held rows remain.")
+            messagebox.showinfo("Lab", "No manually resolvable unknown rows remain.")
             return
-        validate_held_row(self.rows, self.cache, held.barcode, HELD_MANUAL_MENU_ITEM_ID)
+        validate_held_row(
+            self.rows,
+            self.cache,
+            held.request_id,
+            HELD_MANUAL_MENU_ITEM_ID,
+        )
         self._refresh()
         self.status_text.set("Held barcode manually validated in the lab")
         self._log(
@@ -181,9 +203,11 @@ class BarcodeCacheDemo(tk.Tk):
         self._log("STAGE: entered proposed prices without finalizing the synthetic state.")
 
     def _verify(self) -> None:
-        mismatch = self.rows[1].barcode if self.force_mismatch.get() else ""
+        mismatch = self.rows[1].request_id if self.force_mismatch.get() else ""
         try:
-            passed = reread_staged_updates(self.rows, mismatch_barcode=mismatch)
+            passed = reread_staged_updates(
+                self.rows, mismatch_request_id=mismatch
+            )
         except ValueError as exc:
             messagebox.showwarning("Verification blocked", str(exc))
             self._log(f"HOLD: {exc}")
@@ -191,7 +215,10 @@ class BarcodeCacheDemo(tk.Tk):
         self._refresh()
         if passed:
             self.status_text.set("Reread passed; awaiting human save approval")
-            self._log("VERIFY: every staged value matched the request. Save still requires a person.")
+            self._log(
+                "VERIFY: every eligible staged value matched the request. "
+                "The duplicate submission remained held and save still requires a person."
+            )
         else:
             self.status_text.set("Reread mismatch; save blocked")
             self._log("HOLD: reread mismatch detected. The batch cannot be approved.")
@@ -205,7 +232,10 @@ class BarcodeCacheDemo(tk.Tk):
             return
         self._refresh()
         self.status_text.set("Saved only after explicit human approval (lab)")
-        self._log("HUMAN SAVE: approved and persisted the verified synthetic values.")
+        self._log(
+            "HUMAN SAVE: approved and persisted the verified eligible values. "
+            "The duplicate submission remained held."
+        )
 
     def _reset(self) -> None:
         self.rows = fresh_rows()

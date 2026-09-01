@@ -9,15 +9,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="boundary" role="note">
-    <strong>INDEPENDENT PORTFOLIO DEMO</strong><span>·</span><strong>SYNTHETIC DATA</strong><span>·</span><strong>NO AFFILIATION</strong><span>·</span><strong>NO PRODUCTION ACTION</strong>
+  <div class="boundary" data-boundary role="note">
+    INDEPENDENT PORTFOLIO DEMO · SYNTHETIC DATA · NO AFFILIATION · NO PRODUCTION ACTION
   </div>
 
   <header class="hero">
     <div>
       <p class="eyebrow">Fail-closed workflow control</p>
       <h1>Human-in-the-Loop Control</h1>
-      <p class="lede">Resolve known identifiers, hold unknowns, stage proposed values, reread every change, and stop for a person before the synthetic save.</p>
+      <p class="lede">Resolve known identifiers, hold unknowns and repeated request barcodes, stage eligible values, reread every change, and stop for a person before the synthetic save.</p>
     </div>
     <div class="scope-card" aria-label="Execution boundary">
       <span>Runtime</span><strong>Browser memory only</strong>
@@ -28,9 +28,9 @@
 
   <main>
     <section class="metrics" aria-label="Workflow summary">
-      <article><span>Batch</span><strong id="metric-batch">4</strong><small>invented rows</small></article>
+      <article><span>Batch</span><strong id="metric-batch">5</strong><small>invented request rows</small></article>
       <article><span>Resolved</span><strong id="metric-resolved">0</strong><small>validated identifiers</small></article>
-      <article><span>Held</span><strong id="metric-held">0</strong><small>unknown or mismatch</small></article>
+      <article><span>Held</span><strong id="metric-held">0</strong><small>unknown, duplicate, or mismatch</small></article>
       <article class="accent"><span>Gate</span><strong id="metric-gate">STOPPED</strong><small id="metric-gate-detail">awaiting resolution</small></article>
     </section>
 
@@ -41,9 +41,9 @@
           <button class="quiet" type="button" data-action="reset">Reset demo</button>
         </div>
         <ol class="flow" id="flow">
-          <li data-step="resolve"><span>01</span><div><strong>Resolve cache</strong><p>Known identifiers advance; misses stay held.</p></div><button type="button" data-action="resolve">Run</button></li>
-          <li data-step="validate"><span>02</span><div><strong>Validate held row</strong><p>A person supplies the invented mapping.</p></div><button type="button" data-action="validate" disabled>Confirm</button></li>
-          <li data-step="stage"><span>03</span><div><strong>Stage proposed values</strong><p>No final save occurs.</p></div><button type="button" data-action="stage" disabled>Stage</button></li>
+          <li data-step="resolve"><span>01</span><div><strong>Resolve cache</strong><p>Known identifiers advance. Unknown and duplicate submissions stay held.</p></div><button type="button" data-action="resolve">Run</button></li>
+          <li data-step="validate"><span>02</span><div><strong>Validate eligible hold</strong><p>A person supplies the invented mapping for the unknown row.</p></div><button type="button" data-action="validate" disabled>Confirm</button></li>
+          <li data-step="stage"><span>03</span><div><strong>Stage eligible values</strong><p>The duplicate row stays excluded and no final save occurs.</p></div><button type="button" data-action="stage" disabled>Stage</button></li>
           <li data-step="verify"><span>04</span><div><strong>Reread and verify</strong><p>Any mismatch stops the batch.</p></div><button type="button" data-action="verify" disabled>Verify</button></li>
           <li data-step="approve"><span>05</span><div><strong>Human approval</strong><p>Available only after every reread matches.</p></div><button type="button" data-action="approve" disabled>Approve</button></li>
         </ol>
@@ -57,7 +57,7 @@
         </div>
         <div class="table-scroll">
           <table>
-            <thead><tr><th>Barcode</th><th>Item</th><th>Current</th><th>Requested</th><th>Identifier</th><th>Status</th></tr></thead>
+            <thead><tr><th>Request ID</th><th>Barcode</th><th>Item</th><th>Current</th><th>Requested</th><th>Identifier</th><th>Status</th></tr></thead>
             <tbody id="rows"></tbody>
           </table>
         </div>

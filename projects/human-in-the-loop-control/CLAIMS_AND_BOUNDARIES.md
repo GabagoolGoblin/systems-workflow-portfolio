@@ -4,9 +4,10 @@
 
 ## Supported claims
 
-- The checked-in code implements cache lookup, unknown holds, manual validation, staging, reread verification, mismatch blocking, and explicit human approval.
+- The checked-in code implements a unique barcode cache, request-row-specific duplicate holds, cache lookup, unknown holds, manual validation, staging, reread verification, mismatch blocking, and explicit human approval.
+- A later request that repeats a submitted barcode is held before lookup and cannot receive an identifier, staged value, reread result, or approval.
 - Headless tests exercise both successful and fail-closed paths.
-- The optional GUI smoke writes only to an injected temporary or explicit external path; the tracked tree is not a log destination.
+- The optional GUI smoke writes only to an injected temporary or explicit external path. The tracked tree is not a log destination.
 - The code-native browser preview is a fresh public presentation of the same bounded state-machine concepts.
 
 ## Unsupported claims

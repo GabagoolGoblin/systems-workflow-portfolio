@@ -1843,13 +1843,13 @@
       "sha256": "7fed2591cc7940658d8f9cfd1b482cc6e2216cbe62471e8e063a50f788294f88"
     },
     {
-      "bytes": 1076,
+      "bytes": 1287,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/CLAIMS_AND_BOUNDARIES.md",
       "release_wave": null,
-      "sha256": "4e5148d958c83a187fcf3f01942bd814d29d36d764d3157a99b4b3d095b19e9d"
+      "sha256": "11e54b0742a82022096b6fa51660501019c471c07b42dce7fb30ce3f4488b3a1"
     },
     {
       "bytes": 914,
@@ -1861,13 +1861,13 @@
       "sha256": "f92f288a04d7b76224ffdca2d49e4d6bbbf95688a563ed4ae937e10f0bc562ed"
     },
     {
-      "bytes": 2747,
+      "bytes": 3113,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/README.md",
       "release_wave": null,
-      "sha256": "d4639cdb4bfe261f16ca53dea34d17802abb9e9a1996e0d37264071b5c6ab0a9"
+      "sha256": "54947a9105eef1406b6cd900f979660b395f9daafab30c543d9a3502f966327b"
     },
     {
       "bytes": 4110,
@@ -1879,37 +1879,31 @@
       "sha256": "df3b72a544386955e489447f098f309264845c253d606bd34b86e7cb5146c241"
     },
     {
-      "bytes": 8100,
+      "bytes": 8928,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/barcode_cache_demo.py",
       "release_wave": null,
-      "sha256": "d3d0b2a6ce9cca75a669253af365e5cb2768e2958e65cd0b063395b7060a6c0f"
+      "sha256": "fb08ac5ec3d705a3578d174f640bdd0034261a25bdd342cf721af843d327212d"
     },
     {
-      "bytes": 1128,
+      "bytes": 1487,
       "origin": {
-        "kind": "copy_candidate",
-        "project": "hitl-controls",
-        "source_relative": "demos/hitl-desktop/fixtures/synthetic_menu_batch.json",
-        "source_sha256": "3b6d42393209aa3fedee8168f3ee5f0a85d311904fd41ad93b989ffe8a58c2d9"
+        "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/fixtures/synthetic_menu_batch.json",
-      "release_wave": 3,
-      "sha256": "3b6d42393209aa3fedee8168f3ee5f0a85d311904fd41ad93b989ffe8a58c2d9"
+      "release_wave": null,
+      "sha256": "e337e1e74be44198cc6f69778ee9cf65068c521064f20493f2c91a89b362231b"
     },
     {
-      "bytes": 6444,
+      "bytes": 8666,
       "origin": {
-        "kind": "copy_candidate",
-        "project": "hitl-controls",
-        "source_relative": "demos/hitl-desktop/hitl_core.py",
-        "source_sha256": "ca0e725bd618f5fce65b1302a41f4cc9a4b4643589bce3bf1e71c77bf17beb8b"
+        "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/hitl_core.py",
-      "release_wave": 3,
-      "sha256": "ca0e725bd618f5fce65b1302a41f4cc9a4b4643589bce3bf1e71c77bf17beb8b"
+      "release_wave": null,
+      "sha256": "113c318038c924099390cd4db6a66d4116e176873ca54bf498297cbb1f5b7380"
     },
     {
       "bytes": 3745,
@@ -1921,58 +1915,58 @@
       "sha256": "ff863675fd95343c2a6a8a26efc5650def4ad66e75548b0b79e10ae7bbbd8dc4"
     },
     {
-      "bytes": 6204,
+      "bytes": 6735,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/smoke_test.py",
       "release_wave": null,
-      "sha256": "dd3d68283465047effd1bf3bb7dd565a60093257fd9eb3f48e402db14843dfda"
+      "sha256": "36c5f78e72fe58485edd34d39fa53cd5edd7b6259b41d6c8118566adeb79af89"
     },
     {
-      "bytes": 5019,
+      "bytes": 7844,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/test_hitl_core.py",
       "release_wave": null,
-      "sha256": "7799c21411dc9ab0f00f41138f48857f9e5f5e53d8afa1a9f4530f61a299cb06"
+      "sha256": "6602d0f0e5a29037c8a3692fa24adddbac1b208abaab1672922d9b6ac05f882a"
     },
     {
-      "bytes": 4411,
+      "bytes": 4670,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/demos/hitl-desktop/test_public_surface.py",
       "release_wave": null,
-      "sha256": "afcd3df7916ba515ea57147ee87f1dc511c2d56fcb34467b694e47bf50f279af"
+      "sha256": "b6ab3e3a081ee9f4e2e86be66b50e2b06641a18a11c6c9814be78bf1ccc2d36e"
     },
     {
-      "bytes": 6061,
+      "bytes": 7367,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/preview/app.js",
       "release_wave": null,
-      "sha256": "ec7c6de6656f2f972c44e3e77d7278f705c261f1033a251e209dbdd690392a66"
+      "sha256": "fa701129c47c3eda56073b5cd868f0866750636cc8515baeaf2b8e38865014a8"
     },
     {
-      "bytes": 4501,
+      "bytes": 4572,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/preview/index.html",
       "release_wave": null,
-      "sha256": "ea03e6fe48ec9c50ee57b1f842ef1beb1e3c777c14ab84bc1d0ec98a386d91bf"
+      "sha256": "3ff165254ae97c92540f3ab27f4a67be92042b21d52f12536acd20201002ba36"
     },
     {
-      "bytes": 5937,
+      "bytes": 5954,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "projects/human-in-the-loop-control/preview/styles.css",
       "release_wave": null,
-      "sha256": "133a9b8b225cb6a92ab6030fe25dc99d4f5465e8f291eb0b5f453dee79a629b2"
+      "sha256": "ca801045096485a0625d18538047f74e4f92bed94ab6200e58b0b97cd11585bf"
     },
     {
       "bytes": 1142,
@@ -2803,13 +2797,13 @@
       "sha256": "cb92bb9b312837b4fb9b0ea004d9bd57d89079b3f049fe4b776cf757f3905cbd"
     },
     {
-      "bytes": 15250,
+      "bytes": 15685,
       "origin": {
         "kind": "reviewed_public_override"
       },
       "path": "tools/release/verify_landing.py",
       "release_wave": null,
-      "sha256": "4b37c84a8cd5daf6f567a6b916c7bc8ebaccd287b7d21adbe3da5c668b1cedc5"
+      "sha256": "b00e6dfbf74138a631f62a1a4c87d47e10bf06efb46618d6aee6340c5eb70e22"
     },
     {
       "bytes": 4842,

@@ -8,6 +8,7 @@
   },
   "requests": [
     {
+      "request_id": "LAB-REQ-001",
       "barcode": "100000000011",
       "item_name": "Citrus Sparkler",
       "current_price": "2.49",
@@ -15,6 +16,7 @@
       "source": "synthetic_fixture"
     },
     {
+      "request_id": "LAB-REQ-002",
       "barcode": "100000000028",
       "item_name": "Berry Iced Tea",
       "current_price": "2.79",
@@ -22,6 +24,7 @@
       "source": "synthetic_fixture"
     },
     {
+      "request_id": "LAB-REQ-003",
       "barcode": "100000000035",
       "item_name": "Vanilla Cold Brew",
       "current_price": "3.89",
@@ -29,10 +32,19 @@
       "source": "synthetic_fixture"
     },
     {
+      "request_id": "LAB-REQ-004",
       "barcode": "100000000042",
       "item_name": "Ginger Lime Soda",
       "current_price": "2.59",
       "requested_price": "2.79",
+      "source": "synthetic_fixture"
+    },
+    {
+      "request_id": "LAB-REQ-005",
+      "barcode": "100000000011",
+      "item_name": "Citrus Sparkler",
+      "current_price": "2.49",
+      "requested_price": "2.69",
       "source": "synthetic_fixture"
     }
   ],

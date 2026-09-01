@@ -70,7 +70,7 @@ main { max-width: 1500px; margin: 0 auto; padding: 1.4rem clamp(1rem, 4vw, 3.5re
 table { width: 100%; border-collapse: collapse; font-size: .82rem; }
 th { padding: .75rem; color: var(--muted); background: #f8fafc; text-align: left; white-space: nowrap; }
 td { padding: .85rem .75rem; border-top: 1px solid #edf0f4; vertical-align: top; }
-td:first-child, td:nth-child(3), td:nth-child(4), td:nth-child(5) { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+td:first-child, td:nth-child(2), td:nth-child(4), td:nth-child(5), td:nth-child(6) { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .status { display: inline-block; padding: .3rem .48rem; border-radius: 6px; color: var(--navy); background: #edf1f5; font-weight: 700; }
 .status.hold { color: #9a3412; background: #ffedd5; }
 .status.pass { color: #065f46; background: #d1fae5; }

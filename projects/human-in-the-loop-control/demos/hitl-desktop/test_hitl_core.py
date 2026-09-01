@@ -10,6 +10,7 @@ from automate_hitl import PROJECT_ROOT, write_run_log
 
 from hitl_core import (
     DEMO_CACHE,
+    DUPLICATE_HOLD_STATUS,
     HELD_MANUAL_MENU_ITEM_ID,
     approve_lab_save,
     fixture_is_synthetic,
@@ -28,52 +29,91 @@ class HitlCoreTests(unittest.TestCase):
 
     def resolve_and_validate_held_row(self) -> None:
         hits, held = resolve_from_cache(self.rows, self.cache)
-        self.assertEqual((hits, held), (3, 1))
-        held_row = next(row for row in self.rows if not row.menu_item_id)
+        self.assertEqual((hits, held), (3, 2))
+        held_row = next(
+            row
+            for row in self.rows
+            if not row.menu_item_id and not row.duplicate_submission
+        )
         validate_held_row(
             self.rows,
             self.cache,
-            held_row.barcode,
+            held_row.request_id,
             HELD_MANUAL_MENU_ITEM_ID,
         )
 
     def test_fixture_declares_and_satisfies_synthetic_invariants(self) -> None:
         self.assertTrue(fixture_is_synthetic())
+        self.assertEqual(len(DEMO_CACHE), len(set(DEMO_CACHE)))
+        self.assertEqual(len(DEMO_CACHE.values()), len(set(DEMO_CACHE.values())))
+        self.assertEqual(len({row.request_id for row in self.rows}), len(self.rows))
+        self.assertLess(len({row.barcode for row in self.rows}), len(self.rows))
 
     def test_cache_hits_and_unknown_hold(self) -> None:
         hits, held = resolve_from_cache(self.rows, self.cache)
 
-        self.assertEqual((hits, held), (3, 1))
+        self.assertEqual((hits, held), (3, 2))
         self.assertEqual(
             [row.status for row in self.rows].count("Cache hit"),
             3,
         )
         unresolved = [row for row in self.rows if not row.menu_item_id]
-        self.assertEqual(len(unresolved), 1)
-        self.assertEqual(unresolved[0].status, "Held for manual lookup")
+        self.assertEqual(len(unresolved), 2)
+        self.assertEqual(
+            [row.status for row in unresolved],
+            ["Held for manual lookup", DUPLICATE_HOLD_STATUS],
+        )
+        duplicate = next(row for row in self.rows if row.duplicate_submission)
+        first = next(
+            row
+            for row in self.rows
+            if row.barcode == duplicate.barcode and row.request_id != duplicate.request_id
+        )
+        self.assertEqual(first.menu_item_id, DEMO_CACHE[first.barcode])
+        self.assertFalse(duplicate.menu_item_id)
 
     def test_person_can_validate_one_held_identifier(self) -> None:
         resolve_from_cache(self.rows, self.cache)
-        held_row = next(row for row in self.rows if not row.menu_item_id)
+        held_row = next(
+            row
+            for row in self.rows
+            if not row.menu_item_id and not row.duplicate_submission
+        )
 
         validate_held_row(
             self.rows,
             self.cache,
-            held_row.barcode,
+            held_row.request_id,
             HELD_MANUAL_MENU_ITEM_ID,
         )
 
         self.assertEqual(held_row.menu_item_id, HELD_MANUAL_MENU_ITEM_ID)
         self.assertEqual(held_row.status, "Manually validated")
         self.assertEqual(self.cache[held_row.barcode], HELD_MANUAL_MENU_ITEM_ID)
+        duplicate = next(row for row in self.rows if row.duplicate_submission)
+        with self.assertRaisesRegex(ValueError, "duplicate barcode submission"):
+            validate_held_row(
+                self.rows,
+                self.cache,
+                duplicate.request_id,
+                "7002999",
+            )
+        self.assertFalse(duplicate.menu_item_id)
 
     def test_staging_is_blocked_while_an_identifier_is_unresolved(self) -> None:
         resolve_from_cache(self.rows, self.cache)
+        duplicate = next(row for row in self.rows if row.duplicate_submission)
+        duplicate.menu_item_id = "7002999"
+        duplicate.staged_price = "9.99"
+        duplicate.reread_price = "9.99"
 
-        with self.assertRaisesRegex(ValueError, "every held row"):
+        with self.assertRaisesRegex(ValueError, "every eligible held row"):
             stage_price_updates(self.rows)
 
         self.assertTrue(all(not row.staged_price for row in self.rows))
+        self.assertFalse(duplicate.menu_item_id)
+        self.assertFalse(duplicate.reread_price)
+        self.assertEqual(duplicate.status, DUPLICATE_HOLD_STATUS)
 
     def test_reread_passes_when_every_staged_value_matches(self) -> None:
         self.resolve_and_validate_held_row()
@@ -81,11 +121,23 @@ class HitlCoreTests(unittest.TestCase):
 
         self.assertTrue(reread_staged_updates(self.rows))
         self.assertTrue(
-            all(row.status == "Verified, awaiting approval" for row in self.rows)
+            all(
+                row.status == "Verified, awaiting approval"
+                for row in self.rows
+                if not row.duplicate_submission
+            )
         )
         self.assertTrue(
-            all(row.reread_price == row.requested_price for row in self.rows)
+            all(
+                row.reread_price == row.requested_price
+                for row in self.rows
+                if not row.duplicate_submission
+            )
         )
+        duplicate = next(row for row in self.rows if row.duplicate_submission)
+        self.assertEqual(duplicate.status, DUPLICATE_HOLD_STATUS)
+        self.assertFalse(duplicate.staged_price)
+        self.assertFalse(duplicate.reread_price)
 
     def test_reread_mismatch_blocks_approval(self) -> None:
         self.resolve_and_validate_held_row()
@@ -93,7 +145,9 @@ class HitlCoreTests(unittest.TestCase):
         mismatch = self.rows[0]
 
         self.assertFalse(
-            reread_staged_updates(self.rows, mismatch_barcode=mismatch.barcode)
+            reread_staged_updates(
+                self.rows, mismatch_request_id=mismatch.request_id
+            )
         )
         self.assertEqual(mismatch.status, "Held: reread mismatch")
         with self.assertRaisesRegex(ValueError, "every staged row verifies"):
@@ -107,14 +161,31 @@ class HitlCoreTests(unittest.TestCase):
             approve_lab_save(self.rows)
 
         reread_staged_updates(self.rows)
+        duplicate = next(row for row in self.rows if row.duplicate_submission)
+        duplicate.menu_item_id = "7002999"
+        duplicate.staged_price = "9.99"
+        duplicate.reread_price = "9.99"
+        duplicate.status = "Verified, awaiting approval"
         approve_lab_save(self.rows)
 
         self.assertTrue(
-            all(row.status == "Saved after human approval (lab)" for row in self.rows)
+            all(
+                row.status == "Saved after human approval (lab)"
+                for row in self.rows
+                if not row.duplicate_submission
+            )
         )
         self.assertTrue(
-            all(row.current_price == row.requested_price for row in self.rows)
+            all(
+                row.current_price == row.requested_price
+                for row in self.rows
+                if not row.duplicate_submission
+            )
         )
+        self.assertEqual(duplicate.status, DUPLICATE_HOLD_STATUS)
+        self.assertFalse(duplicate.menu_item_id)
+        self.assertFalse(duplicate.staged_price)
+        self.assertFalse(duplicate.reread_price)
 
     def test_log_writer_is_inert_without_an_explicit_path(self) -> None:
         before = {path for path in PROJECT_ROOT.rglob("*") if path.is_file()}

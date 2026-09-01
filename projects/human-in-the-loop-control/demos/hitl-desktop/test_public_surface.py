@@ -48,8 +48,17 @@ class PublicSurfaceTests(unittest.TestCase):
         self.assertEqual(parser.scripts, ["app.js"])
         self.assertEqual(len(parser.ids), len(set(parser.ids)))
         self.assertIn("connect-src 'none'", parser.csp or "")
-        for action in ("resolveCache", "validateHeld", "stageValues", "verifyValues", "approveSave"):
+        for action in (
+            "holdDuplicateSubmissions",
+            "resolveCache",
+            "validateHeld",
+            "stageValues",
+            "verifyValues",
+            "approveSave",
+        ):
             self.assertIn(f"function {action}()", script)
+        self.assertIn('data-request-id="${escapeHTML(row.requestId)}"', script)
+        self.assertIn("Held: duplicate barcode submission", script)
         self.assertIn(":focus-visible", css)
         self.assertIn("prefers-reduced-motion", css)
 
